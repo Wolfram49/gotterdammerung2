@@ -1,0 +1,6 @@
+#reload countrycolors
+
+GER = {
+	color = rgb { 147 130 110 }
+	color_ui = rgb { 147 130 110 }
+}
