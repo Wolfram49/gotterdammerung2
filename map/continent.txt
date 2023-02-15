@@ -1,5 +1,0 @@
-continents = {
-	europe
-	africa
-	middle_east
-}
