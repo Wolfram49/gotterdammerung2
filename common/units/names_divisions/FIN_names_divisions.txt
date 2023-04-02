@@ -18,12 +18,12 @@
 # unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
 #             this option is available here mainly for a mods.
 #
-# ordered - Is a list of all historical names.
-#           Numbers must start from 1 and up.
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
 #           Numbers can't repeat in one scope.
 #           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
 #           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
-#           1st argument = The name. It must contain either:
+#           1st argument = The name. It must contain either: 
 #                          %d (for decimal number placement)
 #                          %s (for string number placement - ROMAN numbers like XIV).
 #           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
@@ -31,11 +31,13 @@
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
 
-FIN_INF_01 =
+FIN_INF_01 = 
 {
 	name = "Infantry Divisions"
 
 	for_countries = { FIN }
+
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -44,7 +46,7 @@ FIN_INF_01 =
 
 	fallback_name = "%d. Divisioona"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -103,11 +105,13 @@ FIN_INF_01 =
 	}
 }
 
-FIN_CAV_01 =
+FIN_CAV_01 = 
 {
 	name = "Cavalry Divisions"
 
 	for_countries = { FIN }
+
+	can_use = { always = yes }
 
 	division_types = { "cavalry" }
 
@@ -116,7 +120,7 @@ FIN_CAV_01 =
 
 	fallback_name = "%d. Ratsuväkiprikaati"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -176,11 +180,13 @@ FIN_CAV_01 =
 	}
 }
 
-FIN_MOT_01 =
+FIN_MOT_01 = 
 {
 	name = "Motorised Divisions"
 
 	for_countries = { FIN }
+
+	can_use = { always = yes }
 
 	division_types = { "motorized" }
 
@@ -189,7 +195,7 @@ FIN_MOT_01 =
 
 	fallback_name = "%d. Jääkäridivisioona"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -230,20 +236,22 @@ FIN_MOT_01 =
 	}
 }
 
-FIN_ARM_01 =
+FIN_ARM_01 = 
 {
 	name = "Armoured Divisions"
 
 	for_countries = { FIN }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" }
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { FIN_MOT_01 }
 
 	fallback_name = "%d. Panssaridivisioona"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -285,11 +293,13 @@ FIN_ARM_01 =
 	}
 }
 
-FIN_MEC_01 =
+FIN_MEC_01 = 
 {
 	name = "Mechanised Divisions"
 
 	for_countries = { FIN }
+
+	can_use = { always = yes }
 
 	division_types = { "mechanized"  }
 
@@ -298,7 +308,7 @@ FIN_MEC_01 =
 
 	fallback_name = "%d. PsJääkäridivisioona"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -340,11 +350,13 @@ FIN_MEC_01 =
 	}
 }
 
-FIN_GAR_01 =
+FIN_GAR_01 = 
 {
 	name = "Garrison Divisions"
 
 	for_countries = { FIN }
+
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -353,7 +365,7 @@ FIN_GAR_01 =
 
 	fallback_name = "%d. Ryhmä"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -413,11 +425,13 @@ FIN_GAR_01 =
 	}
 }
 
-FIN_MAR_01 =
+FIN_MAR_01 = 
 {
 	name = "Marine Divisions"
 
 	for_countries = { FIN }
+
+	can_use = { always = yes }
 
 	division_types = { "marine" }
 
@@ -426,7 +440,7 @@ FIN_MAR_01 =
 
 	fallback_name = "%d. Rannikkojääkäridiv"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -465,11 +479,13 @@ FIN_MAR_01 =
 	}
 }
 
-FIN_MTN_01 =
+FIN_MTN_01 = 
 {
 	name = "Mountain Divisions"
 
 	for_countries = { FIN }
+
+	can_use = { always = yes }
 
 	division_types = { "mountaineers" }
 
@@ -478,7 +494,7 @@ FIN_MTN_01 =
 
 	fallback_name = "%d. Sissidivisioona"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -540,11 +556,13 @@ FIN_MTN_01 =
 	}
 }
 
-FIN_PAR_01 =
+FIN_PAR_01 = 
 {
 	name = "Paratrooper Divisions"
 
 	for_countries = { FIN }
+
+	can_use = { always = yes }
 
 	division_types = { "paratrooper" }
 
@@ -552,7 +570,7 @@ FIN_PAR_01 =
 
 	fallback_name = "%d. Laskuvarjojääkäridiv."
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{

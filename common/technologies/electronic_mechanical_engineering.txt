@@ -3,7 +3,6 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.03
-		land_reinforce_rate = 0.01		
 		
 		path = {
 			leads_to_tech = radio 
@@ -45,20 +44,25 @@ technologies = {
 	radio = {
 
 		# units with radios can more efficiently join combats when there is room
-		land_reinforce_rate = 0.06
+		land_reinforce_rate = 0.05
+		coordination_bonus = 0.04
 		
 		path = {
 			leads_to_tech = radio_detection 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1.75
 		
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 2 }
 		}
 		
+		enable_equipment_modules = { 
+			tank_radio_1
+		}
+
 		folder = {
 			name = support_folder
 			position = { x = 11 y = 9 } # x = 12 y = 0
@@ -93,17 +97,13 @@ technologies = {
 			building = radar_station
 			level = 1
 		}
-		
+		coordination_bonus = 0.01
 		path = {
 			leads_to_tech = decimetric_radar 
 			research_cost_coeff = 1
 		}
 		
-		xp_research_type = navy
-		xp_research_cost = 35
-		xp_research_bonus = 1.50		
-		
-		research_cost = 1.5
+		research_cost = 1.75
 		
 		folder = {
 			name = electronics_folder
@@ -132,15 +132,12 @@ technologies = {
 			leads_to_tech = improved_decimetric_radar 
 			research_cost_coeff = 1
 		}
-		
-		xp_research_type = navy
-		xp_research_cost = 35
-		xp_research_bonus = 1.50		
-		
-		research_cost = 1.5
+		coordination_bonus = 0.01
+		research_cost = 1.25
 		start_year = 1938
 		enable_equipment_modules = { 
 			ship_radar_1
+			tank_radio_2
 		}
 		folder = {
 			name = electronics_folder
@@ -180,7 +177,7 @@ technologies = {
 			building = radar_station
 			level = 3
 		}
-		
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_2
 		}
@@ -190,11 +187,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		xp_research_type = navy
-		xp_research_cost = 50
-		xp_research_bonus = 1.50		
-		
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1939
 		
 		folder = {
@@ -230,23 +223,20 @@ technologies = {
 			building = radar_station
 			level = 4
 		}
-
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_3
+			tank_radio_3
 		}
-		carrier_capacity_penalty_reduction = -0.1
+
 		static_anti_air_hit_chance_factor = 0.2
-		navy_carrier_air_targetting_factor = 0.05
+		
 		path = {
 			leads_to_tech = improved_centimetric_radar 
 			research_cost_coeff = 1
 		}
 		
-		xp_research_type = navy
-		xp_research_cost = 50
-		xp_research_bonus = 1.50		
-		
-		research_cost = 2.5
+		research_cost = 1.25
 		start_year = 1940
 		
 		folder = {
@@ -282,20 +272,17 @@ technologies = {
 			building = radar_station
 			level = 5
 		}
-
-		xp_research_type = navy
-		xp_research_cost = 50
-		xp_research_bonus = 1.50		
+		coordination_bonus = 0.01
+		
 
 		static_anti_air_hit_chance_factor = 0.2
-		carrier_capacity_penalty_reduction = -0.1
-		navy_carrier_air_targetting_factor = 0.05
+		
 		path = {
 			leads_to_tech = advanced_centimetric_radar 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.5
+		research_cost = 1.25
 		start_year = 1941
 		
 		folder = {
@@ -331,18 +318,14 @@ technologies = {
 			building = radar_station
 			level = 6
 		}
-
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_4
 		}
 		
 		static_anti_air_hit_chance_factor = 0.2
 		
-		xp_research_type = navy
-		xp_research_cost = 50
-		xp_research_bonus = 1.50		
-		
-		research_cost = 2.5
+		research_cost = 1.25
 		start_year = 1942
 		
 		folder = {
@@ -371,7 +354,6 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.04
-		land_reinforce_rate = 0.01
 		
 		path = {
 			leads_to_tech = computing_machine 
@@ -404,13 +386,19 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.05
-		land_reinforce_rate = 0.01		
 		
 		path = {
 			leads_to_tech = improved_computing_machine 
 			research_cost_coeff = 1
 		}
-
+		path = {
+			leads_to_tech = basic_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_decryption 
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = improved_fire_control_system
 			research_cost_coeff = 1
@@ -449,10 +437,19 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.08
-		land_reinforce_rate = 0.01		
-		
+		enable_equipment_modules = {
+			stabilizer
+		}
 		path = {
 			leads_to_tech = advanced_computing_machine 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_decryption 
 			research_cost_coeff = 1
 		}
 
@@ -461,7 +458,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 2.5
 		start_year = 1940
 		
 		folder = {
@@ -500,9 +497,17 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.08
-		land_reinforce_rate = 0.01		
 		
-		research_cost = 2
+		path = {
+			leads_to_tech = advanced_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_decryption 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
 		start_year = 1942
 		
 		folder = {
@@ -531,6 +536,252 @@ technologies = {
 			computing_tech
 		}
 	}
+	
+	basic_encryption = {
+
+		# encryption 1
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1938
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	improved_encryption = {
+
+		# encryption 2
+		encryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		research_cost = 1
+		start_year = 1940
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	advanced_encryption = {
+
+		# encryption 3
+		encryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		research_cost = 1
+		start_year = 1942
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	basic_decryption = {
+
+		# decryption 1
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		research_cost = 1.5
+		start_year = 1938
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	improved_decryption = {
+
+		# decryption 2
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		research_cost = 1.5
+		start_year = 1940
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	advanced_decryption = {
+
+		# decryption 3
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		research_cost = 1.5
+		start_year = 1942
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
 
 	basic_fire_control_system = {
 
@@ -542,15 +793,30 @@ technologies = {
 			ship_fire_control_system_1
 		}
 		
-		xp_research_type = navy
-		xp_research_cost = 25
-		xp_research_bonus = 1.50		
-		
 		research_cost = 1
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					can_research = improved_fire_control_system
+					has_tech = improved_fire_control_system
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -575,9 +841,24 @@ technologies = {
 			position = { x = 0 y = 8 }
 		}
 		
-		xp_research_type = navy
-		xp_research_cost = 25
-		xp_research_bonus = 1.50		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					can_research = advanced_fire_control_system
+					has_tech = advanced_fire_control_system
+				}
+				factor = 0
+			}
+		}
 		
 		categories = {
 			electronics
@@ -595,15 +876,24 @@ technologies = {
 			has_dlc = "Man the Guns"
 		}
 		
-		xp_research_type = navy
-		xp_research_cost = 25
-		xp_research_bonus = 1.50		
-		
 		research_cost = 1
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			
 		}
 		
 		categories = {
@@ -626,12 +916,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.0
+		research_cost = 1.5
 		start_year = 1943
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 0 }
+		}
+	
+		ai_will_do = {
+			factor = 1
 		}
 		
 		categories = {
@@ -671,12 +965,21 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.0
+		research_cost = 2
 		start_year = 1944
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 2 }
+		}
+			folder = {
+			name = secret_weapons_folder
+			position = { x = 10 y = 0 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
 		}
 		
 		categories = {
@@ -713,12 +1016,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.0
+		research_cost = 1.5
 		start_year = 1945
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 		
 		categories = {
@@ -750,12 +1057,16 @@ technologies = {
 			soft_attack = 0.05
 		}
 		
-		research_cost = 1.0
+		research_cost = 1.5
 		start_year = 1946
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 		
 		categories = {
@@ -772,7 +1083,9 @@ technologies = {
 		
 		start_year = 1944
 		research_cost = 2
-
+		enable_equipment_modules = {
+			tank_gas_turbine_engine
+		}
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 11 }
@@ -784,6 +1097,10 @@ technologies = {
 			custom_effect_tooltip = JET_ENGINES_RESEARCHED
 		}
 		
+		ai_will_do = {
+			factor = 1
+		}
+		
 		categories = {
 			rocketry
 			jet_technology
@@ -792,7 +1109,7 @@ technologies = {
 	
 	atomic_research = {
 
-		research_speed_factor = 0.02
+		research_speed_factor = 0.04
 		
 		path = {
 			leads_to_tech = nuclear_reactor 
@@ -805,6 +1122,30 @@ technologies = {
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				tag = USA
+			}
 		}
 		
 		categories = {
@@ -831,6 +1172,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				tag = USA
+				factor = 2
+			}
+		}
+		
 		categories = {
 			nuclear
 		}
@@ -851,8 +1200,20 @@ technologies = {
 			position = { x = 0 y = 6 }
 		}
 		
-		nuclear_production = 1
+		ai_will_do = {
+			factor = 10
+		}
 		
+		nuclear_production = 1
+		on_research_complete = {
+			if = {
+				limit = {
+					tag = USA
+					has_war_with = JAP
+				}
+				play_warning_to_japan_effect = yes
+			}
+		}
 		categories = {
 			nuclear
 		}
@@ -873,5 +1234,6 @@ technologies = {
 		ai_will_do = {
 			factor = 0
 		}
+		################
 	}
 }

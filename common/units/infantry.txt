@@ -3,7 +3,51 @@
 # For sea units: ship,transport,uboat
 
 sub_units = {
+
+	infantry = {
+		abbreviation = "INF"
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1.5
+		weight = 0.5
+		
+		supply_consumption = 0.06
+	
+		need = {
+			infantry_equipment = 100
+		}
+	}
+
 	bicycle_battalion = {
+		abbreviation = "BIC"
 		sprite = bicycle
 		map_icon_category = infantry
 		
@@ -22,54 +66,49 @@ sub_units = {
 			category_light_infantry
 			category_all_infantry
 			category_army
-			category_non_support			
 		}
 		
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 15
-		max_organisation = 23
+		max_strength = 25
+		max_organisation = 60
 		default_morale = 0.3
-		maximum_speed = 0.8
+		maximum_speed = 0.6
 		manpower = 1000
 
 		#Misc Abilities
 		training_time = 90
-		suppression = 1
+		suppression = 2
 		weight = 0.5
 		
-		supply_consumption = 0.08
+		supply_consumption = 0.06
 	
 		need = {
 			infantry_equipment = 100
 			support_equipment = 10			
 		}
 
-		desert = {
-			movement = 0.2
-		}
-
 		forest = {
-			movement = 0.10
+			movement = 0.00
 		}
 		hills = {
 			movement = 0.1
 		}
 		mountain = {
-			movement = 0.1
-		}
-		gibraltar = {
 			movement = 0.05
-		}		
+		}
 		marsh = {
 			movement = 0.05
 		}
 		plains = {
-			movement = 0.30
+			movement = 0.2
 		}
 		urban = {
 			movement = 0.2
+		}
+		desert = {
+			movement = 0.05
 		}
 		river = {
 			movement = -0.05
@@ -77,91 +116,15 @@ sub_units = {
 		amphibious = {
 			movement = -0.05
 		}
-		
-		
-		desert_africa = {
-			movement = 0.2
-		}
-
-		forest_africa = {
-			movement = 0.10
-		}
-		hills_africa = {
-			movement = 0.1
-		}
-		mountain_africa = {
-			movement = 0.1
-		}
-		marsh_africa = {
-			movement = 0.05
-		}
-		plains_africa = {
-			movement = 0.30
-		}
-		urban_africa = {
-			movement = 0.2
-		}
 	}
-	infantry = {
-		sprite = infantry
-		map_icon_category = infantry
-
-		priority = 600
-		ai_priority = 200
-		active = no
-
-		type = {
-			infantry
-		}
-
-		group = infantry
-
-		categories = {
-			category_front_line
-			category_light_infantry
-			category_all_infantry
-			category_army
-			category_non_support			
-		}
-
-		combat_width = 2
-
-		#Size Definitions
-		max_strength = 25
-		max_organisation = 40
-		default_morale = 0.3
-		manpower = 1000
-
-		#Misc Abilities
-		training_time = 90
-		suppression = 1
-		weight = 0.5
-
-		supply_consumption = 0.07
-
-		desert = {
-			movement = 0.2
-		}
-
-		desert_africa = {
-			movement = 0.2
-		}
-
-		amphibious = {
-			attack = 0.325
-		}
-
-		need = {
-			infantry_equipment = 90
-		}
-	}
-
+	
 	marine = {
+		abbreviation = "MRN"
 		sprite = infantry
 		map_icon_category = infantry
 		special_forces = yes
 		marines = yes
-
+		
 		priority = 601
 		ai_priority = 200
 		active = no
@@ -169,23 +132,22 @@ sub_units = {
 		type = {
 			infantry
 		}
-
+		
 		group = infantry
-
+		
 		categories = {
 			category_front_line
 			category_light_infantry
 			category_all_infantry
 			category_army
 			category_special_forces
-			category_non_support			
 		}
-
+		
 		combat_width = 2
-
+		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 45
+		max_strength = 20
+		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
 
@@ -193,38 +155,26 @@ sub_units = {
 		training_time = 120
 		suppression = 1
 		weight = 0.5
-		supply_consumption = 0.07
-		breakthrough = 0.20
-
+		supply_consumption = 0.05
+		breakthrough = 0.3
+	
 		need = {
-			infantry_equipment = 200
-		}
-
-		desert = {
-			movement = 0.2
+			infantry_equipment = 150
 		}
 
 		marsh = {
 			attack = 0.3
 		}
 		river = {
-			attack = 0.4
+			attack = 0.3
 		}
 		amphibious = {
 			attack = 0.5
 		}
-		
-		
-		desert_africa = {
-			movement = 0.2
-		}
-
-		marsh_africa = {
-			attack = 0.3
-		}		
 	}
-
+	
 	mountaineers = {
+		abbreviation = "MTN"
 		sprite = infantry
 		map_icon_category = infantry
 		special_forces = yes
@@ -237,23 +187,22 @@ sub_units = {
 		type = {
 			infantry
 		}
-
+		
 		group = infantry
-
+		
 		categories = {
 			category_front_line
 			category_light_infantry
 			category_all_infantry
 			category_army
 			category_special_forces
-			category_non_support			
 		}
-
+		
 		combat_width = 2
-
+		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 45
+		max_strength = 20
+		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
 
@@ -261,77 +210,55 @@ sub_units = {
 		training_time = 120
 		suppression = 1
 		weight = 0.5
-
-		supply_consumption = 0.08
-		breakthrough = 0.20
-
+		
+		supply_consumption = 0.05
+		breakthrough = 0.3
+	
 		need = {
-			infantry_equipment = 200
-		}
-
-		desert = {
-			movement = 0.2
+			infantry_equipment = 140
 		}
 
 		hills = {
 			attack = 0.2
-			defence = 0.1
+			defence = 0.05
 			movement = 0.1
 		}
 		mountain = {
-			attack = 0.3
-			defence = 0.2
-			movement = 0.2
-		}
-		gibraltar = {
-			attack = 0.3
-			defence = 0.2
-			movement = 0.2
-		}
-		amphibious = {
-			attack = 0.2
-		}
-
-
-		hills_africa = {
-			attack = 0.2
+			attack = 0.35
 			defence = 0.1
-			movement = 0.1
-		}
-		mountain_africa = {
-			attack = 0.3
-			defence = 0.2
 			movement = 0.2
-		}		
+		}
 	}
 
 	paratrooper = {
+		abbreviation = "PAR"
 		sprite = infantry
 		map_icon_category = infantry
 		special_forces = yes
 
-		priority = 601
+		priority = 2
 		ai_priority = 2
 		active = no
 
 		type = {
 			infantry
 		}
-
-		# speed of paratroopers on land is set by inf equip, to make sure they don't move at 250km/hr on the land using transport planes lol
-		transport = infantry_equipment
-
+		
 		group = infantry
-
+		
 		categories = {
-			category_paratrooper
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+			category_special_forces
 		}
-
+		
 		combat_width = 2
-
+		
 		#Size Definitions
-		max_strength = 4
-		max_organisation = 6
+		max_strength = 22
+		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
 
@@ -339,331 +266,17 @@ sub_units = {
 		training_time = 150
 		suppression = 1
 		weight = 0.5
-		supply_consumption = 0.07
+		supply_consumption = 0.05
 
 		can_be_parachuted = yes
-
-		# nerfs to combat abilities, similar to how support companies work. This is so that we can make transport planes provide some of the stats of paras, so if you don't have transport planes in the divisions your paras will be shit
-		defense = -0.5
-		breakthrough = -0.5
-		soft_attack = -0.5
-		hard_attack = -0.5
-		ap_attack = -0.5
-
+	
 		need = {
-			infantry_equipment = 200
-			support_equipment = 10
-			transport_plane_equipment = 2
+			infantry_equipment = 130
 		}
-
-		desert = {
-			movement = 0.2
-		}
-
-		desert_africa = {
-			movement = 0.2
-		}
-		
-		amphibious = {
-			attack = 0.2
-		}			
-
 	}
-
-	jaeger = {
-		sprite = infantry
-		map_icon_category = infantry
-		special_forces = yes
-
-		ai_priority = 2
-		priority = 601
-		active = no
-
-		type = {
-			infantry
-		}
-
-		group = infantry
-		
-		
-		
-
-
-
-		
-		
-
-		categories = {
-			category_front_line
-			category_light_infantry
-			category_all_infantry
-			category_army
-			category_special_forces
-			category_non_support			
-		}
-
-		combat_width = 2
-
-		#Size Definitions
-		max_strength = 25
-		max_organisation = 45
-		default_morale = 0.4
-		manpower = 1000
-
-		#Misc Abilities
-		training_time = 150
-		suppression = 1
-		weight = 0.5
-		supply_consumption = 0.08
-		breakthrough = 0.20
-
-		need = {
-			infantry_equipment = 200
-		}
-
-		desert = {
-			movement = 0.2
-		}
-
-		marsh = {
-			attack = 0.05
-			movement = 0.05
-		}
-		forest = {
-			attack = 0.05
-			defence = 0.05
-			movement = 0.05
-		}
-		amphibious = {
-			attack = 0.2
-		}			
-		
-
-		desert_africa = {
-			movement = 0.2
-		}
-
-		marsh_africa = {
-			attack = 0.05
-			movement = 0.05
-		}
-		forest_africa = {
-			attack = 0.05
-			defence = 0.05
-			movement = 0.05
-		}		
-	}
-
-	jungletroop = {
-		sprite = infantry
-		map_icon_category = infantry
-		special_forces = yes
-
-		ai_priority = 2
-		priority = 601
-		active = no
-
-		type = {
-			infantry
-		}
-
-		group = infantry
-
-		categories = {
-			category_front_line
-			category_light_infantry
-			category_all_infantry
-			category_army
-			category_special_forces
-			category_non_support			
-		}
-
-		combat_width = 2
-
-		#Size Definitions
-		max_strength = 25
-		max_organisation = 45
-		default_morale = 0.4
-		manpower = 1000
-
-		#Misc Abilities
-		training_time = 150
-		suppression = 1
-		weight = 0.5
-		supply_consumption = 0.07
-		breakthrough = 0.20
-
-		need = {
-			infantry_equipment = 200
-		}
-
-		desert = {
-			movement = 0.2
-		}
-
-		jungle = {
-			attack = 0.075
-			defence = 0.05
-			movement = 0.1
-		}
-		river = {
-			movement = 0.1
-		}
-		amphibious = {
-			attack = 0.2
-		}
-
-
-		desert_africa = {
-			movement = 0.2
-		}
-
-		jungle_africa = {
-			attack = 0.075
-			defence = 0.05
-			movement = 0.1
-		}		
-	}
-
-	shocktroop = {
-		sprite = infantry
-		map_icon_category = infantry
-		special_forces = yes
-
-		ai_priority = 50
-		priority = 601
-		active = no
-
-		type = {
-			infantry
-		}
-
-		group = infantry
-
-		categories = {
-			category_front_line
-			category_light_infantry
-			category_all_infantry
-			category_army
-			category_special_forces
-			category_non_support			
-		}
-
-		combat_width = 2
-
-		#offensive abilities
-		#soft_attack = 0.2
-
-		#Size Definitions
-		max_strength = 25
-		max_organisation = 52
-		default_morale = 0.4
-		manpower = 1000
-
-		#Misc Abilities
-		training_time = 120
-		suppression = 1
-		weight = 0.5
-		supply_consumption = 0.09
-		breakthrough = 0.2 
-
-		need = {
-			infantry_equipment = 200
-		}
-
-		desert = {
-			movement = 0.2
-		}
-
-		urban = {
-			attack = 0.15
-			movement = 0.1
-			defence = 0.1
-			#Please dont use these to guard coastal urban tiles or I will take this away
-		}
-		fort = {
-			attack = 0.15
-			movement = 0.1
-		}
-		amphibious = {
-			attack = 0.2
-		}
-		
-		
-		desert_africa = {
-			movement = 0.2
-		}
-
-		urban_africa = {
-			attack = 0.15
-			movement = 0.1
-			defence = 0.1
-			#Please dont use these to guard coastal urban tiles or I will take this away
-		}		
-	}
-
-	desertinfantry = {
-		sprite = infantry
-		map_icon_category = infantry
-		special_forces = yes
-
-		ai_priority = 2
-		priority = 601
-		active = no
-
-		type = {
-			infantry
-		}
-
-		group = infantry
-
-		categories = {
-			category_front_line
-			category_light_infantry
-			category_all_infantry
-			category_army
-			category_special_forces
-			category_non_support			
-		}
-
-		combat_width = 2
-
-		#Size Definitions
-		max_strength = 25
-		max_organisation = 45
-		default_morale = 0.4
-		manpower = 1000
-
-		#Misc Abilities
-		training_time = 120
-		suppression = 1
-		weight = 0.5
-		supply_consumption = 0.06
-		breakthrough = 0.20
-
-		need = {
-			infantry_equipment = 200
-		}
-
-		desert = {
-			attack = 0.075
-			defence = 0.075
-			movement = 0.35
-		}
-		
-		desert_africa = {
-			attack = 0.075
-			defence = 0.075
-			movement = 0.35
-		}
-		
-		amphibious = {
-			attack = 0.2
-		}			
-	}
-
 
 	motorized = {
+		abbreviation = "MOT"
 		sprite = motorized
 		map_icon_category = infantry
 
@@ -674,52 +287,44 @@ sub_units = {
 		type = {
 			motorized
 		}
-
-		group = armor		
-
+		
+		group = mobile
+		
 		categories = {
 			category_front_line
 			category_all_infantry
 			category_army
-			category_non_support			
 		}
-
+		
 		combat_width = 2
-
+		
 		#Size Definitions
 		max_strength = 25
-		max_organisation = 31
+		max_organisation = 60
 		default_morale = 0.30
 		manpower = 1200
 
 		#Misc Abilities
 		training_time = 90
-		suppression = 1
+		suppression = 2.2
 		weight = 0.75
-		supply_consumption = 0.14
-
+		supply_consumption = 0.065
+	
 		# this is what moves us and sets speed
 		transport = motorized_equipment
-
+	
 		need = {
 			infantry_equipment = 100
-			motorized_equipment = 50
+			motorized_equipment = 35
 		}
 
 		forest = {
 			attack = -0.1
-			movement = -0.35
+			movement = -0.5
 		}
 		mountain = {
-			attack = -0.1
-			defence = -0.1 
-			movement = -0.2 
+			attack = -0.05
 		}
-		gibraltar = {
-			attack = -0.1
-			defence = -0.1 
-			movement = -0.2 
-		}		
 		jungle = {
 			attack = -0.2
 			movement = -0.5
@@ -738,31 +343,10 @@ sub_units = {
 		amphibious = {
 			attack = -0.2
 		}
-		
-		
-		forest_africa = {
-			attack = -0.1
-			movement = -0.35
-		}
-		mountain_africa = {
-			attack = -0.1
-			defence = -0.1 
-			movement = -0.2 
-		}
-		jungle_africa = {
-			attack = -0.2
-			movement = -0.5
-		}
-		marsh_africa = {
-			attack = -0.1
-			movement = -0.3
-		}
-		urban_africa = {
-			attack = -0.1
-		}		
 	}
 
 	mechanized = {
+		abbreviation = "MEC"
 		sprite = mechanized
 		map_icon_category = infantry
 
@@ -773,35 +357,34 @@ sub_units = {
 		type = {
 			mechanized
 		}
-
-		group = armor
-
+		
+		group = mobile
+		
 		categories = {
 			category_front_line
 			category_all_infantry
 			category_army
-			category_non_support			
 		}
 
 		combat_width = 2
 
 		#Offensive Abilities
-		soft_attack = 0.2
-		hard_attack = 3.5
-
+		soft_attack = 0.1
+		hard_attack = 4.0
+		
 		#Size Definitions
-		max_strength = 36
-		max_organisation = 38
+		max_strength = 30
+		max_organisation = 60
 		default_morale = 0.3
 		manpower = 1200
 
 		#Misc Abilities
 		training_time = 120
-		suppression = 1
+		suppression = 2
 		weight = 1
-
+		
 		supply_consumption = 0.14
-
+		
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {
 			infantry_equipment
@@ -812,24 +395,16 @@ sub_units = {
 		transport = mechanized_equipment
 
 		need = {
-			mechanized_equipment = 50
+			mechanized_equipment = 40
 			infantry_equipment = 100
 		}
 
 		forest = {
 			attack = -0.2
-			movement = -0.35
 		}
 		mountain = {
-			attack = -0.1
-			defence = -0.1 
-			movement = -0.2 
+			attack = -0.05
 		}
-		gibraltar = {
-			attack = -0.1
-			defence = -0.1 
-			movement = -0.2 
-		}		
 		jungle = {
 			attack = -0.3
 		}
@@ -848,31 +423,90 @@ sub_units = {
 			attack = -0.4
 		}
 
-
-		forest_africa = {
-			attack = -0.2
-			movement = -0.35
-		}
-		mountain_africa = {
-			attack = -0.1
-			defence = -0.1 
-			movement = -0.2 
-		}
-		jungle_africa = {
-			attack = -0.3
-		}
-		marsh_africa = {
-			attack = -0.1
-		}
-		urban_africa = {
-			attack = -0.2
-			defence = -0.05
-		}
-
-		hardness = 0.2
+		#hardness = 0.2 moving these buffs to unit stats
 	}
 	
+	
+	fake_intel_unit = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 0
+		ai_priority = 0
+		active = no
 
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 1
+		
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 100
+		default_morale = 0.3
+		manpower = 0
 
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.0
+	
+		need = {
+			infantry_equipment = 1
+		}
+	}
 
+	penal_battalion = {
+		abbreviation = "PEN"
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 400 #600
+		ai_priority = 150 #200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 15 #25 (HP)
+		max_organisation = 70 #60 -> Lower HP but higher Org: They should keep fighting longer
+		default_morale = 0.4 #0.3 (Recovery) -> Easy to get more punishees
+		manpower = 850 #1000 -> Usually no more than 850
+
+		#Misc Abilities
+		training_time = 50 #90 -> Already trained
+		suppression = 0.5 #1.5 -> Not for suppression roles
+		weight = 0.5
+		
+		supply_consumption = 0.05 #0.07 -> Don't need that much supply, and they have lower HP
+	
+		need = {
+			infantry_equipment = 85 #100 -> Same ratio as regular Infantry			
+		}
+	}
 }

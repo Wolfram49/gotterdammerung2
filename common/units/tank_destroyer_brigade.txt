@@ -1,6 +1,7 @@
 sub_units = {
 
 	light_tank_destroyer_brigade = {
+		abbreviation = "LTD"
 		sprite = "light_armor"
 		map_icon_category = armored
 		priority = 1795
@@ -18,13 +19,12 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
-			category_non_support			
 		}
 
 		combat_width = 2
 
 		need = {
-			light_tank_destroyer_equipment = 38
+			light_tank_destroyer_chassis = 50
 		}
 		manpower = 500
 		max_organisation = 0
@@ -32,33 +32,29 @@ sub_units = {
 		max_strength = 0.6
 		training_time = 180
 		weight = 1
-		supply_consumption = 0.29
-		
+		supply_consumption = 0.2
+
+		breakthrough = -0.42
+
+		suppression = 1.0
+
 		forest = {
-		    attack = -0.1
-			movement = -0.2
+		    attack = -0.2
+			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.3
-			defence = -0.15
-			movement = -0.6
-		}
-		gibraltar = 	{
-		    attack = -0.3
-			defence = -0.15
-			movement = -0.6
-		}		
-		jungle = {
 		    attack = -0.1
-			defence = -0.05 
-			movement = -0.2
+		}
+		jungle = {
+		    attack = -0.3
+			movement = -0.4
 		}
 		marsh = {
 		    attack = -0.1 
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.3
+			attack = -0.4
 			defence = -0.1
 		}
 		river = { 
@@ -66,35 +62,12 @@ sub_units = {
 			movement = -0.2
 		}
 		amphibious = { 
-			attack = -0.4
+			attack = -0.6
 		}
-		
-		
-		forest_africa = {
-		    attack = -0.1
-			movement = -0.2
-		}
-		mountain_africa = 	{
-		    attack = -0.3
-			defence = -0.15
-			movement = -0.6
-		}
-		jungle_africa = {
-		    attack = -0.1
-			defence = -0.05 
-			movement = -0.2
-		}
-		marsh_africa = {
-		    attack = -0.1 
-			movement = -0.1
-		}
-		urban_africa = {
-			attack = -0.3
-			defence = -0.1
-		}		
 	}
 	
 	medium_tank_destroyer_brigade = {
+		abbreviation = "MTD"
 		sprite = "medium_armor"
 		map_icon_category = armored
 		priority = 1796
@@ -112,14 +85,13 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
-			category_non_support			
 		}
 
 
 		combat_width = 2
 
 		need = {
-			medium_tank_destroyer_equipment = 32
+			medium_tank_destroyer_chassis = 50
 		}
 		manpower = 500
 		max_organisation = 0
@@ -127,37 +99,32 @@ sub_units = {
 		max_strength = 0.6
 		training_time = 180
 		weight = 1.25
-		supply_consumption = 0.37
+		supply_consumption = 0.22
+
+		breakthrough = -0.25
 		
+		suppression = 1.25
+
 		forest = {
-		    attack = -0.2
-			movement = -0.2
+		    attack = -0.3
+			movement = -0.4
 		}
-		hills = {
-		    attack = -0.15
-			defence = -0.1 
+		hills = 	{
+		    attack = -0.1
 		}
 		mountain = 	{
-		    attack = -0.55
-			defence = -0.35 
-			movement = -0.8
+		    attack = -0.2
 		}
-		gibraltar = 	{
-		    attack = -0.55
-			defence = -0.35 
-			movement = -0.8
-		}		
 		jungle = {
-		    attack = -0.3
-			defence = -0.15 
-			movement = -0.3
+		    attack = -0.4
+			movement = -0.4
 		}
 		marsh = {
 		    attack = -0.1 
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.3
+			attack = -0.4
 			defence = -0.1
 		}
 		river = { 
@@ -167,37 +134,10 @@ sub_units = {
 		amphibious = { 
 			attack = -0.7
 		}
-		
-		
-		forest_africa = {
-		    attack = -0.2
-			movement = -0.2
-		}
-		hills_africa = {
-		    attack = -0.15
-			defence = -0.1 
-		}
-		mountain_africa = 	{
-		    attack = -0.55
-			defence = -0.35 
-			movement = -0.8
-		}
-		jungle_africa = {
-		    attack = -0.3
-			defence = -0.15 
-			movement = -0.3
-		}
-		marsh_africa = {
-		    attack = -0.1 
-			movement = -0.1
-		}
-		urban_africa = {
-			attack = -0.3
-			defence = -0.1
-		}		
 	}
 	
 	heavy_tank_destroyer_brigade = {
+		abbreviation = "HTD"
 		sprite = "heavy_armor"
 		map_icon_category = armored
 		priority = 1797
@@ -216,43 +156,37 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
-			category_non_support			
 		}
-		
+
 
 		combat_width = 2
 
 		need = {
-			heavy_tank_destroyer_equipment = 25
+			heavy_tank_destroyer_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.3
 		max_strength = 0.6
 		weight = 1.5
-		supply_consumption = 0.48
-	
+		supply_consumption = 0.3
+
+		breakthrough = -0.25
+
+		suppression = 1.25
+		
 		forest = {
 		    attack = -0.40
 			movement = -0.40
 		}
 		hills = {
 		    attack = -0.20
-			defence = -0.1
 		}
 		mountain = 	{
-		    attack = -0.9
-			defence = -0.5 
-			movement = -0.8
+		    attack = -0.3
 		}
-		gibraltar = 	{
-		    attack = -0.9
-			defence = -0.5 
-			movement = -0.8
-		}		
 		jungle = {
 		    attack = -0.6
-			defence = -0.2 
 			movement = -0.4
 		}
 		marsh = {
@@ -271,39 +205,12 @@ sub_units = {
 			attack = -0.8 
 		}
 		fort = {
-			attack = 0.1
+			attack = 0.05
 		}
-		
-		
-		forest_africa = {
-		    attack = -0.40
-			movement = -0.40
-		}
-		hills_africa = {
-		    attack = -0.20
-			defence = -0.1
-		}
-		mountain_africa = 	{
-		    attack = -0.9
-			defence = -0.5 
-			movement = -0.8
-		}
-		jungle_africa = {
-		    attack = -0.6
-			defence = -0.2 
-			movement = -0.4
-		}
-		marsh_africa = {
-		    attack = -0.4 
-			movement = -0.2
-		}
-		urban_africa = {
-			attack = -0.5
-			defence = -0.2
-		}		
 	}
 	
 	super_heavy_tank_destroyer_brigade = {
+		abbreviation = "STD"
 		sprite = "heavy_armor"
 		map_icon_category = armored
 		priority = 1798
@@ -321,13 +228,12 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
-			category_non_support			
 		}
 
 		combat_width = 2
 
 		need = {
-			super_heavy_tank_destroyer_equipment = 13
+			super_heavy_tank_destroyer_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 0
@@ -335,26 +241,22 @@ sub_units = {
 		max_strength = 0.6
 		training_time = 180
 		weight = 1.75
-		supply_consumption = 0.56
-		
+		supply_consumption = 0.4
+
+		breakthrough = -0.25
+
+		suppression = 1.25
+
 		forest = {
 		    attack = -0.5
 			movement = -0.4
 		}
 		hills = {
 		    attack = -0.3
-			defence = -0.15	
 		}
 		mountain = 	{
-		    attack = -0.9
-			defence = -0.5 
-			movement = -0.8 
+		    attack = -0.4
 		}
-		gibraltar = 	{
-		    attack = -0.9
-			defence = -0.5 
-			movement = -0.8 
-		}		
 		jungle = {
 		    attack = -0.7
 			movement = -0.4
@@ -365,7 +267,7 @@ sub_units = {
 		}
 		urban = {
 			attack = -0.6
-			defence = -0.35
+			defence = -0.2
 		}
 		river = { 
 			attack = -0.5
@@ -377,32 +279,77 @@ sub_units = {
 		fort = {
 			attack = 0.3
 		}
+	}
+	
+	modern_tank_destroyer_brigade = {
+		abbreviation = "OTD"
+		sprite = "medium_armor"
+		map_icon_category = armored
+		priority = 1796
+		ai_priority = 100
+		active = yes
 		
-		
-		forest_africa = {
-		    attack = -0.5
-			movement = -0.4
+		type = {
+			armor
+			anti_tank
 		}
-		hills_africa = {
+		
+		group = armor
+		
+		categories = {
+			category_front_line
+			category_all_armor
+			category_army
+		}
+
+
+		combat_width = 2
+
+		need = {
+			modern_tank_destroyer_chassis = 50
+		}
+		manpower = 500
+		max_organisation = 0
+		default_morale = 0.3
+		max_strength = 0.6
+		training_time = 180
+		weight = 1.5
+		supply_consumption = 0.25
+		
+		breakthrough = -0.25
+
+		suppression = 1.25
+		
+		forest = {
 		    attack = -0.3
-			defence = -0.15	
-		}
-		mountain_africa = 	{
-		    attack = -0.9
-			defence = -0.5 
-			movement = -0.8 
-		}
-		jungle_africa = {
-		    attack = -0.7
 			movement = -0.4
 		}
-		marsh_africa = {
-		    attack = -0.5 
+		hills = 	{
+		    attack = -0.1
+		}
+		mountain = 	{
+		    attack = -0.2
+		}
+		jungle = {
+		    attack = -0.4
+			movement = -0.4
+		}
+		marsh = {
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban = {
+			attack = -0.4
+			defence = -0.1
+		}
+		river = { 
+			attack = -0.2 
 			movement = -0.2
 		}
-		urban_africa = {
-			attack = -0.6
-			defence = -0.35
-		}		
+		amphibious = { 
+			attack = -0.7
+		}
 	}
+
+
 }

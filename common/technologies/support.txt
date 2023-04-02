@@ -1388,6 +1388,7 @@ technologies = {
 			}
 		}
 	}
+
 	basic_train = {
 		enable_equipments = {
 			train_equipment_1
@@ -1568,6 +1569,5 @@ technologies = {
 			}
 		}
 	}
-
 
 }

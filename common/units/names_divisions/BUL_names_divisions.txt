@@ -18,12 +18,12 @@
 # unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
 #             this option is available here mainly for a mods.
 #
-# ordered - Is a list of all historical names.
-#           Numbers must start from 1 and up.
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
 #           Numbers can't repeat in one scope.
 #           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
 #           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
-#           1st argument = The name. It must contain either:
+#           1st argument = The name. It must contain either: 
 #                          %d (for decimal number placement)
 #                          %s (for string number placement - ROMAN numbers like XIV).
 #           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
@@ -31,11 +31,13 @@
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
 
-BUL_INF_01 =
+BUL_INF_01 = 
 {
 	name = "Infantry Divisions"
 
 	for_countries = { BUL }
+
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -44,7 +46,7 @@ BUL_INF_01 =
 
 	fallback_name = "%d-ta Pekhotna Divizija"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -103,11 +105,13 @@ BUL_INF_01 =
 	}
 }
 
-BUL_INF_02 =
+BUL_INF_02 = 
 {
 	name = "Infantry Brigades"
 
 	for_countries = { BUL }
+
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -116,7 +120,7 @@ BUL_INF_02 =
 
 	fallback_name = "%d-ta Pekhotna Brigada"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -175,13 +179,13 @@ BUL_INF_02 =
 	}
 }
 
-BUL_INF_03 =
+BUL_INF_03 = 
 {
 	name = "Red Army Divisions"
 
 	for_countries = { BUL }
 
-	can_use = {
+	can_use = { 
 		has_government = communism
 	}
 
@@ -192,7 +196,7 @@ BUL_INF_03 =
 
 	fallback_name = "%d-ta Strelkova Divizija"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -251,11 +255,13 @@ BUL_INF_03 =
 	}
 }
 
-BUL_CAV_01 =
+BUL_CAV_01 = 
 {
 	name = "Cavalry Divisions"
 
 	for_countries = { BUL }
+
+	can_use = { always = yes }
 
 	division_types = { "cavalry" }
 
@@ -264,7 +270,7 @@ BUL_CAV_01 =
 
 	fallback_name = "%d-ta Konna Divizija"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -323,11 +329,13 @@ BUL_CAV_01 =
 	}
 }
 
-BUL_CAV_02 =
+BUL_CAV_02 = 
 {
 	name = "Cavalry Brigades"
 
 	for_countries = { BUL }
+
+	can_use = { always = yes }
 
 	division_types = { "cavalry" }
 
@@ -336,7 +344,7 @@ BUL_CAV_02 =
 
 	fallback_name = "%d-ta Konna Brigada"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -395,11 +403,13 @@ BUL_CAV_02 =
 	}
 }
 
-BUL_MOT_01 =
+BUL_MOT_01 = 
 {
 	name = "Motorised Divisions"
 
 	for_countries = { BUL }
+
+	can_use = { always = yes }
 
 	division_types = { "motorized" }
 
@@ -408,7 +418,7 @@ BUL_MOT_01 =
 
 	fallback_name = "%d-ta Brza Divizija"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -467,20 +477,22 @@ BUL_MOT_01 =
 	}
 }
 
-BUL_ARM_01 =
+BUL_ARM_01 = 
 {
 	name = "Tank Divisions"
 
 	for_countries = { BUL }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" }
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BUL_ARM_01 }
 
 	fallback_name = "%d-ta Tankova Divizija"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -539,20 +551,22 @@ BUL_ARM_01 =
 	}
 }
 
-BUL_ARM_02 =
+BUL_ARM_02 = 
 {
 	name = "Tank Brigades"
 
 	for_countries = { BUL }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" }
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BUL_ARM_02 }
 
 	fallback_name = "%d-ta Tankova Brigada"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -611,11 +625,13 @@ BUL_ARM_02 =
 	}
 }
 
-BUL_MEC_01 =
+BUL_MEC_01 = 
 {
 	name = "Mechanised Divisions"
 
 	for_countries = { BUL }
+
+	can_use = { always = yes }
 
 	division_types = { "mechanized" }
 
@@ -624,7 +640,7 @@ BUL_MEC_01 =
 
 	fallback_name = "%d-ta Mekhanizirana Divizija"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -683,11 +699,13 @@ BUL_MEC_01 =
 	}
 }
 
-BUL_GAR_01 =
+BUL_GAR_01 = 
 {
 	name = "Garrison Divisions"
 
 	for_countries = { BUL }
+
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -696,7 +714,7 @@ BUL_GAR_01 =
 
 	fallback_name = "%d-ta Zapasna Divizija"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -755,11 +773,13 @@ BUL_GAR_01 =
 	}
 }
 
-BUL_MAR_01 =
+BUL_MAR_01 = 
 {
 	name = "Marine Divisions"
 
 	for_countries = { BUL }
+
+	can_use = { always = yes }
 
 	division_types = { "marine" }
 
@@ -768,7 +788,7 @@ BUL_MAR_01 =
 
 	fallback_name = "%d-ta Divizija Morska Pekhotna"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -827,11 +847,13 @@ BUL_MAR_01 =
 	}
 }
 
-BUL_MTN_01 =
+BUL_MTN_01 = 
 {
 	name = "Mountain Divisions"
 
 	for_countries = { BUL }
+
+	can_use = { always = yes }
 
 	division_types = { "mountaineers" }
 
@@ -840,7 +862,7 @@ BUL_MTN_01 =
 
 	fallback_name = "%d-ta Planinska Divizija"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -899,11 +921,13 @@ BUL_MTN_01 =
 	}
 }
 
-BUL_PAR_01 =
+BUL_PAR_01 = 
 {
 	name = "Parachute Divisions"
 
 	for_countries = { BUL }
+
+	can_use = { always = yes }
 
 	division_types = { "paratrooper" }
 
@@ -912,7 +936,7 @@ BUL_PAR_01 =
 
 	fallback_name = "%d-ta Parashutna Divizija"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -968,5 +992,182 @@ BUL_PAR_01 =
 		51 = { "%d-va Parashutna Divizija" }
 		52 = { "%d-ra Parashutna Divizija" }
 		13 = { "%d-ta Parashutna Divizija" }
+	}
+}
+
+BUL_INF_04 = 
+{
+	name = "Fatherland Front Militia"
+
+	for_countries = { BUL }
+
+	can_use = { 
+		always = yes
+	}
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SPR_INF_01 }
+
+	fallback_name = "%d-ta Otechestvo"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-va Otechestvo Frontova Militsiya" }
+		2 = { "%d-ra Otechestvo Frontova Militsiya" }
+		3 = { "%d-ta Otechestvo Frontova Militsiya" }
+		4 = { "%d-ta Otechestvo Frontova Militsiya" }
+		5 = { "%d-ta Otechestvena Frontova Militsiya" }
+		6 = { "%d-ta Otechestvena Frontova Militsiya" }
+		7 = { "%d-ma Otechestvena Frontova Militsiya" }
+		8 = { "%d-a Otechestvena Frontova Militsiya" }
+		9 = { "%d-ta Otechestvena Frontova Militsiya" }
+		10 = { "%d-ta Otechestvena Frontova Militsiya" }
+		11 = { "%d-va Otechestvena Frontova Militsiya" }
+		12 = { "%d-ra Otechestvena Frontova Militsiya" }
+		14 = { "%d-ta Otechestvena Frontova Militsiya" }
+		15 = { "%d-ta Otechestvena Frontova Militsiya" }
+		16 = { "%d-ta Otechestvena Frontova Militsiya" }
+		17 = { "%d-ma Otechestvena Frontova Militsiya" }
+		18 = { "%d-a Otechestvena Frontova Militsiya" }
+		19 = { "%d-ta Otechestvena Frontova Militsiya" }
+		20 = { "%d-ta Otechestvena Frontova Militsiya" }
+		21 = { "%d-va Otechestvena Frontova Militsiya" }
+		22 = { "%d-ra Otechestvena Frontova Militsiya" }
+		23 = { "%d-ta Otechestvena Frontova Militsiya" }
+		24 = { "%d-ta Otechestvena Frontova Militsiya" }
+		25 = { "%d-ta Otechestvena Frontova Militsiya" }
+		26 = { "%d-ta Otechestvena Frontova Militsiya" }
+		27 = { "%d-ma Otechestvena Frontova Militsiya" }
+		28 = { "%d-a Otechestvena Frontova Militsiya" }
+		29 = { "%d-ta Otechestvena Frontova Militsiya" }
+		30 = { "%d-va Otechestvena Frontova Militsiya" }
+		31 = { "%d-ra Otechestvena Frontova Militsiya" }
+		32 = { "%d-ta Otechestvena Frontova Militsiya" }
+		33 = { "%d-ta Otechestvena Frontova Militsiya" }
+		34 = { "%d-ta Otechestvena Frontova Militsiya" }
+		35 = { "%d-ta Otechestvena Frontova Militsiya" }
+		36 = { "%d-ma Otechestvena Frontova Militsiya" }
+		37 = { "%d-a Otechestvena Frontova Militsiya" }
+		38 = { "%d-ta Otechestvena Frontova Militsiya" }
+		39 = { "%d-ta Otechestvena Frontova Militsiya" }
+		40 = { "%d-va Otechestvena Frontova Militsiya" }
+		41 = { "%d-ra Otechestvena Frontova Militsiya" }
+		42 = { "%d-ta Otechestvena Frontova Militsiya" }
+		43 = { "%d-ta Otechestvena Frontova Militsiya" }
+		44 = { "%d-ta Otechestvena Frontova Militsiya" }
+		45 = { "%d-ta Otechestvena Frontova Militsiya" }
+		46 = { "%d-ma Otechestvena Frontova Militsiya" }
+		47 = { "%d-a Otechestvena Frontova Militsiya" }
+		48 = { "%d-ta Otechestvena Frontova Militsiya" }
+		49 = { "%d-ta Otechestvena Frontova Militsiya" }
+		50 = { "%d-ta Otechestvena Frontova Militsiya" }
+		51 = { "%d-va Otechestvena Frontova Militsiya" }
+		52 = { "%d-ra Otechestvena Frontova Militsiya" }
+		13 = { "%d-ta Otechestvena Frontova Militsiya" }
+	}
+}
+
+BUL_INF_05 = 
+{
+	name = "IMRO Militia"
+
+	for_countries = { BUL }
+
+	can_use = {	always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SPR_INF_01 }
+
+	fallback_name = "%d-ta Makedonska Revolyutsionna Militsiya"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-va 'Ivan Mihailov' Makedonska Revolyutsionna Militsiya" }
+		2 = { "%d-ra 'Todor Aleksandrov' Makedonska Revolyutsionna Militsiya" }
+		3 = { "%d-ta 'Pitu Guli' Makedonska Revolyutsionna Militsiya" }
+	}
+}
+
+BUL_INF_06 = 
+{
+	name = "Fatherland Front Partisans"
+
+	for_countries = { BUL }
+
+	can_use = { 
+		always = yes
+	}
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SPR_INF_01 }
+
+	fallback_name = "%d-ti Otechestvenofrontovski Partizani"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-vi Otechestvenofrontovski Partizani" }
+		2 = { "%d-ri Otechestvenofrontovski Partizani" }
+		3 = { "%d-ti Otechestvenofrontovski Partizani" }
+		4 = { "%d-ti Otechestvenofrontovski Partizani" }
+		5 = { "%d-ti Otechestvenofrontovski Partizani" }
+		6 = { "%d-ti Otechestvenofrontovski Partizani" }
+		7 = { "%d-mi Otechestvenofrontovski Partizani" }
+		8 = { "%d-i Otechestvenofrontovski Partizani" }
+		9 = { "%d-ti Otechestvenofrontovski Partizani" }
+		10 = { "%d-ti Otechestvenofrontovski Partizani" }
+		11 = { "%d-vi Otechestvenofrontovski Partizani" }
+		12 = { "%d-ri Otechestvenofrontovski Partizani" }
+		14 = { "%d-ti Otechestvenofrontovski Partizani" }
+		15 = { "%d-ti Otechestvenofrontovski Partizani" }
+		16 = { "%d-ti Otechestvenofrontovski Partizani" }
+		17 = { "%d-mi Otechestvenofrontovski Partizani" }
+		18 = { "%d-i Otechestvenofrontovski Partizani" }
+		19 = { "%d-ti Otechestvenofrontovski Partizani" }
+		20 = { "%d-ti Otechestvenofrontovski Partizani" }
+		21 = { "%d-vi Otechestvenofrontovski Partizani" }
+		22 = { "%d-ri Otechestvenofrontovski Partizani" }
+		23 = { "%d-ti Otechestvenofrontovski Partizani" }
+		24 = { "%d-ti Otechestvenofrontovski Partizani" }
+		25 = { "%d-ti Otechestvenofrontovski Partizani" }
+		26 = { "%d-ti Otechestvenofrontovski Partizani" }
+		27 = { "%d-mi Otechestvenofrontovski Partizani" }
+		28 = { "%d-i Otechestvenofrontovski Partizani" }
+		29 = { "%d-ti Otechestvenofrontovski Partizani" }
+		30 = { "%d-vi Otechestvenofrontovski Partizani" }
+		31 = { "%d-ri Otechestvenofrontovski Partizani" }
+		32 = { "%d-ti Otechestvenofrontovski Partizani" }
+		33 = { "%d-ti Otechestvenofrontovski Partizani" }
+		34 = { "%d-ti Otechestvenofrontovski Partizani" }
+		35 = { "%d-ti Otechestvenofrontovski Partizani" }
+		36 = { "%d-mi Otechestvenofrontovski Partizani" }
+		37 = { "%d-i Otechestvenofrontovski Partizani" }
+		38 = { "%d-ti Otechestvenofrontovski Partizani" }
+		39 = { "%d-ti Otechestvenofrontovski Partizani" }
+		40 = { "%d-vi Otechestvenofrontovski Partizani" }
+		41 = { "%d-ri Otechestvenofrontovski Partizani" }
+		42 = { "%d-ti Otechestvenofrontovski Partizani" }
+		43 = { "%d-ti Otechestvenofrontovski Partizani" }
+		44 = { "%d-ti Otechestvenofrontovski Partizani" }
+		45 = { "%d-ti Otechestvenofrontovski Partizani" }
+		46 = { "%d-mi Otechestvenofrontovski Partizani" }
+		47 = { "%d-i Otechestvenofrontovski Partizani" }
+		48 = { "%d-ti Otechestvenofrontovski Partizani" }
+		49 = { "%d-ti Otechestvenofrontovski Partizani" }
+		50 = { "%d-ti Otechestvenofrontovski Partizani" }
+		51 = { "%d-vi Otechestvenofrontovski Partizani" }
+		52 = { "%d-ri Otechestvenofrontovski Partizani" }
+		13 = { "%d-ti Otechestvenofrontovski Partizani" }
 	}
 }

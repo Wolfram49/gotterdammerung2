@@ -5,7 +5,7 @@ GER_BB_HISTORICAL = {
 	for_countries = { GER }
 
 	type = ship
-	ship_types = { capital_ship ship_hull_heavy battleship battle_cruiser }
+	ship_types = { ship_hull_heavy battleship battle_cruiser }
 	
 	fallback_name = "Schlachtschiff %d"
 
@@ -65,7 +65,7 @@ GER_BC_HISTORICAL = {
 	for_countries = { GER }
 
 	type = ship
-	ship_types = { capital_ship ship_hull_heavy battleship battle_cruiser }
+	ship_types = { ship_hull_heavy battleship battle_cruiser }
 	
 	fallback_name = "Schlachtkreuzer %d"
 
@@ -88,6 +88,15 @@ GER_TB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_TB
 
 	for_countries = { GER }
+
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }
@@ -127,6 +136,15 @@ GER_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
 
 	for_countries = { GER }
+
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
@@ -168,8 +186,17 @@ GER_CA_HISTORICAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
+
 	type = ship
-	ship_types = { capital_ship ship_hull_cruiser heavy_cruiser light_cruiser}
+	ship_types = { ship_hull_cruiser heavy_cruiser light_cruiser}
 	
 	fallback_name = "Schwerer Kreuzer %d"
 
@@ -212,8 +239,17 @@ GER_CL_HISTORICAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
+
 	type = ship
-	ship_types = { screen_ship ship_hull_cruiser heavy_cruiser light_cruiser}
+	ship_types = { ship_hull_cruiser heavy_cruiser light_cruiser}
 	
 	fallback_name = "Leichter Kreuzer %d"
 
@@ -343,6 +379,15 @@ GER_DD_HISTORICAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
+
 	type = ship
 	ship_types = { ship_hull_light destroyer }
 	
@@ -380,6 +425,15 @@ GER_CV_HISTORICAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
+
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 	
@@ -403,6 +457,15 @@ GER_THEME_FISH = {
 	name = NAME_THEME_FISH
 
 	for_countries = { GER }
+
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
 
 	type = ship
 	
@@ -441,6 +504,15 @@ GER_THEME_ANIMALS = {
 	name = NAME_THEME_ANIMALS
 
 	for_countries = { GER }
+
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
 
 	type = ship
 	
@@ -505,6 +577,15 @@ GER_THEME_RIVERS = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
+
 	type = ship
 	
 	fallback_name = "Schiff %d"
@@ -546,7 +627,16 @@ GER_THEME_GERMANIC = {
 	name = NAME_THEME_GERMANIC_MYTHOLOGY
 
 	for_countries = { GER }
-	
+
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
+
 	type = ship
 	
 	fallback_name = "Schiff %d"
@@ -589,6 +679,15 @@ GER_THEME_BATTLE = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
+
 	type = ship
 	
 	fallback_name = "Schiff %d"
@@ -625,6 +724,12 @@ GER_BB_IMPERIAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+	}
 	prefix = "SMS "
 	type = ship
 	ship_types = { capital_ship ship_hull_heavy battleship battle_cruiser }
@@ -689,6 +794,12 @@ GER_BC_IMPERIAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+	}
 	prefix = "SMS "
 	type = ship
 	ship_types = { capital_ship ship_hull_heavy battleship battle_cruiser }
@@ -716,7 +827,13 @@ GER_CA_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_CA
 
 	for_countries = { GER }
-	
+
+	can_use = { 
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+	}
 	prefix = "SMS "
 	type = ship
 	ship_types = { capital_ship ship_hull_cruiser heavy_cruiser light_cruiser}
@@ -762,6 +879,14 @@ GER_THEME_ANIMALS_IMPERIAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+		
+	}
 	prefix = "SMS "
 	type = ship
 	
@@ -825,6 +950,12 @@ GER_DD_IMPERIAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+	}
 	prefix = "SMS "
 	type = ship
 	ship_types = { screen_ship ship_hull_light destroyer }
@@ -940,6 +1071,13 @@ GER_CV_IMPERIAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+	}
+
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 	prefix = "SMS "
@@ -962,6 +1100,13 @@ GER_THEME_GERMANIC_IMPERIAL = {
 	name = NAME_THEME_GERMANIC_MYTHOLOGY
 
 	for_countries = { GER }
+
+	can_use = { 
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+	}
 
 	type = ship
 	prefix = "SMS "
@@ -1004,6 +1149,13 @@ GER_THEME_BATTLE_IMPERIAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+	}
+
 	type = ship
 	prefix = "SMS "
 	fallback_name = "Schiff %d"
@@ -1039,6 +1191,13 @@ GER_THEME_FISH_IMPERIAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+	}
+
 	type = ship
 	prefix = "SMS "
 	fallback_name = "Schiff %d"
@@ -1072,10 +1231,63 @@ GER_THEME_FISH_IMPERIAL = {
 	}
 }
 
+GER_SS_IMPERIAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { GER }
+
+	can_use = { 
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+	}
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	prefix = "SM "
+	fallback_name = "U-%d"
+	
+	ordered = {
+		1 = {"U-%d"}
+		2 = {"U-%d"} 
+		3 = {"U-%d"} 
+		4 = {"U-%d"} 
+		5 = {"U-%d"} 
+		6 = {"U-%d"} 
+		7 = {"U-%d"} 
+		8 = {"U-%d"} 
+		9 = {"U-%d"} 
+		10 = {"U-%d"}
+		11 = {"U-%d"} 
+		12 = {"U-%d"}
+		13 = {"U-%d"}
+		14 = {"U-%d"}
+		15 = {"U-%d"}
+		16 = {"U-%d"}
+		17 = {"U-%d"}
+		18 = {"U-%d"}
+		19 = {"U-%d"}
+		20 = {"U-%d"}
+		21 = {"U-%d"}
+		22 = {"U-%d"}
+		23 = {"U-%d"}
+		24 = {"U-%d"}
+		25 = {"U-%d"}
+		26 = {"U-%d"}
+	}
+}
 GER_THEME_RIVERS_IMPERIAL = {
 	name = NAME_THEME_RIVERS
 
 	for_countries = { GER }
+
+	can_use = { 
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+	}
 
 	type = ship
 	prefix = "SMS "
@@ -1118,6 +1330,12 @@ GER_CL_IMPERIAL = {
 
 	for_countries = { GER }
 
+	can_use = { 
+		OR = { 
+			has_completed_focus = GER_return_of_the_kaiser 
+			has_completed_focus = GER_the_monarchy_compromise
+		}
+	}
 	prefix = "SMS "
 	type = ship
 	ship_types = { screen_ship ship_hull_cruiser heavy_cruiser light_cruiser}

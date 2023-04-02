@@ -18,12 +18,12 @@
 # unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
 #             this option is available here mainly for a mods.
 #
-# ordered - Is a list of all historical names.
-#           Numbers must start from 1 and up.
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
 #           Numbers can't repeat in one scope.
 #           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
 #           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
-#           1st argument = The name. It must contain either:
+#           1st argument = The name. It must contain either: 
 #                          %d (for decimal number placement)
 #                          %s (for string number placement - ROMAN numbers like XIV).
 #           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
@@ -31,11 +31,13 @@
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
 
-CAN_INF_01 =
+CAN_INF_01 = 
 {
 	name = "Infantry Divisions"
 
 	for_countries = { CAN }
+
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -44,7 +46,7 @@ CAN_INF_01 =
 
 	fallback_name = "%d Canadian Infantry Division"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -154,11 +156,13 @@ CAN_INF_01 =
 	}
 }
 
-CAN_CAV_01 =
+CAN_CAV_01 = 
 {
 	name = "Cavalry Divisions"
 
 	for_countries = { CAN }
+
+	can_use = { always = yes }
 
 	division_types = { "cavalry" }
 
@@ -167,7 +171,7 @@ CAN_CAV_01 =
 
 	fallback_name = "%d District Cavalry"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -229,11 +233,13 @@ CAN_CAV_01 =
 	}
 }
 
-CAN_MOT_01 =
+CAN_MOT_01 = 
 {
 	name = "Motorised Divisions"
 
 	for_countries = { CAN }
+
+	can_use = { always = yes }
 
 	division_types = { "motorized" }
 
@@ -242,7 +248,7 @@ CAN_MOT_01 =
 
 	fallback_name = "%d Canadian Infantry Division"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -283,20 +289,22 @@ CAN_MOT_01 =
 	}
 }
 
-CAN_ARM_01 =
+CAN_ARM_01 = 
 {
 	name = "Armoured Divisions"
 
 	for_countries = { CAN }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" }
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { CAN_INF_01 }
 
 	fallback_name = "%d Canadian (Armoured) Division"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -338,11 +346,13 @@ CAN_ARM_01 =
 	}
 }
 
-CAN_MEC_01 =
+CAN_MEC_01 = 
 {
 	name = "Mechanised Divisions"
 
 	for_countries = { CAN }
+
+	can_use = { always = yes }
 
 	division_types = { "mechanized"  }
 
@@ -351,7 +361,7 @@ CAN_MEC_01 =
 
 	fallback_name = "%d Canadian Infantry Division"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -393,11 +403,13 @@ CAN_MEC_01 =
 	}
 }
 
-CAN_GAR_01 =
+CAN_GAR_01 = 
 {
 	name = "Garrison Divisions"
 
 	for_countries = { CAN }
+
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -406,7 +418,7 @@ CAN_GAR_01 =
 
 	fallback_name = "%d District Militia"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -465,11 +477,13 @@ CAN_GAR_01 =
 	}
 }
 
-CAN_MAR_01 =
+CAN_MAR_01 = 
 {
 	name = "Marine Divisions"
 
 	for_countries = { CAN }
+
+	can_use = { always = yes }
 
 	division_types = { "marine" }
 
@@ -478,7 +492,7 @@ CAN_MAR_01 =
 
 	fallback_name = "%d Royal Canadian Marine Division"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -517,11 +531,13 @@ CAN_MAR_01 =
 	}
 }
 
-CAN_MTN_01 =
+CAN_MTN_01 = 
 {
 	name = "Mountain Divisions"
 
 	for_countries = { CAN }
+
+	can_use = { always = yes }
 
 	division_types = { "mountaineers" }
 
@@ -530,7 +546,7 @@ CAN_MTN_01 =
 
 	fallback_name = "%d Infantry Division"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -592,11 +608,13 @@ CAN_MTN_01 =
 	}
 }
 
-CAN_PAR_01 =
+CAN_PAR_01 = 
 {
 	name = "Airborne Divisions"
 
 	for_countries = { CAN }
+
+	can_use = { always = yes }
 
 	division_types = { "paratrooper" }
 
@@ -605,7 +623,7 @@ CAN_PAR_01 =
 
 	fallback_name = "%d Airborne Division"
 
-	# Names with numbers (only one number per entry).
+	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
