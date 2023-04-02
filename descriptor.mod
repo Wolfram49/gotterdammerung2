@@ -10,4 +10,4 @@ tags={
 	"Military"
 }
 name="Gotterdammerung 2.0"
-supported_version="1.12.9"
+supported_version="1.12.*"
