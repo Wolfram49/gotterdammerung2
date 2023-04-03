@@ -1,0 +1,78 @@
+﻿# Destroyers sent to ENG in exchange for bases
+
+units = {
+	fleet = {
+		name = "American Destroyer Squadron"
+		naval_base = 3501 # Sussex
+		task_force = {					
+			name = "American Destroyer Flotilla 1"				
+			location = 3501 # Sussex
+			# 7th Destroyer Division				
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Twiggs	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }			# USS Buchanan		
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Aaron Ward			
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Hale			
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Crowninshield		
+			# 8th Destroyer Division				
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Cowell		
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Yarnall		
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }					# USS Tillman		
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Claxton		
+			# 11th Destroyer Division				
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Maddox		
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Foote	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }					# USS Hopewell	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Thomas		
+			# 12th Destroyer Division				
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Satterlee	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Mason	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }					# USS Abel P Upshur	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Hunt	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }			# USS Welborn C Wood	
+		}					
+		task_force = {					
+			name = "American Destroyer Flotilla 2"				
+			location = 3501 # Sussex
+			# 22nd Destroyer Division				
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }					# USS Shubrick		
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Bailey			
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Swasey			
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }					# USS Meade	
+			# 21st Destroyer Division
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS McCalla			
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Rodgers			
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Welles			
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Aulick				
+		}				
+		task_force = {					
+			name = "American Destroyer Flotilla 3"				
+			location = 3501 # Sussex
+			# 19th Destroyer Division				
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }			# USS Abbot	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Doran		
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Branch	
+			# 20th Destroyer Division				
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Herndon	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Laub	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS McLanahan	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }					# USS Edwards	
+		}					
+		task_force = {					
+			name = "American Destroyer Flotilla 4"				
+			location = 3501 # Sussex
+			# 19th Destroyer Division				
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Craven	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Connor	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Stockton	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }			# USS Wickes	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }			# USS Philip	
+			# 20th Destroyer Division				
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }			# USS Evans	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }			# USS Sigourney	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }			# USS Robinson	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }				# USS Ringgold	
+			ship = { definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Sonar DD1" } } }			# USS Fairfax	
+		}					
+	}
+}					
+					

@@ -1,0 +1,54 @@
+﻿capital = 6
+
+set_research_slots = 0
+
+add_ideas = { 
+	GDU_neutrality 
+}
+
+add_opinion_modifier = { target = JAP modifier = embargo }
+add_opinion_modifier = { target = JAP modifier = sanctions }
+add_opinion_modifier = { target = JAP modifier = minor_sanctions }
+
+add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+         amount = 3554
+         producer = GER
+}  
+add_equipment_to_stockpile = {
+         type = support_equipment
+         amount = 484
+         producer = GER
+} 
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 43684
+         producer = GER
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 83
+    fascism = 11
+    communism = 6
+}
+
+set_convoys = 80
+set_stability = 0.75
+
+create_country_leader = {
+	name = "Hubert Pierlot"
+	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+#	traits = {
+#		#
+#	}
+}

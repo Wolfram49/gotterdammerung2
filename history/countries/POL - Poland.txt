@@ -1,0 +1,50 @@
+﻿capital = 10
+
+set_research_slots = 0
+# Starting tech
+
+add_opinion_modifier = { target = JAP modifier = embargo }
+add_opinion_modifier = { target = JAP modifier = sanctions }
+add_opinion_modifier = { target = JAP modifier = minor_sanctions }
+
+add_ideas = GDU_neutrality
+add_ideas = GDU_price_of_playable_poland
+
+set_convoys = 0
+
+add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+         amount = 5034
+         producer = GER
+}  
+add_equipment_to_stockpile = {
+         type = support_equipment
+         amount = 606
+         producer = GER
+} 
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 71483
+         producer = GER
+}	
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.9.8"
+	election_frequency = 36
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 18
+	fascism = 15
+	communism = 2
+	neutrality = 65
+}
+
+create_country_leader = {
+	name = "Władysław Sikorski"
+	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+}

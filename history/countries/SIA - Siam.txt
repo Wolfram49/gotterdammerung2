@@ -1,0 +1,216 @@
+﻿capital = 289
+oob = "SIA_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SIA_1936_naval_mtg"
+	else = {
+		set_naval_oob = "SIA_1936_naval_legacy"
+	}
+}
+
+add_intel = {
+	target = GER
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = ITA
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = SPR
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = FIN
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = ROM
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = HUN
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = BUL
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+
+
+add_opinion_modifier = { target = SOV modifier = embargo }
+add_opinion_modifier = { target = SOV modifier = sanctions_relations }
+add_opinion_modifier = { target = SOV modifier = large_decrease }
+add_opinion_modifier = { target = SOV modifier = hostile_status }
+
+add_ideas = GDU_scuffed_acclim
+add_timed_idea = { idea = airandnavy_idea  days = 1825 }
+add_ideas = GDU_neutrality
+
+set_research_slots = 3
+
+set_convoys = 100
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 20
+	neutrality = 80
+}
+
+create_country_leader = {
+	name = "Phraya Phahon"
+	desc = "POLITICS_PHRAYA_PHAHON_DESC"
+	picture = "Portrait_Siam_Phraya_Phahon.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+
+
+create_corps_commander = {
+	name = "Pichit Kriangsakpichit"
+	portrait_path = "gfx/leaders/SIA/Pichit_krieng.dds"
+	traits = { ranger cavalry_officer combined_arms_expert trait_engineer jungle_rat }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Sai Kotchaseni"
+	portrait_path = "gfx/leaders/SIA/Sai_Kotchaseni.dds"
+	traits = { inflexible_strategist guerilla_fighter scavenger camouflage_expert urban_assault_specialist organizer jungle_rat }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Chakchai Supangkasen"
+	portrait_path = "gfx/leaders/SIA/Chakchai_Supangkasen.dds"
+	traits = { career_officer ambusher harsh_leader hill_fighter trickster infantry_leader jungle_rat }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Tomoyuki Yamashita AFRICANUS"
+		picture = "AFRICA_Portrait_Japan_Tomoyuki_Yamashita.dds"
+	traits = {trickster trait_engineer brilliant_strategist politically_connected cavalry_officer infantry_leader desert_fox }
+	skill = 6
+	attack_skill = 6
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+set_technology = {
+	heavy_fighter1 = 1
+	forgotgwtank = 1
+	forgotearly_fighter = 1
+	forgotearly_bomber = 1
+	forgotearly_ship_hull_light = 1
+	forgotearly_ship_hull_cruiser = 1
+	forgotearly_ship_hull_heavy = 1
+	forgotearly_ship_hull_submarine = 1
+	forgotearly_ship_hull_carrier = 1
+	improved_airplane_launcher = 1
+	airfield_construction = 1
+	fort_construction = 1
+	interwar_antiair = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	marines  = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	trench_warfare = 1
+	base_strike = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+	tech_logistics_company = 1 
+	air_superiority = 1
+	forward_interception = 1 
+	fighter_ace_initiative = 1 
+	dive_bombing = 1 
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		improved_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		cruiser_submarines = 1
+	}

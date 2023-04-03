@@ -1,0 +1,29 @@
+
+state={
+	id=172
+	name="STATE_172"
+	manpower = 1794880
+	
+	state_category = city
+	
+	resources={
+		steel=16 # was: 12
+	}
+
+	history={
+		owner = SPR
+		victory_points = {
+			740 10
+		}
+		buildings = {
+			infrastructure = 3
+			anti_air_building = 5		
+			fuel_silo = 1			
+		}
+		add_core_of = SPR
+	}
+
+	provinces={
+		740
+	}
+}

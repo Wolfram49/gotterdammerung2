@@ -1,0 +1,42 @@
+﻿capital = 9
+
+add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+         amount = 10000
+         producer = GER
+}  
+add_equipment_to_stockpile = {
+         type = support_equipment
+         amount = 5650
+         producer = GER
+} 
+
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 98000
+         producer = GER
+} 
+set_research_slots = 0
+add_ideas = GDU_neutrality
+
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1935.5.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 65
+    neutrality = 20
+    fascism = 5
+    communism = 10
+}
+
+create_country_leader = {
+	name = "Edvard Beneš"
+	desc = "POLITICS_EDVARD_BENES_DESC"
+	picture = "Portrait_Czech_Edvard_Benes.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+}

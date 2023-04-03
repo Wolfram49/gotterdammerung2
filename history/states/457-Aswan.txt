@@ -1,0 +1,27 @@
+
+state={
+	id=457
+	name="STATE_457"
+
+	history={
+		owner = ENG
+		buildings = {
+			air_base = 1
+
+		}
+		victory_points = {
+			4910 1 
+		}
+		victory_points = {
+			4910 100 
+		}
+
+	}
+
+	provinces={
+		2064 4068 4910 5069 7156 5602 2555 2551 2479 1717 1418 
+	}
+	manpower=2194
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

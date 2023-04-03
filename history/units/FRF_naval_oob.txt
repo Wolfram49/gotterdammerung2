@@ -1,0 +1,54 @@
+units= {
+	fleet = {
+		name = "Free French Fleet"
+		naval_base = 5139 # Gabon
+		task_force = {
+			name = "Main Fleet"
+			location = 5139 # Gabon			
+			ship = { name = "Joffre" definition = carrier start_experience_factor = 0.3 equipment = { ship_hull_carrier_1 = { amount = 1 owner = FRF version_name = "Joffre Class" } } 
+				air_wings = {
+					cv_fighter_equipment_1 =  { owner = "FRA" amount = 60 }
+				}
+			}
+			# Battleship Group 
+            ship = { name = "Richelieu" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = FRF version_name = "Richelieu Class" } } }				
+			ship = { name = "Dunkerque" definition = battle_cruiser start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = FRF version_name = "Dunkerque Class" } } }				
+			ship = { name = "Strasbourg" definition = battle_cruiser start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = FRF version_name = "Dunkerque Class" } } }	
+			# Heavy Cruiser Group
+			ship = { name = "Algérie" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRF version_name = "Saint Louis Class" } } }			
+			ship = { name = "Jean de Vienne" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRF version_name = "Saint Louis Class" } } }			
+			ship = { name = "Marseillaise" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRF version_name = "Saint Louis Class" } } }
+			# Light Cruiser Group 1
+			ship = { name = "Duguay-Trouin" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRF version_name = "De Grasse Class" } } }
+			ship = { name = "Primauguet" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRF version_name = "De Grasse Class" } } }	
+			ship = { name = "Pluton" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRF version_name = "De Grasse Class" } } }
+			# Light Cruiser Group 2
+			ship = { name = "Émile Bertin" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRF version_name = "De Grasse Class" } } }
+			ship = { name = "Lamotte" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRF version_name = "De Grasse Class" } } }
+			ship = { name = "De Grasse" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRF version_name = "De Grasse Class" } } }
+			# Destroyer Group 1
+			ship = { name = "Siroco" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }	
+			ship = { name = "Mistral" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }	
+			ship = { name = "Ouragan" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }
+			ship = { name = "Orage" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }	
+			# Destroyer Group  2
+			ship = { name = "Milan" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }
+			ship = { name = "Épervier" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }
+			ship = { name = "Colonia" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }
+			ship = { name = "Brest" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }
+			# Destroyer Group  3
+			ship = { name = "Lion" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }
+			ship = { name = "Cyclone" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }
+			ship = { name = "Brestois" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }
+			ship = { name = "Frondeur" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = FRF version_name = "Mogador Class" } } }
+            # Submarine Group  1
+			ship = { name = "Surcouf" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = FRF version_name = "Surcouf Class" } } }
+			ship = { name = "Ajax" definition = submarine start_experience_factor = 0.3  equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRF version_name = "Redoutable Class" } } }
+			ship = { name = "Archimède" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRF version_name = "Redoutable Class" } } }			
+            # Submarine Group  2	
+			ship = { name = "Circé" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRF version_name = "Redoutable Class" } } }				
+			ship = { name = "Calypso" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = FRF version_name = "Surcouf Class" } } }				
+			ship = { name = "Thétis" definition = submarine start_experience_factor = 0.3 equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = FRF version_name = "Surcouf Class" } } }			
+		}	
+	}
+} 

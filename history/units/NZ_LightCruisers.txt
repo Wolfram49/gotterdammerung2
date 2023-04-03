@@ -1,0 +1,15 @@
+﻿# Cruisers sent to New Zealand
+
+units = {
+	fleet = {
+		name = "New Zealand Fleet"
+		naval_base = 2197 # South NZ Island
+		task_force = {
+			name = "CL Fleet"
+			location = 2197# South NZ Island
+		    ship = { name = "HMS Achilles" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = NZL version_name = "Achilles Class" } } }		
+            ship = { name = "HMS Leander" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = NZL version_name = "Achilles Class" } } }			
+	    }
+	}	
+}					
+

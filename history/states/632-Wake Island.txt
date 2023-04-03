@@ -1,0 +1,25 @@
+state={
+	id=632
+	name="STATE_632"
+	manpower=150
+	state_category = tiny_island
+		resources={
+		oil=1
+	}
+	history={
+		owner = USA
+		buildings = {
+		infrastructure = 1
+			979 = {
+				naval_base = 1
+			}
+		}	
+		victory_points = {
+			979 10 
+		}
+
+	}
+	provinces={
+		979 
+	}
+}

@@ -1,0 +1,440 @@
+type={
+	type="bigben"
+	use_animation=no
+	scale=0.5
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="bigben_entity"
+		position={
+			2798.67 11.50 1557.24
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+}
+
+type={
+	type="ladyliberty"
+	use_animation=no
+	scale=0.4
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="ladyliberty"
+		position={
+			1653.88 11.00 1549.42
+		}
+		rotation={
+			0.00 210.00 0.000
+		}
+	}
+}
+
+type={
+	type="kremlin"
+	use_animation=no
+	scale=0.35
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="kremlin"
+		position={
+			3395.49 12.00 1646.32
+		}
+		rotation={
+			0.00 210.00 0.000
+		}
+	}
+}
+
+type={
+	type="reichstag"
+	use_animation=no
+	scale=0.30
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="reichstag"
+		position={
+			3008.48 10.70 1570.69
+		}
+		rotation={
+			0.00 120.00 0.000
+		}
+	}
+}
+
+type={
+	type="eiffel"
+	use_animation=no
+	scale=0.15
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="eiffel"
+		position={
+			2839.43 10.70 1495.46
+		}
+		rotation={
+			0.00 120.00 0.000
+		}
+	}
+}
+
+type={
+	type="giza"
+	use_animation=no
+	scale=0.5
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="giza"
+		position={
+			3288.94 10.70 1141.25
+		}
+		rotation={
+			0.00 140.00 0.00
+		}
+	}
+}
+
+type={
+	type="colosseum"
+	use_animation=no
+	scale=0.7
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="colosseum"
+		position={
+			3003.95 11.00 1359.52
+		}
+		rotation={
+			0.00 -50.00 0.00
+		}
+	}
+}
+
+type={
+	type="christredeemer"
+	use_animation=no
+	scale=1.30
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="christredeemer"
+		position={
+			2125.90 11.70 514.31
+		}
+		rotation={
+			0.00 50.00 0.00
+		}
+	}
+}
+
+type={
+	type="brandenburg"
+	use_animation=no
+	scale=0.2
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="brandenburg"
+		position={
+			3010.92 9.90 1563.36
+		}
+		rotation={
+			0.00 105.00 0.00
+		}
+	}
+}
+
+type={
+	type="pisa"
+	use_animation=no
+	scale=0.6
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="pisa"
+		position={
+			2975.00 10.00 1384.38
+		}
+		rotation={
+			0.00 220.00 0.00
+		}
+	}
+}
+
+type={
+	type="test"
+	use_animation=no
+	scale=1
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="test"
+		position={
+			2975.00 -10.00 1384.38
+		}
+		rotation={
+			0.00 220.00 0.00
+		}
+	}
+}
+
+
+type={
+	type="greatwall"
+	use_animation=no
+	scale=1.15
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="greatwall"
+		position={
+			4620.88 10.90 1348.5
+		}
+		rotation={
+			0.00 180.00 0.00
+		}
+	}
+}
+
+type={
+	type="chickenitza"
+	use_animation=no
+	scale=1.00
+	
+	visible_in_all_map_modes = yes
+	always_visible = yes
+	
+	object={
+		name="chickenitza"
+		position={
+			1415.93 9.00 1192.38
+		}
+		rotation={
+			0.00 90.00 0.00
+		}
+	}
+}
+
+################################
+
+type={
+	type="ambient_wind_entity"
+	use_animation=no
+	always_visible=yes
+	object={
+		name="ambient_wind"
+		position={
+			0.000 0.000 0.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="ambient_water_entity"
+	use_animation=no
+	scale=10.000000
+	object={
+		name="ambient_water"
+		position={
+			205.110 10.000 1517.910 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			685.150 10.000 1008.290 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			420.090 10.000 382.670 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			1234.890 10.000 407.440 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			2541.140 10.000 370.870 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			2427.300 10.000 1655.700 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			1773.610 10.000 1295.370 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			2224.790 10.000 1268.600 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			3865.330 10.000 555.220 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			4201.620 10.000 358.560 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			5315.160 10.000 1328.670 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			5217.910 10.000 1005.380 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			5465.920 10.000 559.670 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="ambient_water"
+		position={
+			100.000 10.000 1000.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_border_entity"
+	use_animation=no
+	scale=100.000000
+	always_visible=yes
+	object={
+		name="frame_border_entity_top"
+		position={
+			0.000 0.000 2190.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_border_bottom_entity"
+	use_animation=no
+	scale=100.000000
+	always_visible=yes
+	object={
+		name="frame_border_bottom_entity_bottom"
+		position={
+			0.000 0.000 -140.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_border_logo_entity"
+	use_animation=no
+	scale=300.000000
+	always_visible=yes
+	object={
+		name="frame_border_logo_entity_top"
+		position={
+			3000.000 0.000 2130.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
