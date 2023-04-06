@@ -7960,7 +7960,7 @@
 7959;0;0;29;sea;false;ocean;5
 7960;255;0;30;sea;false;ocean;5
 7961;0;0;31;sea;false;ocean;5
-7962;0;0;32;land;false;jungle;5
+7962;255;0;32;sea;false;ocean;5
 7963;0;0;33;land;false;jungle;5
 7964;0;0;34;land;false;jungle;5
 7965;0;0;35;land;false;jungle;5
