@@ -7958,8 +7958,8 @@
 7957;255;0;27;land;false;jungle;5
 7958;0;0;28;land;false;jungle;5
 7959;0;0;29;land;false;jungle;5
-7960;0;0;30;land;false;jungle;5
-7961;0;0;31;land;false;jungle;5
+7960;255;0;30;sea;false;ocean;5
+7961;0;0;31;sea;false;ocean;5
 7962;0;0;32;land;false;jungle;5
 7963;0;0;33;land;false;jungle;5
 7964;0;0;34;land;false;jungle;5
