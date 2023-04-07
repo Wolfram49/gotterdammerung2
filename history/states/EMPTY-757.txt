@@ -3,8 +3,9 @@ id=757
 name="STATE_757"
 manpower = 1
 state_category = wasteland
-history={
-}
+	history={
+		owner = SWE
+	}
 provinces={
 8000
 }
