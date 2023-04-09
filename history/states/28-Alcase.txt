@@ -38,7 +38,7 @@ state={
 			2952 = {
 				bunker = 15
 			}
-			anti_air_building = 10
+			anti_air_building = 5
 			air_base = 5
 
 		}
