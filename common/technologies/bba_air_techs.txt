@@ -832,7 +832,7 @@ technologies = {
 	}
 	atg_rockets {
 		enable_equipment_modules = {
-					
+			rocket_rails
 		}
 			
 		research_cost = 1
@@ -855,7 +855,7 @@ technologies = {
 	}
 	atg_cannon {
 		enable_equipment_modules = {
-					
+			tank_buster_1	
 		}
 			
 		research_cost = 1
@@ -1072,7 +1072,7 @@ technologies = {
 	aa_cannon_3 = {
 
 		enable_equipment_modules = {
-			aircraft_cannon_2_1x
+			aircraft_cannon_1_2x
 			cannon_defense_turret
 		}
 		
