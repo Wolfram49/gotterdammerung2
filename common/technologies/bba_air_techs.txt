@@ -905,9 +905,7 @@ technologies = {
 	aa_lmg = {
 
 		enable_equipment_modules = {
-			light_mg_2x
-			lmg_defense_turret
-			
+			light_mg_2x	
 		}
 		
 		research_cost = 1
@@ -952,7 +950,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			light_mg_4x
-			lmg_defense_turret_2x
 		}
 		
 		research_cost = 1
@@ -997,7 +994,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			heavy_mg_2x
-			hmg_defense_turret
 			
 		}
 		
@@ -1043,7 +1039,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			heavy_mg_4x
-			hmg_defense_turret_2x
 		}
 		
 		research_cost = 1.5
@@ -1073,7 +1068,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			aircraft_cannon_1_2x
-			cannon_defense_turret
 		}
 		
 		research_cost = 1.5
@@ -1103,7 +1097,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			aircraft_cannon_2_2x
-			cannon_defense_turret_2x
 		}
 		
 		research_cost = 1.5
