@@ -11,13 +11,6 @@ add_opinion_modifier = { target = JAP modifier = sanctions }
 add_opinion_modifier = { target = JAP modifier = minor_sanctions }
 
 set_technology = {
-	forgotgwtank = 1
-	forgotearly_fighter = 1
-	forgotearly_bomber = 1
-	forgotearly_ship_hull_light = 1
-	forgotearly_ship_hull_cruiser = 1
-	forgotearly_ship_hull_heavy = 1
-	forgotearly_ship_hull_submarine = 1
 	airfield_construction = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1

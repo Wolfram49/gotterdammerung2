@@ -52,14 +52,6 @@ add_timed_idea = { idea = airandnavy_idea days = 1320 }
 # Starting tech
 set_technology = {
 	heavy_fighter1 = 1
-	forgotgwtank = 1
-	forgotearly_fighter = 1
-	forgotearly_bomber = 1
-	forgotearly_ship_hull_light = 1
-	forgotearly_ship_hull_cruiser = 1
-	forgotearly_ship_hull_heavy = 1
-	forgotearly_ship_hull_submarine = 1
-	forgotearly_ship_hull_carrier = 1
 	improved_airplane_launcher = 1
 	airfield_construction = 1
 	infantry_weapons = 1
@@ -158,11 +150,9 @@ if = {
 		sonar = 1
 		smoke_generator = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_secondary_battery = 1
 		basic_fire_control_system = 1
 		cruiser_submarines = 1
 	}

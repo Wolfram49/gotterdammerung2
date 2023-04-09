@@ -74,13 +74,6 @@ add_timed_idea = { idea = airandnavy_idea days = 1980 }
 # Starting tech
 set_technology = {
 	heavy_fighter1 = 1
-	forgotgwtank = 1
-	forgotearly_fighter = 1
-	forgotearly_bomber = 1
-	forgotearly_ship_hull_light = 1
-	forgotearly_ship_hull_cruiser = 1
-	forgotearly_ship_hull_heavy = 1
-	forgotearly_ship_hull_submarine = 1
 	airfield_construction = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -163,7 +156,6 @@ if = {
 		basic_light_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
 		mtg_transport = 1
 	}
 }
