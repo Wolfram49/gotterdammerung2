@@ -87,7 +87,7 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	tech_logistics_company = 1 
-	desertinfantry_at = 1
+	#desertinfantry_at = 1
 	synth_oil_experiments = 1
 # early -> basic -> improved
 	#GDU additions for UK air control 
