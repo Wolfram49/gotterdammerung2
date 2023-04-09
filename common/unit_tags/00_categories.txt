@@ -19,4 +19,6 @@ sub_unit_categories = {
 	category_assault_guns
 	category_recon
 	category_paratrooper
+	category_scout_plane
+	category_militia
 }
