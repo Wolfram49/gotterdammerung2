@@ -667,7 +667,6 @@ equipment_modules = {
 			soft_attack = 55
 			ap_attack = 10
 			reliability = -0.2
-			breakthrough = -15
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -691,7 +690,6 @@ equipment_modules = {
 			soft_attack = 64
 			ap_attack = 10
 			reliability = -0.2
-			breakthrough = -15
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -715,7 +713,6 @@ equipment_modules = {
 			soft_attack = 72
 			ap_attack = 10
 			reliability = -0.2
-			breakthrough = -15
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
