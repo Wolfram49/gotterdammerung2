@@ -49,12 +49,21 @@ sub_units = {
 		}
 		hills = {
 		    attack = -0.3
+			defence = -0.15			
 		}
 		mountain = 	{
-		    attack = -0.4
+		    attack = -0.9
+			defence = -0.85 
+			movement = -0.9
 		}
+		gibraltar = 	{
+		    attack = -0.9
+			defence = -0.85 
+			movement = -0.9
+		}		
 		jungle = {
 		    attack = -0.7
+                    defence = -0.35 
 			movement = -0.4
 		}
 		marsh = {
@@ -63,7 +72,7 @@ sub_units = {
 		}
 		urban = {
 			attack = -0.6
-			defence = -0.2
+			defence = -0.35
 		}
 		river = { 
 			attack = -0.5
@@ -73,7 +82,34 @@ sub_units = {
 			attack = -1.0
 		}
 		fort = {
-			attack = 0.5
+			attack = 1
 		}
+	
+		forest_africa = {
+		    attack = -0.5
+			movement = -0.4
+		}
+		hills_africa = {
+		    attack = -0.3
+			defence = -0.15
+		}
+		mountain_africa = 	{
+		    attack = -0.9
+			defence = -0.85 
+			movement = -0.9
+		}
+		jungle_africa = {
+		    attack = -0.7
+            defence = -0.35 
+			movement = -0.4
+		}
+		marsh_africa = {
+		    attack = -0.5 
+			movement = -0.2
+		}
+		urban_africa = {
+			attack = -0.6
+			defence = -0.35
+		}	
 	}
 }

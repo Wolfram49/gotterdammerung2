@@ -40,22 +40,30 @@ sub_units = {
 		suppression = 1.0
 
 		forest = {
-		    attack = -0.2
-			movement = -0.4
+		    attack = -0.1
+			movement = -0.2
 		}
 		mountain = 	{
-		    attack = -0.1
-		}
-		jungle = {
 		    attack = -0.3
-			movement = -0.4
+			defence = -0.15
+			movement = -0.6
+		}
+		gibraltar = 	{
+		    attack = -0.3
+			defence = -0.15
+			movement = -0.6
+		}		
+		jungle = {
+		    attack = -0.1
+			defence = -0.05 
+			movement = -0.2
 		}
 		marsh = {
 		    attack = -0.1 
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.4
+			attack = -0.3
 			defence = -0.1
 		}
 		river = { 
@@ -63,8 +71,32 @@ sub_units = {
 			movement = -0.2
 		}
 		amphibious = { 
-			attack = -0.6
+			attack = -0.4
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.1
+			movement = -0.2
+		}
+		mountain_africa = 	{
+		    attack = -0.3
+			defence = -0.15
+			movement = -0.6
+		}
+		jungle_africa = {
+		    attack = -0.1
+			defence = -0.05 
+			movement = -0.2
+		}
+		marsh_africa = {
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban_africa = {
+			attack = -0.3
+			defence = -0.1
+		}		
 	}
 	
 	medium_tank_destroyer_brigade = {
@@ -105,30 +137,38 @@ sub_units = {
 		weight = 1.25
 		supply_consumption = 0.22
 
-		breakthrough = -0.25
 		
 		suppression = 1.25
 
 		forest = {
-		    attack = -0.3
-			movement = -0.4
+		    attack = -0.2
+			movement = -0.2
 		}
-		hills = 	{
-		    attack = -0.1
+		hills = {
+		    attack = -0.15
+			defence = -0.1 
 		}
 		mountain = 	{
-		    attack = -0.2
+		    attack = -0.55
+			defence = -0.35 
+			movement = -0.8
 		}
+		gibraltar = 	{
+		    attack = -0.55
+			defence = -0.35 
+			movement = -0.8
+		}		
 		jungle = {
-		    attack = -0.4
-			movement = -0.4
+		    attack = -0.3
+			defence = -0.15 
+			movement = -0.3
 		}
 		marsh = {
 		    attack = -0.1 
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.4
+			attack = -0.3
 			defence = -0.1
 		}
 		river = { 
@@ -138,6 +178,34 @@ sub_units = {
 		amphibious = { 
 			attack = -0.7
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.2
+			movement = -0.2
+		}
+		hills_africa = {
+		    attack = -0.15
+			defence = -0.1 
+		}
+		mountain_africa = 	{
+		    attack = -0.55
+			defence = -0.35 
+			movement = -0.8
+		}
+		jungle_africa = {
+		    attack = -0.3
+			defence = -0.15 
+			movement = -0.3
+		}
+		marsh_africa = {
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban_africa = {
+			attack = -0.3
+			defence = -0.1
+		}		
 	}
 	
 	heavy_tank_destroyer_brigade = {
@@ -178,7 +246,6 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.3
 
-		breakthrough = -0.25
 
 		suppression = 1.25
 		
@@ -188,12 +255,21 @@ sub_units = {
 		}
 		hills = {
 		    attack = -0.20
+			defence = -0.1
 		}
 		mountain = 	{
-		    attack = -0.3
+		    attack = -0.9
+			defence = -0.5 
+			movement = -0.8
 		}
+		gibraltar = 	{
+		    attack = -0.9
+			defence = -0.5 
+			movement = -0.8
+		}		
 		jungle = {
 		    attack = -0.6
+			defence = -0.2 
 			movement = -0.4
 		}
 		marsh = {
@@ -212,8 +288,36 @@ sub_units = {
 			attack = -0.8 
 		}
 		fort = {
-			attack = 0.05
+			attack = 0.1
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.40
+			movement = -0.40
+		}
+		hills_africa = {
+		    attack = -0.20
+			defence = -0.1
+		}
+		mountain_africa = 	{
+		    attack = -0.9
+			defence = -0.5 
+			movement = -0.8
+		}
+		jungle_africa = {
+		    attack = -0.6
+			defence = -0.2 
+			movement = -0.4
+		}
+		marsh_africa = {
+		    attack = -0.4 
+			movement = -0.2
+		}
+		urban_africa = {
+			attack = -0.5
+			defence = -0.2
+		}		
 	}
 	
 	super_heavy_tank_destroyer_brigade = {
@@ -253,7 +357,6 @@ sub_units = {
 		weight = 1.75
 		supply_consumption = 0.4
 
-		breakthrough = -0.25
 
 		suppression = 1.25
 
@@ -263,10 +366,18 @@ sub_units = {
 		}
 		hills = {
 		    attack = -0.3
+			defence = -0.15	
 		}
 		mountain = 	{
-		    attack = -0.4
+		    attack = -0.9
+			defence = -0.5 
+			movement = -0.8 
 		}
+		gibraltar = 	{
+		    attack = -0.9
+			defence = -0.5 
+			movement = -0.8 
+		}		
 		jungle = {
 		    attack = -0.7
 			movement = -0.4
@@ -277,7 +388,7 @@ sub_units = {
 		}
 		urban = {
 			attack = -0.6
-			defence = -0.2
+			defence = -0.35
 		}
 		river = { 
 			attack = -0.5
@@ -289,6 +400,33 @@ sub_units = {
 		fort = {
 			attack = 0.3
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.5
+			movement = -0.4
+		}
+		hills_africa = {
+		    attack = -0.3
+			defence = -0.15	
+		}
+		mountain_africa = 	{
+		    attack = -0.9
+			defence = -0.5 
+			movement = -0.8 
+		}
+		jungle_africa = {
+		    attack = -0.7
+			movement = -0.4
+		}
+		marsh_africa = {
+		    attack = -0.5 
+			movement = -0.2
+		}
+		urban_africa = {
+			attack = -0.6
+			defence = -0.35
+		}		
 	}
 	
 	modern_tank_destroyer_brigade = {
@@ -297,7 +435,10 @@ sub_units = {
 		map_icon_category = armored
 		priority = 1796
 		ai_priority = 100
-		active = yes
+		active = 
+		breakthrough = -0.4
+		soft_attack = -0.4
+		hard_attack = 0.05
 		
 		type = {
 			armor
@@ -326,39 +467,77 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.25
 		
-		breakthrough = -0.25
+
 
 		suppression = 1.25
 		
 		forest = {
-		    attack = -0.3
+		    attack = -0.5
 			movement = -0.4
 		}
-		hills = 	{
-		    attack = -0.1
+		hills = {
+		    attack = -0.3
+			defence = -0.15	
 		}
 		mountain = 	{
-		    attack = -0.2
+		    attack = -0.9
+			defence = -0.5 
+			movement = -0.8 
 		}
+		gibraltar = 	{
+		    attack = -0.9
+			defence = -0.5 
+			movement = -0.8 
+		}		
 		jungle = {
-		    attack = -0.4
+		    attack = -0.7
 			movement = -0.4
 		}
 		marsh = {
-		    attack = -0.1 
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
-		}
-		river = { 
-			attack = -0.2 
+		    attack = -0.5 
 			movement = -0.2
 		}
-		amphibious = { 
-			attack = -0.7
+		urban = {
+			attack = -0.6
+			defence = -0.35
 		}
+		river = { 
+			attack = -0.5
+			movement = -0.5
+		}
+		amphibious = { 
+			attack = -1.0
+		}
+		fort = {
+			attack = 0.3
+		}
+		
+		
+		forest_africa = {
+		    attack = -0.5
+			movement = -0.4
+		}
+		hills_africa = {
+		    attack = -0.3
+			defence = -0.15	
+		}
+		mountain_africa = 	{
+		    attack = -0.9
+			defence = -0.5 
+			movement = -0.8 
+		}
+		jungle_africa = {
+		    attack = -0.7
+			movement = -0.4
+		}
+		marsh_africa = {
+		    attack = -0.5 
+			movement = -0.2
+		}
+		urban_africa = {
+			attack = -0.6
+			defence = -0.35
+		}		
 	}
 
 

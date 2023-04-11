@@ -33,19 +33,29 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.42
 
-		breakthrough = -0.42
+		breakthrough = -0.75
+		hard_attack = -0.33
 
 		suppression = 1.25
 
+		
 		forest = {
 		    attack = -0.2
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.3
+			defence = -0.15
+			movement = -0.5
 		}
+		gibraltar = 	{
+		    attack = -0.3
+			defence = -0.15
+			movement = -0.5
+		}		
 		jungle = {
 		    attack = -0.3
+			defence = -0.05 
 			movement = -0.4
 		}
 		marsh = {
@@ -63,6 +73,30 @@ sub_units = {
 		amphibious = { 
 			attack = -0.6
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.2
+			movement = -0.4
+		}
+		mountain_africa = 	{
+		    attack = -0.3
+			defence = -0.15
+			movement = -0.5
+		}
+		jungle_africa = {
+		    attack = -0.3
+			defence = -0.05 
+			movement = -0.4
+		}
+		marsh_africa = {
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban_africa = {
+			attack = -0.4
+			defence = -0.1
+		}		
 	}
 	
 	medium_sp_artillery_brigade = {
@@ -96,24 +130,34 @@ sub_units = {
 		training_time = 180
 		weight = 1.25
 		supply_consumption = 0.46
+		breakthrough = -0.75
+		hard_attack = -0.33
 
-		breakthrough = -0.25
+	
 
 		suppression = 1.5
-
-		forest = {
-		    attack = -0.3
-			movement = -0.4
+forest = {
+		    attack = -0.2
+			movement = -0.2
 		}
 		hills = 	{
-		    attack = -0.1
+		   	attack = -0.15
+			defence = -0.1 
 		}
 		mountain = 	{
-		    attack = -0.2
+		    attack = -0.55
+			defence = -0.55 
+			movement = -0.8
 		}
+		gibraltar = 	{
+		    attack = -0.55
+			defence = -0.35 
+			movement = -0.8
+		}		
 		jungle = {
-		    attack = -0.4
-			movement = -0.4
+		    attack = -0.3
+			movement = -0.3
+			defence = -0.15 
 		}
 		marsh = {
 		    attack = -0.1 
@@ -130,6 +174,34 @@ sub_units = {
 		amphibious = { 
 			attack = -0.7
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.2
+			movement = -0.2
+		}
+		hills_africa = 	{
+		   	attack = -0.15
+			defence = -0.1 
+		}
+		mountain_africa = 	{
+		    attack = -0.55
+			defence = -0.55 
+			movement = -0.8
+		}
+		jungle_africa = {
+		    attack = -0.3
+			movement = -0.3
+			defence = -0.15 
+		}
+		marsh_africa = {
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban_africa = {
+			attack = -0.4
+			defence = -0.1
+		}		
 	}
 	
 	heavy_sp_artillery_brigade = {
@@ -165,7 +237,8 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.6
 
-		breakthrough = -0.25
+		breakthrough = -0.75
+		hard_attack = -0.33
 
 		suppression = 1.5
 
@@ -175,12 +248,21 @@ sub_units = {
 		}
 		hills = {
 		    attack = -0.20
+			defence = -0.1			
 		}
 		mountain = 	{
-		    attack = -0.3
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8
 		}
+		gibraltar = 	{
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8
+		}		
 		jungle = {
 		    attack = -0.6
+			defence = -0.2 
 			movement = -0.4
 		}
 		marsh = {
@@ -198,6 +280,37 @@ sub_units = {
 		amphibious = { 
 			attack = -0.8 
 		}
+		fort = {
+			attack = 0.1
+		}
+		
+		
+		forest_africa = {
+		    attack = -0.40
+			movement = -0.40
+		}
+		hills_africa = {
+		    attack = -0.20
+			defence = -0.1 			
+		}
+		mountain_africa = 	{
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8
+		}
+		jungle_africa = {
+		    attack = -0.6
+			defence = -0.2 
+			movement = -0.4
+		}
+		marsh_africa = {
+		    attack = -0.4 
+			movement = -0.2
+		}
+		urban_africa = {
+			attack = -0.5
+			defence = -0.2
+		}	
 	}
 	
 	super_heavy_sp_artillery_brigade = {
@@ -234,7 +347,8 @@ sub_units = {
 		weight = 1.75
 		supply_consumption = 0.8
 
-		breakthrough = -0.25
+		breakthrough = -0.75
+		hard_attack = -0.33
 
 		suppression = 1.25
 
@@ -244,10 +358,18 @@ sub_units = {
 		}
 		hills = {
 		    attack = -0.3
+			defence = -0.15			
 		}
 		mountain = 	{
-		    attack = -0.4
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8 
 		}
+		gibraltar = 	{
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8
+		}		
 		jungle = {
 		    attack = -0.7
 			movement = -0.4
@@ -258,7 +380,7 @@ sub_units = {
 		}
 		urban = {
 			attack = -0.6
-			defence = -0.2
+			defence = -0.35
 		}
 		river = { 
 			attack = -0.5
@@ -267,6 +389,33 @@ sub_units = {
 		amphibious = { 
 			attack = -1.0
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.5
+			movement = -0.4
+		}
+		hills_africa = {
+		    attack = -0.3
+			defence = -0.15						
+		}
+		mountain_africa = 	{
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8
+		}
+		jungle_africa = {
+		    attack = -0.7
+			movement = -0.4
+		}
+		marsh_africa = {
+		    attack = -0.5 
+			movement = -0.2
+		}
+		urban_africa = {
+			attack = -0.6
+			defence = -0.35
+		}		
 	}
 	
 	modern_sp_artillery_brigade = {
@@ -302,7 +451,8 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.5
 		
-		breakthrough = -0.25
+		breakthrough = -0.75
+		hard_attack = -0.33
 
 		suppression = 1.5
 

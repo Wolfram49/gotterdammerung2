@@ -38,31 +38,63 @@ sub_units = {
 		suppression = 0.75
 
 		forest = {
-		    attack = -0.2
-			movement = -0.4
+		    attack = -0.1
+			movement = -0.2
 		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.2
+			defence = -0.1
+			movement = -0.2
 		}
+		gibraltar = 	{
+		    attack = -0.2
+			defence = -0.1
+			movement = -0.2
+		}		
 		jungle = {
-		    attack = -0.3
-			movement = -0.4
+		    attack = -0.1
+			defence = -0.05 
+			movement = -0.2
 		}
 		marsh = {
-		    attack = -0.1 
+		    attack = -0.1
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.4
+			attack = -0.3
 			defence = -0.1
 		}
 		river = { 
-			attack = -0.2 
+			attack = -0.2
 			movement = -0.2
 		}
 		amphibious = { 
-			attack = -0.6
+			attack = -0.4
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.1
+			movement = -0.2
+		}
+		mountain_africa = 	{
+		    attack = -0.2
+			defence = -0.1
+			movement = -0.2
+		}
+		jungle_africa = {
+		    attack = -0.1
+			defence = -0.05 
+			movement = -0.2
+		}
+		marsh_africa = {
+		    attack = -0.1
+			movement = -0.1
+		}
+		urban_africa = {
+			attack = -0.3
+			defence = -0.1
+		}		
 	}
 	
 	medium_sp_anti_air_brigade = {
@@ -103,34 +135,71 @@ sub_units = {
 		suppression = 0.8
 
 		forest = {
-		    attack = -0.3
-			movement = -0.4
+		    attack = -0.2
+			movement = -0.2
 		}
-		hills = 	{
-		    attack = -0.1
+		hills = {
+		    attack = -0.15
+			defence = -0.05			
 		}
 		mountain = 	{
-		    attack = -0.2
+		    attack = -0.3
+			defence = -0.3
+			movement = -0.45
 		}
+		gibraltar = 	{
+		    attack = -0.3
+			defence = -0.3
+			movement = -0.45
+		}		
 		jungle = {
-		    attack = -0.4
-			movement = -0.4
+		    attack = -0.3
+			defence = -0.15 
+			movement = -0.3
 		}
 		marsh = {
-		    attack = -0.1 
+		    attack = -0.1
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.4
+			attack = -0.3
 			defence = -0.1
 		}
 		river = { 
-			attack = -0.2 
+			attack = -0.2
 			movement = -0.2
 		}
 		amphibious = { 
 			attack = -0.7
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.2
+			movement = -0.2
+		}
+		hills_africa = {
+		    attack = -0.15
+			defence = -0.05 
+		}
+		mountain_africa = 	{
+		    attack = -0.3
+			defence = -0.3
+			movement = -0.45
+		}
+		jungle_africa = {
+		    attack = -0.3
+			defence = -0.15 
+			movement = -0.3
+		}
+		marsh_africa = {
+		    attack = -0.1
+			movement = -0.1
+		}
+		urban_africa = {
+			attack = -0.3
+			defence = -0.1
+		}		
 	}
 	
 	heavy_sp_anti_air_brigade = {
@@ -178,14 +247,22 @@ sub_units = {
 		    attack = -0.20
 		}
 		mountain = 	{
-		    attack = -0.3
+		    attack = -0.4
+			defence = -0.4 
+			movement = -0.4
 		}
+		gibraltar = 	{
+		    attack = -0.4
+			defence = -0.4
+			movement = -0.4
+		}		
 		jungle = {
 		    attack = -0.6
+			defence = -0.2 
 			movement = -0.4
 		}
 		marsh = {
-		    attack = -0.4 
+		    attack = -0.4
 			movement = -0.2
 		}
 		urban = {
@@ -193,12 +270,42 @@ sub_units = {
 			defence = -0.2
 		}
 		river = { 
-			attack = -0.4 
+			attack = -0.4
 			movement = -0.4
 		}
 		amphibious = { 
 			attack = -0.8 
 		}
+		fort = {
+			attack = 0.1
+		}
+		
+		
+		forest_africa = {
+		    attack = -0.40
+			movement = -0.40
+		}
+		hills_africa = {
+		    attack = -0.20
+		}
+		mountain_africa = 	{
+		    attack = -0.4
+			defence = -0.4 
+			movement = -0.4
+		}
+		jungle_africa = {
+		    attack = -0.6
+			defence = -0.2 
+			movement = -0.4
+		}
+		marsh_africa = {
+		    attack = -0.4
+			movement = -0.2
+		}
+		urban_africa = {
+			attack = -0.5
+			defence = -0.2
+		}		
 	}
 	
 	super_heavy_sp_anti_air_brigade = {
@@ -246,18 +353,23 @@ sub_units = {
 		}
 		mountain = 	{
 		    attack = -0.4
+			defence = -0.4			
 		}
+		gibraltar = 	{
+		    attack = -0.4
+			defence = -0.4						
+		}		
 		jungle = {
 		    attack = -0.7
 			movement = -0.4
 		}
 		marsh = {
-		    attack = -0.5 
+		    attack = -0.5
 			movement = -0.2
 		}
 		urban = {
 			attack = -0.6
-			defence = -0.2
+			defence = -0.35
 		}
 		river = { 
 			attack = -0.5
@@ -266,6 +378,30 @@ sub_units = {
 		amphibious = { 
 			attack = -1.0
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.5
+			movement = -0.4
+		}
+		hills_africa = {
+		    attack = -0.3
+		}
+		mountain_africa = 	{
+		    attack = -0.4
+		}
+		jungle_africa = {
+		    attack = -0.7
+			movement = -0.4
+		}
+		marsh_africa = {
+		    attack = -0.5
+			movement = -0.2
+		}
+		urban_africa = {
+			attack = -0.6
+			defence = -0.35
+		}		
 	}
 	
 	modern_sp_anti_air_brigade = {
