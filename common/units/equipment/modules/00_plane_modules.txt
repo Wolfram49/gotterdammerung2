@@ -850,6 +850,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 12
 			air_agility = -5
+			air_defence = 3
 			air_ground_attack = 12
 			naval_strike_attack = 3
 			naval_strike_targetting = 8
