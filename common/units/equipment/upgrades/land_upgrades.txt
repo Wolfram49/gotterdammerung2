@@ -27,7 +27,6 @@ upgrades = {
 		}
 
 		maximum_speed = 0.05
-		reliability = -0.01
 		add_stats = {
 			build_cost_ic = 0.15
 		}
@@ -71,7 +70,6 @@ upgrades = {
 ##		}
 
 		maximum_speed = -0.02
-		reliability = -0.01
 		add_stats = {
 			breakthrough = 0.2
 			defense = 0.35

@@ -1492,7 +1492,8 @@ org_loss_when_moving = 0.10
 				medium_tank_chassis = {
 					reliability = 0.1
 					maximum_speed = 0.1
-					hard_attack = 0.15
+					hard_attack = 0.075
+					soft_attack = 0.075
 				}
 				medium_tank_destroyer_chassis = {
 					hard_attack = 0.1
@@ -1507,42 +1508,42 @@ org_loss_when_moving = 0.10
 
 		}
 
-		daimler_benz_2 = {
-
-			cost = 75
-			allowed = {
-				or = { 
-					original_TAG = GER
-					original_TAG = HUN 
-					original_TAG = BUL 
-					original_TAG = SPR
-					original_TAG = ROM
-					original_TAG = ITA
-					original_TAG = FIN					
-				}
-			}
-			
-			available = {
-				GER = { has_completed_focus = GER_around_maginot }			
-			}
-
-			picture = daimler_benz
-
-			research_bonus = {
-				armor = 0.15
-			}
-
-			equipment_bonus = {
-				medium_tank_destroyer_chassis = {
-					hard_attack = 0.15
-					ap_attack = 0.25
-					reliability = 0.15
-					defense = 0.1
-					build_cost_ic = -0.15
-				}
-			}
-
-		}
+##		daimler_benz_2 = {
+##
+##			cost = 75
+##			allowed = {
+##				or = { 
+##					original_TAG = GER
+##					original_TAG = HUN 
+##					original_TAG = BUL 
+##					original_TAG = SPR
+##					original_TAG = ROM
+##					original_TAG = ITA
+##					original_TAG = FIN					
+##				}
+##			}
+##			
+##			available = {
+##				GER = { has_completed_focus = GER_around_maginot }			
+##			}
+##
+##			picture = daimler_benz
+##
+##			research_bonus = {
+##				armor = 0.15
+##			}
+##
+##			equipment_bonus = {
+##				medium_tank_destroyer_chassis = {
+##					hard_attack = 0.15
+##					ap_attack = 0.25
+##					reliability = 0.15
+##					defense = 0.1
+##					build_cost_ic = -0.15
+##				}
+##			}
+##
+##		}
 
 		henschel = {
 
@@ -1557,7 +1558,7 @@ org_loss_when_moving = 0.10
 				}			
 			}
 			available = {
-				date > 1941.1.1
+				date > 1942.1.1
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1569,12 +1570,12 @@ org_loss_when_moving = 0.10
 
 			equipment_bonus = {
 				heavy_tank_chassis = {
-					reliability = 0.05				
-					hard_attack = 0.20
-					soft_attack = 0.20
-					defense = 0.15
-					build_cost_ic = 0.05
-					armor_value = 0.05
+					reliability = -0.25				
+					hard_attack = 0.4
+					soft_attack = 0.4
+					defense = 0.35
+					build_cost_ic = 0.5
+					armor_value = 0.5
 				}
 				heavy_tank_destroyer_chassis = {
 					hard_attack = 0.20
@@ -1586,9 +1587,9 @@ org_loss_when_moving = 0.10
 			}
 		}
 
-		krupp_tank = {
+		krupp_tank = { ##Debug
 
-			cost = 75
+			cost = 0
 			allowed = {
 				or = { 
 					original_TAG = GER
@@ -1604,8 +1605,12 @@ org_loss_when_moving = 0.10
 
 			equipment_bonus = {
 				medium_tank_chassis = {
-					reliability = 0.1
-					soft_attack = 0.15
+					reliability = -0.25
+					soft_attack = 0.25
+					hard_attack = 0.25
+					armor_value = 0.5
+					build_cost_ic = 0.5
+
 				}
 				medium_tank_destroyer_chassis = {
 					hard_attack = 0.15
@@ -1638,7 +1643,7 @@ org_loss_when_moving = 0.10
 				}
 			}
 			available = {
-				date > 1941.1.1
+				date > 1942.1.1
 			}
 
 			research_bonus = {
