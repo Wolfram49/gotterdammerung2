@@ -168,10 +168,9 @@ equipments = {
 		armor_value = 15
 		soft_attack = 1
 		hard_attack = 1
-		build_cost_ic = 10
 		reliability = 1
 		breakthrough = 1
-		build_cost_ic = 8
+		build_cost_ic = 6
 	}
 
 	light_tank_chassis_2 = {
@@ -187,10 +186,9 @@ equipments = {
 		armor_value = 25
 		soft_attack = 2
 		hard_attack = 2
-		build_cost_ic = 12
 		reliability = 1
 		breakthrough = 1
-		build_cost_ic = 6
+		build_cost_ic = 7
 		resources = {
 			steel = 1
 		}
@@ -209,7 +207,6 @@ equipments = {
 		armor_value = 35
 		soft_attack = 4
 		hard_attack = 4
-		build_cost_ic = 14
 		reliability = 1
 		breakthrough = 1
 		build_cost_ic = 8
@@ -393,10 +390,10 @@ equipments = {
 		parent = medium_tank_chassis_0
 		priority = 2000
 		module_slots = inherit
-		armor_value = 65
+		armor_value = 72
 		soft_attack = 4
 		hard_attack = 4
-		build_cost_ic = 15
+		build_cost_ic = 6
 		reliability = 1
 		breakthrough = 1
 		build_cost_ic = 8
@@ -410,12 +407,12 @@ equipments = {
 		archetype = medium_tank_chassis
 		priority = 2000
 		module_slots = inherit
-		armor_value = 80
+		armor_value = 85
 		soft_attack = 8
 		hard_attack = 8
 		reliability = 1
 		breakthrough = 1
-		build_cost_ic = 10
+		build_cost_ic = 8
 		resources = {
 			steel = 1
 		}
@@ -429,10 +426,10 @@ equipments = {
 		archetype = medium_tank_chassis
 		priority = 2000
 		module_slots = inherit
-		armor_value = 100
+		armor_value = 110
 		soft_attack = 16
 		hard_attack = 16
-		build_cost_ic = 12
+		build_cost_ic = 10
 		reliability = 1
 		breakthrough = 1
 		resources = {
@@ -615,10 +612,10 @@ equipments = {
 		parent = heavy_tank_chassis_0
 		priority = 2000
 		module_slots = inherit
-		armor_value = 80
+		armor_value = 100
 		soft_attack = 4
 		hard_attack = 4
-		build_cost_ic = 30
+		build_cost_ic = 28
 		reliability = 1
 		breakthrough = 1
 	}
@@ -632,10 +629,10 @@ equipments = {
 		parent = heavy_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		armor_value = 100
+		armor_value = 135
 		soft_attack = 20
 		hard_attack = 16
-		build_cost_ic = 33
+		build_cost_ic = 31
 		reliability = 1
 		breakthrough = 1
 		resources = {
@@ -653,10 +650,10 @@ equipments = {
 		parent = heavy_tank_chassis_2
 		priority = 2000
 		module_slots = inherit
-		armor_value = 140
+		armor_value = 180
 		soft_attack = 28
 		hard_attack = 20
-		build_cost_ic = 36
+		build_cost_ic = 34
 		reliability = 1
 		breakthrough = 1
 		resources = {
@@ -922,50 +919,7 @@ equipments = {
 			}
 
 		}
-		module_count_limit = {
-			module = sloped_armor
-			count < 2
-		}	
-		module_count_limit = {
-			category = tank_radio_module
-			count < 2
-		}
-		module_count_limit = {
-			module = amphibious_drive
-			count < 1
-		}
-		module_count_limit = {
-			module = wet_ammo_storage
-			count < 2
-		}
 
-		module_count_limit = {
-			module = squeezebore_adaptor
-			count < 2
-		}
-
-		module_count_limit = {
-			module = armor_skirts
-			count < 2
-		}
-
-		module_count_limit = {
-			module = dozer_blade
-			count < 2
-		}
-
-		module_count_limit = {
-			module = easy_maintenance
-			count < 2
-		}
-		module_count_limit = {
-			module = auto_loader
-			count < 2
-		}
-		module_count_limit = {
-			module = stabilizer
-			count < 2
-		}
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_super_heavy_three_man_tank_turret
@@ -975,7 +929,7 @@ equipments = {
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 2.5
+		maximum_speed = 0.5
 		build_cost_ic = 24
 		reliability = 1.3
 		armor_value = 85
@@ -997,6 +951,12 @@ equipments = {
 		archetype = super_heavy_tank_chassis
 		priority = 2000
 		module_slots = inherit
+		soft_attack = 158
+		hard_attack = 195
+		armor_value = 250
+		build_cost_ic = 134
+		reliability = 0.5
+		breakthrough = 1
 		upgrades = {
 			tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
@@ -1071,56 +1031,6 @@ equipments = {
 			}
 
 
-		}
-		module_count_limit = {
-			module = sloped_armor
-			count < 2
-		}	
-		module_count_limit = {
-			category = tank_radio_module
-			count < 2
-		}
-
-		module_count_limit = {
-			module = amphibious_drive
-			count < 1
-		}
-		module_count_limit = {
-			module = wet_ammo_storage
-			count < 2
-		}
-		module_count_limit = {
-			module = additional_machine_guns
-			count < 2
-		}
-
-		module_count_limit = {
-			module = squeezebore_adaptor
-			count < 2
-		}
-
-		module_count_limit = {
-			module = armor_skirts
-			count < 2
-		}
-
-		module_count_limit = {
-			module = dozer_blade
-			count < 2
-		}
-
-		module_count_limit = {
-			module = easy_maintenance
-			count < 2
-		}
-		module_count_limit = {
-			module = auto_loader
-			count < 2
-		}
-
-		module_count_limit = {
-			module = stabilizer
-			count < 2
 		}
 
 		default_modules = {
