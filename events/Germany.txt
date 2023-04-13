@@ -1054,7 +1054,7 @@ country_event = {
 				set_technology = { basic_medium_tank = 1 }
 				create_equipment_variant = {
 					name = "LT-38 E"
-					type = medium_tank_equipment_1
+					type = medium_tank_chassis_1
 					parent_version = 0
 					upgrades = {
 						tank_gun_upgrade = 2
@@ -1073,12 +1073,12 @@ country_event = {
 		name = germany.55.b
 		add_to_faction = HUN
 		add_equipment_to_stockpile = {
-			type = light_tank_equipment_2
+			type = light_tank_chassis_2
 			amount = 500
 			producer = GER
 		}
 		add_equipment_to_stockpile = {
-			type = medium_tank_equipment_1
+			type = medium_tank_chassis_1
 			amount = 200
 			producer = GER
 		}

@@ -298,7 +298,7 @@ add_equipment_to_stockpile = {
          producer = JAP
 } 
 add_equipment_to_stockpile = {
-         type = light_tank_equipment_1
+         type = light_tank_chassis_1
          amount = 720
          producer = JAP
 } 

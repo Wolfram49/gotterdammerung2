@@ -164,17 +164,17 @@ add_equipment_to_stockpile = {
          producer = CAN
 }
 add_equipment_to_stockpile = {
-         type = heavy_tank_equipment_1
+         type = heavy_tank_chassis_1
          amount = 400
          producer = CAN
 }
 add_equipment_to_stockpile = {
-         type = light_tank_equipment_2
+         type = light_tank_chassis_2
          amount = 800
          producer = CAN
 }
 add_equipment_to_stockpile = {
-         type = light_tank_equipment_1
+         type = light_tank_chassis_1
          amount = 400
          producer = CAN
 } 

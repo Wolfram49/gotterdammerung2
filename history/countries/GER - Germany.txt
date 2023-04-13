@@ -223,17 +223,17 @@ add_equipment_to_stockpile = {
          producer = GER
 } 
 add_equipment_to_stockpile = {
-         type = light_tank_equipment_2
+         type = light_tank_chassis_2
          amount = 1801
          producer = GER
 } 
 add_equipment_to_stockpile = {
-         type = light_tank_equipment_1
+         type = light_tank_chassis_1
          amount = 1000
          producer = GER
 } 
 add_equipment_to_stockpile = {
-         type = heavy_tank_equipment_1
+         type = heavy_tank_chassis_1
          amount = 7
          producer = GER
 } 

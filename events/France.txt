@@ -293,11 +293,11 @@ country_event = {
 			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1000 producer = FRF }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = FRF }
 
-			add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 100 producer = FRF }
-			add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 100 producer = FRF }
-			add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 100 producer = FRF }
+			add_equipment_to_stockpile = { type = heavy_tank_chassis_1 amount = 100 producer = FRF }
+			add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 100 producer = FRF }
+			add_equipment_to_stockpile = { type = medium_tank_chassis_1 amount = 100 producer = FRF }
 			add_equipment_to_stockpile = { type = gw_tank_equipment amount = 600 producer = FRF }
-			add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 50 producer = FRF }
+			add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 50 producer = FRF }
 			
 			add_equipment_to_stockpile = { type = transport_plane_equipment amount = 5 producer = FRF }	
 			

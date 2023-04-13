@@ -191,7 +191,7 @@ add_equipment_to_stockpile = {
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = heavy_tank_equipment_1
+         type = heavy_tank_chassis_1
          amount = 481
          producer = SOV
 } 
@@ -206,12 +206,12 @@ add_equipment_to_stockpile = {
          producer = SOV
 } 
 add_equipment_to_stockpile = {
-         type = light_tank_equipment_1
+         type = light_tank_chassis_1
          amount = 2500
          producer = SOV
 } 
 add_equipment_to_stockpile = {
-         type = light_tank_equipment_2
+         type = light_tank_chassis_2
          amount = 500
          producer = SOV
 }
@@ -221,32 +221,32 @@ add_equipment_to_stockpile = {
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = light_tank_artillery_equipment_1
+         type = light_tank_artillery_chassis_1
          amount = 1475
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = light_tank_artillery_equipment_2
+         type = light_tank_artillery_chassis_2
          amount = 1675
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = light_tank_destroyer_equipment_1
+         type = light_tank_destroyer_chassis_1
          amount = 1400
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = light_tank_destroyer_equipment_2
+         type = light_tank_destroyer_chassis_2
          amount = 500
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = light_tank_aa_equipment_1
+         type = light_tank_aa_chassis_1
          amount = 500
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = light_tank_aa_equipment_2
+         type = light_tank_aa_chassis_2
          amount = 250
          producer = SOV
 }
@@ -256,12 +256,12 @@ add_equipment_to_stockpile = {
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = heavy_tank_destroyer_equipment_1
+         type = heavy_tank_destroyer_chassis_1
          amount = 300
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = heavy_tank_aa_equipment_1
+         type = heavy_tank_aa_chassis_1
          amount = 96
          producer = SOV
 }
@@ -1104,7 +1104,7 @@ if = {
  }
  create_equipment_variant = {
  	name = "T-26 modle. 1931"
- 	type = light_tank_equipment_1
+ 	type = light_tank_chassis_1
  	upgrades = {
  
  	}
@@ -1112,7 +1112,7 @@ if = {
  }
  create_equipment_variant = {
  	name = "T-26 modle. 1933"
- 	type = light_tank_equipment_1
+ 	type = light_tank_chassis_1
  	upgrades = {
  		tank_gun_upgrade = 5
  		tank_armor_upgrade = 3
@@ -1123,7 +1123,7 @@ if = {
 
  create_equipment_variant = {
  	name = "T-27"
- 	type = light_tank_equipment_1
+ 	type = light_tank_chassis_1
  	upgrades = {
  		tank_reliability_upgrade = 3
  	}
@@ -1131,7 +1131,7 @@ if = {
  }
  create_equipment_variant = {
  	name = "BT.2"
- 	type = light_tank_equipment_2
+ 	type = light_tank_chassis_2
  	upgrades = {
  	}
  	obsolete = yes
@@ -1139,7 +1139,7 @@ if = {
 
  create_equipment_variant = {
  	name = "BT.5"
- 	type = light_tank_equipment_2
+ 	type = light_tank_chassis_2
  	upgrades = {
  		tank_gun_upgrade = 3
  		tank_engine_upgrade = 2
@@ -1151,7 +1151,7 @@ if = {
 
  create_equipment_variant = {
  	name = "BT.7"
- 	type = light_tank_equipment_2
+ 	type = light_tank_chassis_2
  	upgrades = {
  		tank_gun_upgrade = 4
  		tank_armor_upgrade = 3

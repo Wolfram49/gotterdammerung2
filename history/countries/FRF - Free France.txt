@@ -113,7 +113,7 @@ if = {
 # 1936 Start #
 create_equipment_variant = {
 	name = "T-26 TU"
-	type = light_tank_equipment_1
+	type = light_tank_chassis_1
 	upgrades = {
 		tank_gun_upgrade = 1
 		tank_armor_upgrade = 2
