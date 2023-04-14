@@ -32,7 +32,7 @@ focus_tree = {
 			842 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
 			add_political_power = 150
-			army_experience = 265
+			army_experience = 300
 			add_named_threat = { threat = 5 name = GER_rhineland }
 			add_named_threat = { threat = 1 name = ITA_Ethiopia }
 			if = {
@@ -41,12 +41,7 @@ focus_tree = {
 					country_event = { id = germany.60 }
 				}
 			}
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.00
-				uses = 2
-				category = land_doctrine
-			}			
+						
 		}
 	}
 
@@ -66,15 +61,10 @@ focus_tree = {
 		completion_reward = {
 			# Balance research bonus for 2 techs under land_doctrine
 
-			army_experience = 1050
+			army_experience = 200
 
 
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.00
-				uses = 2
-				category = land_doctrine
-			}
+			
 
 			add_tech_bonus = {
 				name = land_doc_bonus
@@ -990,9 +980,9 @@ activate_mission = GER_relocate_industry_from_friesland
 
 			add_tech_bonus = {
 				name = air_bonus
-				bonus = 1.25
+				bonus = 1.5
 				uses = 1
-				technology = fighter2
+				technology = improved_small_airframe
 			}
 
 			add_ideas = GER_air_innovations_2_idea
@@ -1046,19 +1036,21 @@ activate_mission = GER_relocate_industry_from_friesland
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 150
-			add_tech_bonus = {
-				name = op_dest_bonus
-				bonus = 1.00
-				uses = 2
-				category = air_doctrine
-			}
+			##air_experience = 150
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 4
 				uses = 1
-				technology = CAS2
-			}		
+				technology = advanced_bombs
+			}	
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 4
+				uses = 1
+				technology = atg_cannon
+			}
+						
+			
 		}
 	}
 
@@ -1079,9 +1071,9 @@ activate_mission = GER_relocate_industry_from_friesland
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_long_range_escorts
-				bonus = 1.00
+				bonus = 2.5
 				uses = 1
-				category = cat_heavy_fighter
+				technology = improved_medium_airframe
 			}
 		}
 	}
@@ -1103,12 +1095,7 @@ activate_mission = GER_relocate_industry_from_friesland
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.00
-				uses = 1
-				category = naval_bomber
-			}
+			navy_experience = 200
 		}
 	}
 
@@ -1128,18 +1115,12 @@ activate_mission = GER_relocate_industry_from_friesland
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 150
-			add_tech_bonus = {
-				name = strat_dest_bonus
-				bonus = 1.00
-				uses = 2
-				category = air_doctrine
-			}
+			##air_experience = 150
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 2.00
+				bonus = 2.5
 				uses = 1
-				technology = strategic_bomber2
+				technology = improved_large_airframe
 			}		
 		}
 	}
@@ -1162,11 +1143,10 @@ activate_mission = GER_relocate_industry_from_friesland
 				custom_effect_tooltip = needs_approval
 			}
 			# Actual reward effects added in event if Soviets approve
-			set_technology = { basic_medium_td = 1 }
 		add_tech_bonus = {
 			name = GER_soviet_treaty
 			bonus = 2.00
-			technology = basic_medium_tank
+			technology = basic_medium_tank_chassis
 		}
 		add_tech_bonus = {
 			name = GER_soviet_treaty
@@ -1181,7 +1161,7 @@ activate_mission = GER_relocate_industry_from_friesland
 		add_tech_bonus = {
 			name = GER_soviet_treaty
 			bonus = 2.00
-			technology = basic_medium_tank
+			technology = basic_medium_tank_chassis
 		}
 		}
 	}
@@ -1201,18 +1181,18 @@ activate_mission = GER_relocate_industry_from_friesland
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 50
+			##air_experience = 50
 			add_tech_bonus = {
 				name = air_sup_bonus
 				bonus = 1.00
-				uses = 3
-				category = air_doctrine
+				uses = 1
+				technology = aa_cannon_2
 			}
 			# Balance research bonus to next tech among radio, radio_detection, decimetric_radar, improved_decimetric_radar, centimetric_radar, improved_centimetric_radar, advanced_centimetric_radar
 			add_tech_bonus = {
 				name = radar_tech_bonus
-				bonus = 1.00
-				uses = 3
+				bonus = 2.00
+				uses = 4
 				category = radar_tech
 			}
 			if = {
@@ -1243,65 +1223,26 @@ activate_mission = GER_relocate_industry_from_friesland
 
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
-			army_experience = 50
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.00
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = 400
+			
 			add_tech_bonus = {
 				bonus = 1.00
 				uses = 1
 				name = mech_army_bonus
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis
 			}
-			add_tech_bonus = {
-				bonus = 1.00
-				uses = 1
-				name = mech_army_bonus
-				technology = advanced_light_tank
-				technology = improved_heavy_tank
-				technology = advanced_heavy_tank
-			}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 1
-				ahead_reduction = 4.0
-				name = mech_army_TD_bonus
-				technology = advanced_light_td
-				technology = improved_medium_td
-				technology = improved_heavy_td
-			}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 1
-				ahead_reduction = 4.0
-				name = mech_army_ART_bonus
-				technology = advanced_light_art
-				technology = improved_medium_art
-				technology = improved_heavy_art
-			}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 1
-				ahead_reduction = 4.0
-				name = mech_army_SPAA_bonus
-				technology = advanced_light_spaa
-				technology = improved_medium_spaa
-				technology = improved_heavy_spaa
-			}
+
 			add_tech_bonus = {
 				bonus = 1.25
 				uses = 1
 				name = mech_army_bonus
-				category = cat_mechanized_2
+				technology = mechanised_infantry2
 			}
 			add_tech_bonus = {
 				bonus = 1.5
 				uses = 1
 				name = mech_army_bonus
-				category = cat_mechanized_1
+				technology = mechanised_infantry
 			}
 
 		
@@ -1774,7 +1715,6 @@ activate_mission = GER_relocate_industry_from_friesland
 					country_event = gduevents.62
 				}
 			}		
-			army_experience = 10
 			if = {
 				limit = {
 					country_exists = AUS
@@ -2835,7 +2775,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		mutually_exclusive = { focus = GER_naval_rearmament_alt }		
 		x = 25
 		y = 1
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -2861,7 +2801,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		mutually_exclusive = { focus = GER_naval_rearmament }
 		x = 27
 		y = 1
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -3066,7 +3006,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		prerequisite = { focus = GER_naval_rearmament focus = GER_naval_rearmament_alt }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -3074,7 +3014,6 @@ add_timed_idea = { idea = CDE days = 365 }
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			navy_experience = 25
 
 			add_tech_bonus = {
 				name = dd_bonus
@@ -3091,7 +3030,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		}
 
 		completion_reward = {
-			navy_experience = 25
+		
 			add_tech_bonus = {
 				name = dd_bonus
 				bonus = 2.00
@@ -3162,7 +3101,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			navy_experience = 50
+			navy_experience = 100
 			add_tech_bonus = {
 				name = bc_bonus
 				bonus = 2
@@ -3178,7 +3117,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		}
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 100
 			add_tech_bonus = {
 				name = bc_bonus
 				bonus = 2
@@ -3214,7 +3153,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		}
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 100
 			add_tech_bonus = {
 				name = cv_bonus
 				bonus = 1.50
@@ -3353,7 +3292,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			navy_experience = 25
+			navy_experience = 100
 			add_tech_bonus = {
 				name = GER_u_boat_effort
 				bonus = 1.00
@@ -3363,7 +3302,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		}
 
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 100
 			add_tech_bonus = {
 				name = GER_u_boat_effort
 				bonus = 1.00
@@ -3388,13 +3327,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_trade_interdiction
-				bonus = 1.25
-				uses = 3
-				category = trade_interdiction_tree
-			}
+			navy_experience = 400
 		}
 	}
 
@@ -3435,7 +3368,6 @@ add_timed_idea = { idea = CDE days = 365 }
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 20
 					42 = {
 						add_building_construction = {
 							type = anti_air_building
@@ -3537,7 +3469,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		completion_reward = {
 			army_experience = 500
 			set_technology = {
-				improved_heavy_tank = 1
+				improved_heavy_tank_chassis = 1
 			}
 
 		202 = {
@@ -3551,36 +3483,9 @@ add_timed_idea = { idea = CDE days = 365 }
 				name = Rasenai_Panther_bonus
 				bonus = 4
 				uses = 2
-				technology = advanced_medium_tank
-				technology = advanced_light_tank_a
+				technology = advanced_medium_tank_chassis
+				technology = advanced_light_tank_chassis
 			}	
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 1
-				ahead_reduction = 2.0
-				name = Rasenai_TD_bonus
-				technology = advanced_light_td
-				technology = advanced_medium_td
-				technology = advanced_heavy_td
-			}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 1
-				ahead_reduction = 2.0
-				name = Rasenai_ART_bonus
-				technology = advanced_light_art
-				technology = advanced_medium_art
-				technology = advanced_heavy_art
-			}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 1
-				ahead_reduction = 2.0
-				name = Rasenai_SPAA_bonus
-				technology = advanced_light_spaa
-				technology = advanced_medium_spaa
-				technology = advanced_heavy_spaa
-			}
 			add_tech_bonus = {
 				name = at_bonus
 				bonus = 1.75
@@ -3611,7 +3516,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		completion_reward = {
 			army_experience = 500
 			set_technology = {
-				improved_heavy_tank = 1
+				improved_heavy_tank_chassis = 1
 			}
 		202 = {
 					add_resource = {
@@ -3623,42 +3528,9 @@ add_timed_idea = { idea = CDE days = 365 }
 				name = Brody_KingTiger_bonus
 				bonus = 3.75
 				uses = 2
-				technology = advanced_heavy_tank
-				technology = advanced_light_tank_a				
-			}			
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 3
-				uses = 1
-				technology = CAS3
-			}		
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 1
-				ahead_reduction = 2.0
-				name = Rasenai_TD_bonus
-				technology = advanced_light_td
-				technology = advanced_medium_td
-				technology = advanced_heavy_td
-			}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 1
-				ahead_reduction = 2.0
-				name = Rasenai_ART_bonus
-				technology = advanced_light_art
-				technology = advanced_medium_art
-				technology = advanced_heavy_art
-			}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 1
-				ahead_reduction = 2.0
-				name = Rasenai_SPAA_bonus
-				technology = advanced_light_spaa
-				technology = advanced_medium_spaa
-				technology = advanced_heavy_spaa
-			}
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_light_tank_chassis				
+			}					
 			add_tech_bonus = {
 				name = at_bonus
 				bonus = 3
@@ -3840,13 +3712,13 @@ add_timed_idea = { idea = CDE days = 365 }
 				name = ta152_bonus
 				bonus = 5.00
 				uses = 1
-				technology = fighter3
+				technology = advanced_small_airframe
 			}
 			add_tech_bonus = {
 				name = me262_bonus
 				bonus = 8.00
 				uses = 1
-				technology = jet_fighter1
+				technology = modern_small_airframe
 			}		
 		}
 	}		
