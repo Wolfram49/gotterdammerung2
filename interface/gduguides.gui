@@ -1,0 +1,1433 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "gdu_guides_container"
+		orientation = UPPER_RIGHT
+		position = { x = -420 y = 7 }
+		clipping = no
+		
+		
+		buttonType ={
+			name ="gdu_guides_open_button"
+			spriteType = "GFX_gdu_guides_open_button"
+			position = { x=0 y=0 }
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "GDUGUIDES_TOOLTIP"
+		}
+		
+		
+		
+	}
+	
+	### Main Window ###
+	containerWindowType = {
+		name = "gdu_guides_main_window_container"
+		position = {x=0 y=80}
+		size = { width=1100 height=645 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg2"
+		}
+		
+		instantTextboxType = {
+			name = "gdu_guides_main_window_title"
+			position = { x = 45 y = 8 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "GDU Guides"
+			maxWidth = 240
+			maxHeight = 20
+			format = left	
+		}
+		
+		buttonType = {
+			name = "gdu_guides_main_close"
+			quadTextureSprite = "GFX_closebutton"
+			position = { x= 1060 y = 12 }
+			clicksound = click_close
+			pdx_tooltip = "GDUGUIDESCLOSE_TOOLTIP"
+		}
+		
+		containerWindowType = {
+			name = "gdu_guides_primary_container"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			
+				instantTextboxType = {
+					name = "land_title"
+					position = {x=45 y=5}
+					font = "hoi_24header"
+					text = "Land Guides"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+				instantTextboxType = {
+					name = "air_title"
+					position = {x=212 y=5}
+					font = "hoi_24header"
+					text = "Air Guides"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+				instantTextboxType = {
+					name = "navy_title"
+					position = {x=378 y=5}
+					font = "hoi_24header"
+					text = "Navy Guides"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+				instantTextboxType = {
+					name = "general_title"
+					position = {x=542 y=5}
+					font = "hoi_24header"
+					text = "General Guides"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+				instantTextboxType = {
+					name = "advanced_title"
+					position = {x=731 y=5}
+					font = "hoi_24header"
+					text = "Advanced Guides"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+				instantTextboxType = {
+					name = "other_title"
+					position = {x=920 y=5}
+					font = "hoi_24header"
+					text = "Other Guides"
+					maxWidth = 320
+					maxHeight = 23
+					format = left
+				}
+			
+				containerWindowType = {
+					name = "gdu_guides_land_container"
+					position = { x=10 y=30 }
+					size = { width = 176 height = 728 }
+					
+					
+					
+					background = {
+						name = "land_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					
+					
+					buttonType = {
+						name = "gdu_guides_land_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_land_1_tt"
+						pdx_tooltip_delayed = "gdu_guides_land_1_tt_del"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "Armor & Piercing"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_land_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_land_2_tt"
+						pdx_tooltip_delayed = "gdu_guides_land_2_tt_del"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "Basic Templates"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_land_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_land_3_tt"
+						pdx_tooltip_delayed = "gdu_guides_land_3_tt_del"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "Land Guide III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_land_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_land_4_tt"
+						pdx_tooltip_delayed = "gdu_guides_land_4_tt_del"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "Land Guide IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_land_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_land_5_tt"
+						pdx_tooltip_delayed = "gdu_guides_land_5_tt_del"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "Land Guide V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_land_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_land_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "Land Guide VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_land_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_land_7_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "Land Guide VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_land_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_land_8_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "Land Guide VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_land_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_land_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "Land Guide IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_land_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_land_10_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "land_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "Land Guide X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+				}
+				
+				containerWindowType = {
+					name = "gdu_guides_air_container"
+					position = { x=183 y=30 }
+					size = { width = 176 height = 728 }
+					
+					
+					background = {
+						name = "navy_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}	
+					
+					
+					buttonType = {
+						name = "gdu_guides_air_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_air_1_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "air_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "Air Gangbang"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+				
+					buttonType = {
+						name = "gdu_guides_air_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_air_2_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "air_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "GDU CAS"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_air_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_air_3_tt"
+					}
+				
+					
+					instantTextboxType = {
+						name = "air_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "10 Air Tips"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_air_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_air_4_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "air_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "Air Guide IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_air_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_air_5_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "air_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "Air Guide V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_air_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_air_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "air_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "Air Guide VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_air_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_air_7_tt"
+					}
+					
+				
+					instantTextboxType = {
+						name = "air_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "Air Guide VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_air_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_air_8_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "air_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "Air Guide VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_air_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_air_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "air_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "Air Guide IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_air_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_air_10_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "air_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "Air Guide X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+		
+				containerWindowType = {
+					name = "gdu_guides_navy_container"
+					position = { x=356 y=30 }
+					size = { width = 176 height = 728 }
+					
+					
+					background = {
+						name = "navy_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_navy_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_navy_1_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navy_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "Positioning"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_navy_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_navy_2_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navy_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "Naval Compositions"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_navy_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_navy_3_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navy_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "10 Naval Tips"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_navy_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_navy_4_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navy_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "Navy Guide IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_navy_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_navy_5_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navy_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "Navy Guide V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_navy_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_navy_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navy_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "Navy Guide VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_navy_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_navy_7_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navy_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "Navy Guide VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_navy_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_navy_8_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navy_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "Navy Guide VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_navy_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_navy_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navy_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "Navy Guide IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_navy_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_navy_10_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "navy_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "Navy Guide X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+				
+				containerWindowType = {
+					name = "gdu_guides_general_container"
+					position = { x=529 y=30 }
+					size = { width = 176 height = 728 }
+						
+					
+					
+					background = {
+						name = "general_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_general_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_general_1_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "General Guide I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_general_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_general_2_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "General Guide II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_general_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_general_3_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "General Guide III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_general_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_general_4_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "General Guide IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_general_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_general_5_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "General Guide V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_general_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_general_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "General Guide VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_general_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_general_7_tt"
+					}
+				
+					
+					instantTextboxType = {
+						name = "general_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "General Guide VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_general_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_general_8_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "General Guide VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_general_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_general_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "General Guide IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_general_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_general_10_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "general_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "General Guide X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+				
+				containerWindowType = {
+					name = "gdu_guides_advanced_container"
+					position = { x=702 y=30 }
+					size = { width = 176 height = 728 }
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					background = {
+						name = "advanced_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_advanced_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_advanced_1_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "advanced_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "Advanced Guide I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_advanced_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_advanced_2_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "advanced_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "Advanced Guide II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_advanced_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_advanced_3_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "advanced_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "Advanced Guide III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_advanced_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_advanced_4_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "advanced_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "Advanced Guide IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_advanced_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_advanced_5_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "advanced_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "Advanced Guide V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_advanced_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_advanced_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "advanced_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "Advanced Guide VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_advanced_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_advanced_7_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "advanced_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "Advanced Guide VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_advanced_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_advanced_8_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "advanced_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "Advanced Guide VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_advanced_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_advanced_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "advanced_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "Advanced Guide IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_advanced_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_advanced_10_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "advanced_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "Advanced Guide X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+				
+				containerWindowType = {
+					name = "gdu_guides_other_container"
+					position = { x=875 y=30 }
+					size = { width = 176 height = 728 }
+						
+					background = {
+						name = "other_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_other_1_available" 
+						position = {x=23 y=15}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_other_1_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "other_1"
+						position = {x=0 y=28}
+						font = "hoi_18mbs"
+						text = "Be Prepared For Beginners"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_other_2_available" 
+						position = {x=23 y=65}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_other_2_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "other_2"
+						position = {x=0 y=78}
+						font = "hoi_18mbs"
+						text = "Summary of GDU"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_other_3_available" 
+						position = {x=23 y=115}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_other_3_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "other_3"
+						position = {x=0 y=128}
+						font = "hoi_18mbs"
+						text = "Dont do these mistakes"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_other_4_available" 
+						position = {x=23 y=165}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_other_4_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "other_4"
+						position = {x=0 y=178}
+						font = "hoi_18mbs"
+						text = "Other Guide IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_other_5_available" 
+						position = {x=23 y=215}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_other_5_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "other_5"
+						position = {x=0 y=228}
+						font = "hoi_18mbs"
+						text = "Other Guide V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_other_6_available" 
+						position = {x=23 y=265}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_other_6_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "other_6"
+						position = {x=0 y=278}
+						font = "hoi_18mbs"
+						text = "Other Guide VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_other_7_available" 
+						position = {x=23 y=315}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_other_7_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "other_7"
+						position = {x=0 y=328}
+						font = "hoi_18mbs"
+						text = "Other Guide VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_other_8_available" 
+						position = {x=23 y=365}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_other_8_tt"
+					}
+			
+					
+					
+					instantTextboxType = {
+						name = "other_8"
+						position = {x=0 y=378}
+						font = "hoi_18mbs"
+						text = "Other Guide VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_other_9_available" 
+						position = {x=23 y=415}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_other_9_tt"
+					}
+					
+					
+					instantTextboxType = {
+						name = "other_9"
+						position = {x=0 y=428}
+						font = "hoi_18mbs"
+						text = "Other Guide IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					
+					buttonType = {
+						name = "gdu_guides_other_10_available" 
+						position = {x=23 y=465}	
+						spriteType = "GFX_gdu_guides_idea_button_available"
+						pdx_tooltip = "gdu_guides_other_10_tt"
+					}
+				
+					
+					instantTextboxType = {
+						name = "other_10"
+						position = {x=0 y=478}
+						font = "hoi_18mbs"
+						text = "Other Guide X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+	}
+}
