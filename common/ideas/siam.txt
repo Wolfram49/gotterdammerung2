@@ -64,11 +64,11 @@ ideas = {
 			
 
 			equipment_bonus = {	
-				fighter_equipment = {
+				small_plane_airframe  = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				jet_fighter_equipment = {
+				jet_small_plane_airframe  = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
@@ -76,27 +76,27 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				heavy_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}					
-				CAS_equipment = {
+				large_plane_airframe  = {
 					instant = yes
 					build_cost_ic = -0.05
 				}				
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				jet_tac_bomber_equipment = {
+				jet_medium_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				jet_strat_bomber_equipment = {
+				jet_large_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
@@ -108,19 +108,19 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe  = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				cv_CAS_equipment = {
+				cv_large_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				cv_nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe  = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}								

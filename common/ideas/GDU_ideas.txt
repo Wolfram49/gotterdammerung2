@@ -6,6 +6,26 @@ ideas = {
 
 	country = {
 
+		USA_naval_disarmament = {
+		
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				industrial_capacity_dockyard = -0.5
+			}
+		}
+
 		GDU_aided_by_BEF = {
 			allowed = {
 				always = no
@@ -1731,59 +1751,59 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe  = {
 					air_attack = 0.10
 					instant = yes
 				}
-				heavy_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					air_attack = 0.10
 					instant = yes
 				}
-				CAS_equipment = {
+				large_plane_airframe  = {
 					air_attack = 0.10
 					instant = yes
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					air_attack = 0.10
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.10
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.10
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.10
 					instant = yes
 				}
-				jet_strat_bomber_equipment = {
+				jet_large_plane_airframe = {
 					air_attack = 0.10
 					instant = yes
 				}				
-				jet_tac_bomber_equipment = {
+				jet_medium_plane_airframe = {
 					air_attack = 0.10
 					instant = yes
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe  = {
 					air_attack = 0.10
 					instant = yes
 				} 
-				cv_CAS_equipment = {
+				cv_large_plane_airframe = {
 					air_attack = 0.10
 					instant = yes
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					air_attack = 0.10
 					instant = yes
 				} 
-				cv_nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe  = {
 					air_attack = 0.10
 					instant = yes
 				} 
-				jet_fighter_equipment = {
+				jet_small_plane_airframe  = {
 					air_attack = 0.10
 					instant = yes
 				}
@@ -1809,59 +1829,59 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe  = {
 					air_attack = 0.35
 					instant = yes
 				}
-				heavy_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					air_attack = 0.35
 					instant = yes
 				}
-				CAS_equipment = {
+				large_plane_airframe  = {
 					air_attack = 0.35
 					instant = yes
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					air_attack = 0.35
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.35
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.35
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.35
 					instant = yes
 				}
-				jet_strat_bomber_equipment = {
+				jet_large_plane_airframe = {
 					air_attack = 0.35
 					instant = yes
 				}				
-				jet_tac_bomber_equipment = {
+				jet_medium_plane_airframe = {
 					air_attack = 0.35
 					instant = yes
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe  = {
 					air_attack = 0.35
 					instant = yes
 				} 
-				cv_CAS_equipment = {
+				cv_large_plane_airframe = {
 					air_attack = 0.35
 					instant = yes
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					air_attack = 0.35
 					instant = yes
 				} 
-				cv_nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe  = {
 					air_attack = 0.35
 					instant = yes
 				} 
-				jet_fighter_equipment = {
+				jet_small_plane_airframe  = {
 					air_attack = 0.35
 					instant = yes
 				}
@@ -1890,59 +1910,59 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe  = {
 					air_attack = 0.6
 					instant = yes
 				}
-				heavy_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					air_attack = 0.6
 					instant = yes
 				}
-				CAS_equipment = {
+				large_plane_airframe  = {
 					air_attack = 0.6
 					instant = yes
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					air_attack = 0.6
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.6
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.6
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.6
 					instant = yes
 				}
-				jet_strat_bomber_equipment = {
+				jet_large_plane_airframe = {
 					air_attack = 0.6
 					instant = yes
 				}				
-				jet_tac_bomber_equipment = {
+				jet_medium_plane_airframe = {
 					air_attack = 0.6
 					instant = yes
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe  = {
 					air_attack = 0.6
 					instant = yes
 				} 
-				cv_CAS_equipment = {
+				cv_large_plane_airframe = {
 					air_attack = 0.6
 					instant = yes
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					air_attack = 0.6
 					instant = yes
 				} 
-				cv_nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe  = {
 					air_attack = 0.6
 					instant = yes
 				} 
-				jet_fighter_equipment = {
+				jet_small_plane_airframe  = {
 					air_attack = 0.6
 					instant = yes
 				}
@@ -1970,59 +1990,59 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe  = {
 					air_attack = 0.85
 					instant = yes
 				}
-				heavy_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					air_attack = 0.85
 					instant = yes
 				}
-				CAS_equipment = {
+				large_plane_airframe  = {
 					air_attack = 0.85
 					instant = yes
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					air_attack = 0.85
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.85
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.85
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_attack = 0.85
 					instant = yes
 				}
-				jet_strat_bomber_equipment = {
+				jet_large_plane_airframe = {
 					air_attack = 0.85
 					instant = yes
 				}				
-				jet_tac_bomber_equipment = {
+				jet_medium_plane_airframe = {
 					air_attack = 0.85
 					instant = yes
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe  = {
 					air_attack = 0.85
 					instant = yes
 				} 
-				cv_CAS_equipment = {
+				cv_large_plane_airframe = {
 					air_attack = 0.85
 					instant = yes
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					air_attack = 0.85
 					instant = yes
 				} 
-				cv_nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe  = {
 					air_attack = 0.85
 					instant = yes
 				} 
-				jet_fighter_equipment = {
+				jet_small_plane_airframe  = {
 					air_attack = 0.85
 					instant = yes
 				}

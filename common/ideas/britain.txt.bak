@@ -1892,7 +1892,7 @@ ideas = {
 					air_attack = 0.1
 					reliability = 0.1
 				}
-				amphibious_tanks_chassis = {
+				amphibious_tank_chassis = {
 				    reliability = 0.1
 				    hard_attack = 0.16
 				    soft_attack = 0.2
