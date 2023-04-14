@@ -292,7 +292,7 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.15
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.05
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.3	       -- more AA attack will approach this amount of help (diminishing returns)
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 400 -- how quickly defense approaches the max impact diminishing returns curve
-NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00000
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0000
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.5 }
 NDefines.NMilitary.SLOWEST_SPEED = 4
@@ -335,6 +335,9 @@ NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.6	   -- penalty to org
 NDefines.NMilitary.PARADROP_PENALTY = -0.25
 NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 1.0			   -- Base org regain per hour
 
+
+
+
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0013
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 8		-- chance to get a hit to damage on forts. (out of 100)
 
@@ -347,6 +350,13 @@ NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.09   -- air global da
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.09    -- global damage modifier
 
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.5 -- how many CAS/TAC can enter a combat depending on enemy width there
+
+NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0
+NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTORY = 0
+NDefines.NNavy.FIELD_EXPERIENCE_SCALE = 0
+NDefines.NNavy.XP_GAIN_FACTOR = 0
+NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0
+NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 0
 
 
 
