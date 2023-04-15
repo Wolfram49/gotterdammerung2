@@ -360,32 +360,32 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 50		
+			army_experience = 500		
 			add_tech_bonus = {
 				name = medium1_bonus
 				bonus = 0.5
-				technology = basic_medium_tank
+				technology = basic_medium_tank_chassis
 			}		
 			add_tech_bonus = {
 				name = UK_tank
 				bonus = 0.50
 				uses = 1
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = UK_tank
 				bonus = 0.6
 				uses = 2
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 			add_tech_bonus = {
 				name = UK_tank
 				bonus = 1.1
 				uses = 3
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = advanced_light_tank_a				
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_light_tank_chassis	
 			}
 
 		}
@@ -1105,12 +1105,6 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_tech_bonus = {
-				name = air_rearmament_doctrine
-				bonus = 1.00
-				uses = 3
-				category = air_doctrine
-			}
 			every_state = {
 				limit = { has_state_flag = air_rearmament_focus_2AirBase }
 				add_building_construction = {
@@ -1123,17 +1117,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = air_rearmament_doctrine
-				bonus = 1.00
-				uses = 3
-				category = air_doctrine
-			}
-			add_tech_bonus = {
 				name = air_rearmament_cas
 				bonus = 1.0
-				category = cas_bomber
+				category = atg_rockets
 			}
-			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1355,10 +1342,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
 			custom_effect_tooltip = GDU_supermarine_spitfire_tt
-			hidden_effect = {
-				set_technology = { fighter2 = 1 }
+			add_tech_bonus = {
+				name = fighter_command_focus
+				bonus = 9.99
+				uses = 1
+				technology = improved_small_airframe		
 			}
 		}
 	}
@@ -1377,13 +1366,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
 			add_tech_bonus = {
 				name = bomber_command_focus
-				bonus = 1.0
-				uses = 2
-				category = cat_strategic_bomber
-				category = tactical_bomber				
+				bonus = 1.25
+				uses = 1
+				technology = improved_medium_airframe		
+			}
+			add_tech_bonus = {
+				name = bomber_command_focus
+				bonus = 1.25
+				uses = 1
+				technology = improved_large_airframe		
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = arthur_harris
@@ -1404,20 +1397,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 75
-			add_tech_bonus = {
-				name = coastal_command_focus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-				category = naval_air
-			}
-			add_tech_bonus = {
-				name = heavy_fighter_bonus
-				bonus = 1.0
-				uses = 1
-				category = cat_heavy_fighter
-			}			
+			navy_experience = 200		
 		}
 	}
 
@@ -1474,13 +1454,13 @@ focus_tree = {
 				name = fighter3_bonus
 				bonus = 0.5
 				uses = 1
-				technology = fighter3
+				technology = advanced_small_airframe
 			}			
 			add_tech_bonus = {
 				name = jet_fighter_bonus
 				bonus = 2.5
 				uses = 1
-				technology = jet_fighter1
+				technology = modern_small_airframe
 			}		
 		}
 	}	
@@ -1513,7 +1493,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 100
 			add_ideas = ENG_expand_the_repair_yards
 			338 = {
 				add_extra_state_shared_building_slots = 2
@@ -1735,12 +1715,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-				name = uk_waves_focus
-				bonus = 1.0
-				uses = 3
-				category = naval_doctrine
-			}
+			navy_experience = 800
 
 		}
 	}
@@ -1759,7 +1734,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			navy_experience = 25
 			add_tech_bonus = {
 				name = uk_carrier_focus
 				bonus = 1.5
@@ -1783,8 +1757,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		completion_reward = {
-			navy_experience = 25
+		completion_reward = {		
 			add_tech_bonus = {
 				name = uk_battleship_focus
 				bonus = 1.5
@@ -2226,9 +2199,6 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_tooltip = GDU_eng_countenance		
-			army_experience = 50
-			navy_experience = 25
-			air_experience = 25
 			add_ideas = ENG_service_overseas_idea
 		}
 	}
@@ -3508,12 +3478,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 200
 			add_timed_idea = { idea = eng_blood_toil_tears_idea days = 400 }
-			add_tech_bonus = {
-				name = ENG_blood_toil_tears
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = 500
 
 		}
 	}
@@ -3614,12 +3579,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = naval_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = naval_doctrine
-			}
+			navy_experience = 600
 
 
 
