@@ -583,8 +583,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 125
-			navy_experience = 100
+			army_experience = 100
+			navy_experience = 400
 		}
 	}
 	
@@ -606,12 +606,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_methodical_battle
-				category = land_doctrine
-				uses = 2
-				bonus = 1.00
-			}
+			army_experience = 400
 		}
 	}
 	
@@ -690,7 +685,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 100
 			add_ideas = FRA_infantry_focus
 		add_tech_bonus = {
 				name = land_doc_bonus
@@ -756,25 +751,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_technology = { basic_heavy_tank = 1 }
-			create_equipment_variant = {
-				name = "Char B1 Bis"
-				type = heavy_tank_equipment_1
-				upgrades = {
-					tank_gun_upgrade = 5
-					tank_engine_upgrade = 5
-					tank_armor_upgrade = 5
-					tank_reliability_upgrade = 5
-				}
-				obsolete = no
-			}
-			FRA = { add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 850 producer = FRA } }
+			##set_technology = { basic_heavy_tank = 1 }
+			##create_equipment_variant = {
+			##	name = "Char B1 Bis"
+			##	type = heavy_tank_equipment_1
+			##	upgrades = {
+			##		tank_gun_upgrade = 5
+			##		tank_engine_upgrade = 5
+			##		tank_armor_upgrade = 5
+			##		tank_reliability_upgrade = 5
+			##	}
+			##	obsolete = no
+			##}
+			##FRA = { add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 850 producer = FRA } }
 
 			add_tech_bonus = {
 				name = tank_bonus
 				bonus = 0.75
 				uses = 1
-				technology = improved_heavy_tank
+				technology = improved_heavy_tank_chassis
 			}
 
 			
@@ -793,8 +788,8 @@ focus_tree = {
 			factor = 0.2
 		}
 		completion_reward = {
-			army_experience = 125
-			navy_experience = 100
+			army_experience = 100
+			navy_experience = 400
 		}
 	}
 	focus = {
@@ -872,12 +867,12 @@ focus_tree = {
 			add_tech_bonus = {
 						bonus = 1
 						name = tank_bonus
-						technology = basic_medium_tank
+						technology = basic_medium_tank_chassis
 					}
 			add_tech_bonus = {
 						bonus = 0.5
 						name = tank_bonus
-						technology = improved_medium_tank
+						technology = improved_medium_tank_chassis
 					}
 		}
 	}
@@ -895,12 +890,7 @@ focus_tree = {
 		completion_reward = {
 		   	custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = charles_de_gaulle
-			add_tech_bonus = {
-				name = FRA_army_reform
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = 400
 		}
 	}	
 	focus = {

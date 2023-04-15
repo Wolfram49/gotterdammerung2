@@ -31,6 +31,7 @@ focus_tree = {
 		completion_reward = {	
 			add_political_power = 300
 			add_stability = 0.25
+			army_experience = 300
 			add_popularity = {
 				popularity = 0.15
 				ideology = democratic
@@ -324,15 +325,15 @@ focus_tree = {
 			539 = {
 				add_resource = {
 					type = steel
-					amount = 30
+					amount = 100
 				}
 				add_resource = {
 					type = tungsten
-					amount = 20
+					amount = 50
 				}
 				add_resource = {
 					type = chromium
-					amount = 10
+					amount = 30
 				}
 			}
 		}
@@ -588,12 +589,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_army_reform
-				bonus = 1.0
-				uses = 3
-				category = land_doctrine
-			}
+			army_experience = 100
 
 		}
 	}
@@ -615,7 +611,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = FRA }
 			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 300 producer = FRA }
 			add_equipment_to_stockpile = { type = anti_tank_equipment_1  amount = 300 producer = FRA }
-			add_equipment_to_stockpile = { type = motorized_equipment amount = 150 producer = FRA }
+			add_equipment_to_stockpile = { type = motorized_equipment amount = 950 producer = FRA }
 	    }
 	}
 	
@@ -685,22 +681,22 @@ focus_tree = {
 				name = tank_bonus
 				bonus = 0.5
 				uses = 1
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = tank_bonus
 				bonus = 0.75
 				uses = 2
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 			add_tech_bonus = {
 				name = tank_bonus
 				bonus = 1
 				uses = 3
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = advanced_light_tank_a
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_light_tank__chassis
 			}
 	
 			add_tech_bonus = {
@@ -754,14 +750,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
-
-			add_tech_bonus = {
-				name = FRA_air_doctrine
-				bonus = 1.00 
-				uses = 3
-				category = air_doctrine
-			}
+			
 		}
 	}
 	
@@ -776,7 +765,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-            set_technology = { fighter2 = 1 }
+            set_technology = { improved_small_airframe = 1 }
 		}
 	}
 	
@@ -796,7 +785,7 @@ focus_tree = {
 				name = FRA_cas_focus
 				bonus = 1.00
 				uses = 1
-				technology = cas2
+				technology = atg_rockets
 			}
 		}
 	}
@@ -813,12 +802,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_naval_bomber_focus
-				bonus = 1.00
-				uses = 1
-				technology = naval_bomber2
-			}
+			navy_experience = 200
 		}
 	}
 	
@@ -841,7 +825,7 @@ focus_tree = {
 				name = FRA_bomber_focus
 				bonus = 1.00 
 				uses = 1
-				technology = tactical_bomber2
+				technology = improved_medium_airframe
 			}
 		}
 	} 
@@ -865,7 +849,7 @@ focus_tree = {
 				name = FRA_heavy_bomber_focus
 				bonus = 1.00 
 				uses = 1
-				technology = strategic_bomber2
+				technology = improved_heavy_airframe
 			}
 		}
 	}
@@ -890,7 +874,7 @@ focus_tree = {
  
 		completion_reward = {
 			custom_effect_tooltip = FRA_fighters
-			SOV = { add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 100 producer = FRF } }
+			##SOV = { add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 100 producer = FRF } }
 		}
 	}
 	
@@ -905,20 +889,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 400
 		    add_ideas = free_french_fleet
-			add_tech_bonus = {
-				name = FRA_naval_doctrine
-				bonus = 1.00 
-				uses = 2
-				category = naval_doctrine
-			}
-			add_tech_bonus = {
-				name = FRA_convoy_tactics
-				bonus = 1.0
-				uses = 2
-				category = convoy_defense_tree
-			}
 		}
 	}
 	
