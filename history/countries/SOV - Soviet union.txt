@@ -71,6 +71,33 @@ add_intel = {
 set_research_slots = 3
 navy_experience = 0
 add_timed_idea = { idea = airandnavy_idea days = 1980 }
+recruit_character = SOV_nikolay_voznesensky
+recruit_character = SOV_lavrenty_beriya
+recruit_character = SOV_nikita_khrushchyov
+recruit_character = SOV_mikhail_kalinin
+recruit_character = SOV_vyacheslav_molotov
+recruit_character = SOV_georgy_zhukov
+recruit_character = SOV_semyon_timoshenko
+recruit_character = SOV_kliment_voroshilov
+recruit_character = SOV_nikolay_kuznetsov
+recruit_character = SOV_ivan_yumashev
+recruit_character = SOV_konstantin_vershinin
+recruit_character = SOV_ivan_konev
+recruit_character = SOV_aleksandr_vasilevsky
+recruit_character = SOV_konstantin_rokossovsky
+recruit_character = SOV_pavel_zhigarev
+recruit_character = SOV_sergey_khudyakov
+recruit_character = SOV_stepan_krasovsky
+recruit_character = SOV_vladimir_kasatonov
+recruit_character = SOV_arseny_golovko
+recruit_character = SOV_sergey_rudenko
+recruit_character = SOV_boris_shaposhnikov
+recruit_character = SOV_sergey_gorshkov
+recruit_character = SOV_vladimir_tributs
+recruit_character = SOV_aleksandr_golovanov
+recruit_character = SOV_igor_kurchatov
+recruit_character = SOV_sergey_korolyov
+recruit_character = SOV_georgy_zhukov_highcommand
 # Starting tech
 set_technology = {
 	heavy_fighter1 = 1
@@ -156,6 +183,7 @@ if = {
 		basic_light_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
+		basic_secondary_battery = 1
 		mtg_transport = 1
 	}
 }
@@ -191,7 +219,7 @@ add_equipment_to_stockpile = {
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = heavy_tank_chassis_1
+         type = heavy_tank_chassi_1
          amount = 481
          producer = SOV
 } 
@@ -251,7 +279,7 @@ add_equipment_to_stockpile = {
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = heavy_tank_artillery_equipment_1
+         type = heavy_tank_artillery_chassis_1
          amount = 523
          producer = SOV
 }
@@ -268,37 +296,37 @@ add_equipment_to_stockpile = {
 
 
 add_equipment_to_stockpile = {
-         type = fighter_equipment_0
+         type = small_plane_airframe_0
          amount = 1400
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = fighter_equipment_0
+         type = small_plane_airframe_0
          amount = 1200
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = fighter_equipment_0
+         type = small_plane_airframe_0
          amount = 400
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = tac_bomber_equipment_0
+         type = medium_plane_airframe_0
          amount = 300
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = strat_bomber_equipment_1
+         type = large_plane_airframe_1
          amount = 200
          producer = SOV
 }
 add_equipment_to_stockpile = {
-         type = nav_bomber_equipment_1
+         type = small_plane_naval_bomber_airframe_1
          amount = 100
          producer = SOV
 } 
 add_equipment_to_stockpile = {
-         type = CAS_equipment_1
+         type = small_plane_cas_airframe_1
          amount = 500
          producer = SOV
 }
@@ -1083,7 +1111,7 @@ if = {
 }
  create_equipment_variant = {
  	name = "I-15bis"
- 	type = fighter_equipment_0
+ 	type = small_plane_airframe _0
  	upgrades = {
  		plane_gun_upgrade = 3
  		plane_range_upgrade = 5
@@ -1094,7 +1122,7 @@ if = {
  }
  create_equipment_variant = {
  	name = "I-153"
- 	type = fighter_equipment_0
+ 	type = small_plane_airframe _0
  	upgrades = {
  		plane_gun_upgrade = 5
  		plane_range_upgrade = 5
@@ -1162,7 +1190,7 @@ if = {
 
  create_equipment_variant = {
  	name = "Sh-1"
- 	type = CAS_equipment_1 
+ 	type = small_plane_cas_airframe_1
  	upgrades = {
  		plane_cas_upgrade = 0
  		plane_range_upgrade = 2

@@ -1,14 +1,111 @@
-USA_1936
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
 
+	division_names_group = USA_INF_01
 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 4 y = 0 }
+		anti_tank_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon =  { x = 0 y = 1 }
+	}
+}
 
+###### OOB ######
+units = {
+	####### CONUS Theater #######
+	### Carribean Forces ###
 
+	### 1st Army -- note: Armies only paper organizations in 1936 ###
+	# I Army Corps #
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 3957
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
 
+	}					
+}
+	
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
 
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
 
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+		add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	
+			add_equipment_production = { 
+			equipment = { 
+				type = anti_air_equipment_1 
+				creator = "USA" 
+			} 
 
+			requested_factories = 1
+			progress = 0.4 
+			efficiency = 50 
+		} 
+	
 
-
-
-
-
+}
+#####################

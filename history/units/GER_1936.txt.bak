@@ -467,7 +467,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = heavy_tank_chassis_1
+			type = heavy_tank_equipment_1
 			creator = "GER" 
 		}
 		requested_factories = 1
@@ -476,7 +476,7 @@ instant_effect = {
 	}	
 		add_equipment_production = {
 		equipment = {
-			type = light_tank_chassis_2
+			type = light_tank_equipment_2
 			creator = "GER" 
 		}
 		requested_factories = 3

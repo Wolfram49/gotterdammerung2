@@ -11,6 +11,8 @@ set_fuel_ratio = 0.8
 
 add_ideas = { GER_mefo_bills_non_germany }
 
+
+
 add_opinion_modifier = { target = SOV modifier = embargo }
 add_opinion_modifier = { target = SOV modifier = sanctions_relations }
 add_opinion_modifier = { target = SOV modifier = large_decrease }
@@ -35,6 +37,34 @@ set_stability = 0.7
 set_war_support = 0.6
 
 add_timed_idea = { idea = airandnavy_idea days = 1320 }
+
+recruit_character = HUN_miklos_horthy
+recruit_character = HUN_albert_speer
+recruit_character = HUN_shvoy_kalman_highcommand
+recruit_character = HUN_francois_deak
+recruit_character = HUN_gyorgy_jendrassik
+recruit_character = HUN_jeno_ratz
+recruit_character = HUN_henrik_werth
+recruit_character = HUN_hugo_sonyi
+recruit_character = HUN_ferenc_szombathelyi
+recruit_character = HUN_gusztav_jany
+recruit_character = HUN_dezso_laszlo
+recruit_character = HUN_reszo_kastner
+recruit_character = HUN_shvoy_kalman
+recruit_character = HUN_sandor_magyarossy
+recruit_character = HUN_bela_rakosi
+recruit_character = HUN_kalman_kanya
+
+recruit_character = HUN_vilmos_roder
+recruit_character = HUN_zoltan_tildy
+
+recruit_character = HUN_kalman_daranyi
+recruit_character = HUN_lajos_remenyi_schneller
+
+recruit_character = HUN_gyula_gombos_de_jakfa
+
+recruit_character = HUN_franz_friedrich
+
 set_technology = {
 	air_superiority = 1
 	airfield_construction = 1

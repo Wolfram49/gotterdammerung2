@@ -31,6 +31,56 @@ add_intel = {
 set_research_slots = 4
 add_timed_idea = { idea = airandnavy_idea days = 1320 }
 
+recruit_character = FRA_philippe_petain
+recruit_character = FRA_rene_massigli
+recruit_character = FRA_leon_blum
+recruit_character = FRA_pierre_pucheu
+recruit_character = FRA_charles_maurras
+recruit_character = FRA_paul_reynaud
+recruit_character = FRA_charles_tillon
+recruit_character = FRA_pierre_laval
+recruit_character = FRA_edouard_daladier
+recruit_character = FRA_jean_de_lattre_de_tassigny
+recruit_character = FRA_alphonse_juin
+recruit_character = FRA_maurice_gamelin
+recruit_character = FRA_maxime_weygand
+recruit_character = FRA_antoinemariebenoit_besson
+recruit_character = FRA_charles_de_gaulle
+recruit_character = FRA_philippe_leclerc
+recruit_character = FRA_henri_giraud
+recruit_character = FRA_charles_huntziger
+recruit_character = FRA_gastonhenri_billotte
+recruit_character = FRA_henry_freydenberg
+recruit_character = FRA_rene_olry
+recruit_character = FRA_francois_darlan
+recruit_character = FRA_jeanmarie_charles_abrial
+recruit_character = FRA_jeanpierre_esteva
+recruit_character = FRA_jean_de_laborde
+recruit_character = FRA_denis_guillaumat
+recruit_character = FRA_philippe_fequant
+recruit_character = FRA_victor_denain
+recruit_character = FRA_jean_marie_abrial
+recruit_character = FRA_jean_decoux
+recruit_character = FRA_jean_marie_bergeret
+recruit_character = FRA_marcel_gensoul
+
+recruit_character = FRA_rene_emile_godfroy
+recruit_character = FRA_joseph_vuillemin
+recruit_character = FRA_robert_odic
+
+
+recruit_character = FRA_frederic_irene_joliot_curie
+recruit_character = FRA_alfred_heurtaux
+recruit_character = FRA_rene_prioux
+recruit_character = FRA_gaston_henry_haye
+recruit_character = FRA_charles_tillon
+
+recruit_character = FRA_zivony_peshkov
+
+recruit_character = FRA_felix_gouin
+
+
+
 add_opinion_modifier = { target = SOV modifier = embargo }
 add_opinion_modifier = { target = SOV modifier = sanctions_relations }
 add_opinion_modifier = { target = SOV modifier = large_decrease }
@@ -159,7 +209,7 @@ add_equipment_to_stockpile = {
     producer = FRA
 } 
 add_equipment_to_stockpile = {
-    type = gw_tank_equipment
+    type = gw_tank_chassis
     amount = 950
     producer = FRA
 } 
@@ -232,17 +282,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Maurice Thorez"
-	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "Portrait_France_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = 	stalinism
-	traits = {
-
 	}
 }
 

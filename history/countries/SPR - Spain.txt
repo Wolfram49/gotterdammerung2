@@ -37,9 +37,51 @@ add_ideas = {
 
 add_timed_idea = { idea = airandnavy_idea days = 1350 }
 
+	recruit_character = SPR_niceto_alcala_zamora
+	recruit_character = SPA_enrique_canovas_lacruz
+	recruit_character = SPR_jose_diaz
+	
+	recruit_character = SPA_wilhelm_ritter_von_thoma
+	recruit_character = SPA_heli_rolando_de_tella
+	recruit_character = SPA_rafael_garcia_valino
+	
+	recruit_character = SPA_miguel_ponte
+	recruit_character = SPR_alejandro_lerroux
+	recruit_character = SPA_francisco_franco
+	recruit_character = SPR_jose_asensio_torrado
+	recruit_character = SPR_albert_speer
+	recruit_character = SPR_diego_hidalgo_duran
+	recruit_character = SPA_tomas_dominguez_arevalo
+	recruit_character = SPA_diego_hidalgo_y_duran
+	recruit_character = SPA_luis_carrero_blanco
+	recruit_character = SPA_joaquin_garcia_morato
+	recruit_character = SPR_andres_saborit_colomer
+	recruit_character = SPA_miguel_cabanellas
+	recruit_character = SPR_jose_miaja
+	recruit_character = SPA_raimundo_fernandez_cuesta
+	recruit_character = SPA_jose_antonio_giron
+	recruit_character = SPA_juan_yague
+	recruit_character = SPA_manuel_hedilla
+	recruit_character = SPA_emilio_esteban_infantes
+	recruit_character = SPA_salvador_moreno_fernandez
+	recruit_character = SPR_vicente_rojo_lluch
+	recruit_character = SPR_miguel_buiza_fernandez_palacios
+	recruit_character = SPA_fransisco_moreno_fernandez
+	recruit_character = SPR_luis_gonzalez_de_ubieta
+	recruit_character = SPA_emilio_herrera
+	recruit_character = SPR_carlos_masquelet_lacaci
+	recruit_character = SPR_indalecio_prieto_tuero
+	recruit_character = SPA_angel_salas_larrazabal
+	recruit_character = SPR_ignacio_hidalgo_de_cisneros
+	recruit_character = SPA_emilio_mola
+	recruit_character = SPA_alfredo_kindelan_duany
+	recruit_character = SPR_nicolas_molero
+
 set_technology = {
 	noports = 1
 	Spain_INF = 1
+	forgotearly_fighter = 1
+	forgotearly_bomber = 1
 	air_superiority = 1
 	interwar_antiair = 1
 	infantry_weapons = 1
@@ -124,6 +166,7 @@ if = {
 		early_ship_hull_heavy = 1
 		basic_battery = 1
 		basic_medium_battery = 1
+		basic_secondary_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		mtg_transport = 1

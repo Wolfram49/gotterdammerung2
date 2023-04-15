@@ -15,6 +15,73 @@ navy_experience = 0
 set_research_slots = 5
 
 add_timed_idea = { idea = airandnavy_idea days = 1825 }
+recruit_character = USA_william_dudley_pelley
+recruit_character = USA_franklin_delano_roosevelt
+recruit_character = USA_george_s_patton
+recruit_character = USA_george_s_patton_highcommand
+recruit_character = USA_omar_bradley
+recruit_character = USA_dwight_d_eisenhower
+recruit_character = USA_geoffrey_keyes
+recruit_character = USA_lucian_truscott
+recruit_character = USA_mark_clark
+recruit_character = USA_douglas_macarthur
+recruit_character = USA_walter_krueger
+recruit_character = USA_lloyd_fredendall
+recruit_character = USA_leslie_mcnair
+recruit_character = USA_jonathan_wainwright
+recruit_character = USA_russell_hartle
+recruit_character = USA_leonard_gerow
+recruit_character = USA_edward_brooks
+recruit_character = USA_clarence_huebner
+recruit_character = USA_alexander_patch
+recruit_character = USA_william_simpson
+recruit_character = USA_stonewall_campbell
+recruit_character = USA_wade_babcock
+recruit_character = USA_j_lawton_collins
+recruit_character = USA_courtney_hodges
+recruit_character = USA_joseph_stilwell
+recruit_character = USA_oscar_griswold
+recruit_character = USA_maurice_rose
+recruit_character = USA_alexander_vandegrift
+recruit_character = ernest_king_1
+recruit_character = ernest_king_2
+recruit_character = USA_chester_w_nimitz
+recruit_character = USA_william_halsey_jr
+recruit_character = USA_frank_jack_fletcher
+recruit_character = USA_raymond_a_spruance
+recruit_character = USA_harold_rainsford_stark
+recruit_character = USA_arleigh_burke
+recruit_character = USA_charles_m_cooke_jr
+recruit_character = USA_carnot_wheeler
+recruit_character = USA_robert_goddard
+recruit_character = USA_robert_oppenheimer
+recruit_character = USA_curtis_lemay
+recruit_character = USA_thomas_kinkaid
+recruit_character = USA_henry_arnold
+recruit_character = USA_dewitt_clinton_ramsey
+recruit_character = USA_harold_mcclelland
+recruit_character = USA_charles_lindbergh
+recruit_character = USA_george_kenney
+recruit_character = USA_john_cannon
+recruit_character = USA_george_marshall
+recruit_character = USA_carl_spaatz
+recruit_character = USA_marc_mitscher
+recruit_character = USA_jimmy_doolittle
+recruit_character = USA_claire_lee_chennault
+recruit_character = USA_john_winant
+
+
+recruit_character = USA_robert_taft
+recruit_character = USA_donald_nelson
+
+recruit_character = USA_cordell_hull
+
+recruit_character = USA_william_regnery
+recruit_character = USA_joseph_patterson
+recruit_character = USA_henry_stimson
+recruit_character = USA_victor_perlo
+
+
 
 add_opinion_modifier = { target = JAP modifier = jap_trade }
 add_opinion_modifier = { target = JAP modifier = jap_trade_2 }
@@ -27,6 +94,13 @@ add_opinion_modifier = { target = JAP modifier = jap_trade_4 }
 # Starting tech
 set_technology = {
 	heavy_fighter1 = 1
+	forgotearly_fighter = 1
+	forgotearly_bomber = 1
+	forgotearly_ship_hull_light = 1
+	forgotearly_ship_hull_cruiser = 1
+	forgotearly_ship_hull_heavy = 1
+	forgotearly_ship_hull_submarine = 1
+	forgotearly_ship_hull_carrier = 1
 	improved_airplane_launcher = 1
 	airfield_construction = 1
 	fort_construction = 1
@@ -113,6 +187,8 @@ if = {
 		basic_torpedo = 1
 		sonar = 1
 		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
@@ -160,32 +236,32 @@ add_equipment_to_stockpile = {
 
 
 add_equipment_to_stockpile = {
-         type = CAS_equipment_1
+         type = small_plane_cas_airframe_1
          amount = 100
          producer = USA
 }
 add_equipment_to_stockpile = {
-         type = tac_bomber_equipment_0
+         type = medium_plane_airframe_0
          amount = 250
          producer = USA
 }
 add_equipment_to_stockpile = {
-         type = heavy_fighter_equipment_1
+         type = medium_plane_fighter_airframe _1
          amount = 100
          producer = USA
 }
 add_equipment_to_stockpile = {
-         type = nav_bomber_equipment_1
+         type = small_plane_naval_bomber_airframe_1
          amount = 100
          producer = USA
 }
 add_equipment_to_stockpile = {
-         type = cv_fighter_equipment_1
+         type = cv_small_plane_airframe _1
          amount = 100
          producer = USA
 }
 add_equipment_to_stockpile = {
-         type = cv_nav_bomber_equipment_1
+         type = cv_small_plane_naval_bomber_airframe_1
          amount = 100
          producer = USA
 }

@@ -258,12 +258,12 @@ add_equipment_to_stockpile = {
 
 
 add_equipment_to_stockpile = {
-	type = cv_nav_bomber_equipment_1
+	type = cv_small_plane_naval_bomber_airframe_1
     amount = 175
     producer = ENG
 }
 add_equipment_to_stockpile = {
-	type = cv_fighter_equipment_1
+	type = cv_small_plane_airframe_1
     amount = 75
     producer = ENG
 }
@@ -271,37 +271,37 @@ add_equipment_to_stockpile = {
 
 
 add_equipment_to_stockpile = {
-         type = fighter_equipment_1
+         type = small_plane_airframe_1
          amount = 500
          producer = ENG
 }
 add_equipment_to_stockpile = {
-         type = fighter_equipment_0
+         type = small_plane_airframe_0
          amount = 500
          producer = ENG
 }
 add_equipment_to_stockpile = {
-         type = CAS_equipment_1
+         type = small_plane_cas_airframe_1 
          amount = 300
          producer = ENG
 }
 add_equipment_to_stockpile = {
-         type = tac_bomber_equipment_0
+         type = medium_plane_airframe_0
          amount = 200
          producer = ENG
 }
 add_equipment_to_stockpile = {
-         type = tac_bomber_equipment_1
+         type = medium_plane_airframe_1
          amount = 200
          producer = ENG
 }
 add_equipment_to_stockpile = {
-         type = heavy_fighter_equipment_1
+         type = medium_plane_fighter_airframe _1
          amount = 100
          producer = ENG
 }
 add_equipment_to_stockpile = {
-         type = nav_bomber_equipment_1
+         type = small_plane_naval_bomber_airframe_1
          amount = 100
          producer = ENG
 }
@@ -341,6 +341,76 @@ add_to_faction = RAJ		# Must be after puppet
 #give_guarantee = CZE
 
 # Order matters - here Chamberlain becomes starting leader
+recruit_character = ENG_stanley_baldwin
+recruit_character = ENG_alan_brooke
+recruit_character = ENG_bernard_montgomery
+recruit_character = ENG_claude_auchinleck
+recruit_character = ENG_neil_ritchie
+recruit_character = ENG_alan_cunningham
+recruit_character = ENG_arthur_harris_highcommand
+recruit_character = ENG_jfc_fuller_highcommand
+recruit_character = ENG_william_slim
+recruit_character = ENG_richard_oconnor
+recruit_character = ENG_william_platt
+recruit_character = ENG_george_giffard
+recruit_character = ENG_jackie_smyth
+recruit_character = ENG_thomas_jacomb_hutton
+recruit_character = ENG_arthur_percival
+recruit_character = ENG_merton_beckwithsmith
+recruit_character = ENG_henry_pownall
+recruit_character = ENG_john_vereker
+recruit_character = ENG_henry_wilson
+recruit_character = ENG_william_gott
+recruit_character = ENG_jock_campbell
+recruit_character = ENG_oliver_leese
+recruit_character = ENG_jfc_fuller
+recruit_character = ENG_miles_dempsey
+recruit_character = ENG_brian_horrocks
+recruit_character = ENG_archibald_wavell
+recruit_character = ENG_james_fownes_somerville
+recruit_character = ENG_henry_harwood
+recruit_character = ENG_claude_auchinleck
+recruit_character = ENG_andrew_cunningham
+recruit_character = ENG_bruce_fraser
+recruit_character = ENG_john_tovey
+recruit_character = ENG_bernard_rawlings
+recruit_character = ENG_john_cunningham
+recruit_character = ENG_charles_forbes
+recruit_character = ENG_algernon_willis
+recruit_character = ENG_arthur_power
+recruit_character = ENG_horatio_dundas
+recruit_character = ENG_clement_attlee
+recruit_character = ENG_edmund_ironside
+recruit_character = ENG_david_stirling
+recruit_character = ENG_james_somerville
+recruit_character = ENG_kenneth_anderson
+recruit_character = ENG_louis_mountbatten
+recruit_character = ENG_james_chadwick
+recruit_character = ENG_arthur_harris
+recruit_character = ENG_frank_whittle
+recruit_character = ENG_random_communist_minister_15
+recruit_character = ENG_random_communist_minister_14
+recruit_character = ENG_ernle_chatfield
+recruit_character = ENG_trafford_leigh_mallory
+recruit_character = ENG_max_horton
+recruit_character = ENG_hugh_dowding
+recruit_character = ENG_charles_portal
+recruit_character = ENG_dudley_pound
+recruit_character = ENG_raymond_briggs
+recruit_character = ENG_frederick_bowhill
+recruit_character = ENG_cyril_newall
+recruit_character = ENG_sholto_douglas
+recruit_character = ENG_edward_ellington
+
+
+
+
+recruit_character = ENG_ernest_bevin
+recruit_character = ENG_leslie_hore_belisha
+recruit_character = ENG_nevile_henderson
+recruit_character = ENG_philip_kerr
+recruit_character = ENG_maxwell_aitken
+recruit_character = ENG_thomas_moore
 
 create_country_leader = {
 	name = "Winston Churchill"
@@ -1156,7 +1226,7 @@ if = {
 
 	create_equipment_variant = {
 		name = "Hurricane 109 B"
-		type = fighter_equipment_1
+		type = small_plane_airframe_1
 		upgrades = {
 			plane_range_upgrade = 4
 			plane_engine_upgrade = 0

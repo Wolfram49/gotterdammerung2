@@ -1,10 +1,8 @@
-capital = 276
+capital = 285
 set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-
-set_variable = { ROOT.SpecOpsLimit = 160 }
 
 add_opinion_modifier = { target = JAP modifier = embargo }
 add_opinion_modifier = { target = JAP modifier = sanctions }
@@ -26,54 +24,44 @@ add_intel = {
 	airforce_intel = 200
 }
 
-oob = "CAN_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_naval_oob = "CAN_1936_naval_mtg"
-	else = {
-		set_naval_oob = "CAN_1936_naval_legacy"
-	}
-}
+set_variable = { ROOT.SpecOpsLimit = 160 }
+oob = "AST_1936"
+set_stability = 0.8
+set_war_support = 0.3
 set_research_slots = 4
-
-recruit_character = CAN_mackenzie_king
-recruit_character = CAN_adrien_arcand
-recruit_character = CAN_tim_buck
-recruit_character = CAN_j_s_woodsworth
-recruit_character = CAN_thomas_victor_anderson
-recruit_character = CAN_charles_foulkes
-recruit_character = CAN_percival_john_montague
-recruit_character = CAN_bert_hoffmeister
-recruit_character = CAN_leonard_w_murray
-recruit_character = CAN_ht_bailliegrohman
-recruit_character = CAN_james_d_prentice
-recruit_character = CAN_harry_dewolf
-recruit_character = CAN_george_pearkes
-recruit_character = CAN_john_murchie
-recruit_character = CAN_harold_edwards
-recruit_character = CAN_frederick_m_w_harvey
-recruit_character = CAN_harry_crerar
-recruit_character = CAN_robert_leckie
-recruit_character = CAN_kenneth_stuart
-recruit_character = CAN_andrew_mcnaughton
-recruit_character = CAN_raymond_collishaw
-recruit_character = CAN_guy_simonds
-recruit_character = CAN_gino_verchiella
-recruit_character = CAN_alasdair_murray
-recruit_character = CAN_george_volkoff
-recruit_character = CAN_george_croil
-recruit_character = CAN_percy_nelles
-recruit_character = CAN_robert_manion
-recruit_character = CAN_ian_a_mackenzie
-recruit_character = CAN_c_d_howe
-recruit_character = CAN_newton_wesley_rowell
-recruit_character = CAN_james_ilsley
-recruit_character = CAN_leo_richer_lafleche
-recruit_character = CAN_r_b_bennett
-recruit_character = CAN_louis_st_laurent
-
-set_country_flag = monroe_doctrine
 add_timed_idea = { idea = airandnavy_idea days = 1320 }
+recruit_character = AST_john_curtin
+recruit_character = AST_eric_campbell
+recruit_character = AST_richard_dixon
+recruit_character = AST_earle_page
+recruit_character = AST_rod_hull
+recruit_character = AST_leslie_morshead
+recruit_character = AST_thomas_blamey
+recruit_character = AST_henry_wynter
+recruit_character = AST_alan_vasey
+recruit_character = AST_horace_robertson
+recruit_character = AST_john_northcott
+recruit_character = AST_harold_farncomb
+recruit_character = AST_victor_crutchley
+recruit_character = AST_clive_caldwell
+recruit_character = AST_sydney_rowell
+recruit_character = AST_richard_williams
+recruit_character = AST_iven_mackay
+recruit_character = AST_ragnar_colvin
+recruit_character = AST_norman_makin
+recruit_character = AST_james_fairbairn
+recruit_character = AST_john_collins
+recruit_character = AST_arthur_allen
+recruit_character = AST_vernon_sturdee
+recruit_character = AST_jack_crace
+recruit_character = AST_cederic_hicks
+recruit_character = AST_charles_burnett
+recruit_character = AST_edmund_herring
+recruit_character = AST_arthur_drakeford
+recruit_character = AST_john_lavarack
+recruit_character = AST_robert_g_menzies
+recruit_character = AST_ben_chifley
+recruit_character = AST_arthur_calwell
 # Starting tech
 set_technology = {
 	forgotgwtank = 1
@@ -85,10 +73,9 @@ set_technology = {
 	forgotearly_ship_hull_submarine = 1
 	forgotearly_ship_hull_carrier = 1
 	air_superiority = 1
+	improved_airplane_launcher = 1
 	airfield_construction = 1
 	fort_construction = 1
-	interwar_antiair = 1
-	motorised_infantry = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -96,23 +83,18 @@ set_technology = {
 	tech_recon = 1
 	gw_artillery = 1
 	gwtank = 1
-	basic_light_tank = 1
-	improved_light_tank = 1
-	basic_heavy_tank = 1  # PLACEHOLDER	
 	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
 	naval_bomber1 = 1
 	early_bomber = 1
+	CAS1 = 1
 	trench_warfare = 1
-	fleet_in_being = 1
-	tech_field_hospital = 1
-	support_weapons = 1
-	tech_logistics_company = 1
 	fuel_silos = 1
 	fuel_refining = 1
-	desertinfantry_at = 1
-	interwar_antitank = 1	
-	tech_mountaineers = 1	
-	synth_oil_experiments = 1	
+	fleet_in_being = 1
+	interwar_antiair = 1
+	synth_oil_experiments = 1
 		basic_ship_hull_submarine = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
@@ -138,105 +120,98 @@ set_technology = {
 		basic_fire_control_system = 1
 		cruiser_submarines = 1
 }
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_destroyer = 1
-		early_light_cruiser = 1
-		transport = 1
-	}
-}
 
+add_opinion_modifier = { target = NZL modifier = huge_increase  }
+add_opinion_modifier = { target = NZL modifier = huge_increase  }
+add_opinion_modifier = { target = NZL modifier = huge_increase  }
+add_opinion_modifier = { target = SPR modifier = embargo }
+add_opinion_modifier = { target = SPR modifier = sanctions_relations }
+add_opinion_modifier = { target = SPR modifier = large_decrease }
+add_opinion_modifier = { target = SPR modifier = hostile_status }
 if = {
 	limit = {
 		has_dlc = "La Resistance"
 	}
 	set_technology = { armored_car1 = 1	}
 }
-
 if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_torpedo = 1
-		basic_depth_charges = 1
-		mtg_transport = 1
+	limit = {
+		not = { has_dlc = "Man the Guns" }
 	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+	set_naval_oob = "AST_1936_naval_legacy"
 }
 if = {
-	limit = { NOT = { has_dlc = "Together for Victory" } }
-	set_cosmetic_tag = CAN_ALY
+	limit = {
+		 has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		mtg_transport = 1
+	}
+	set_naval_oob = "AST_1936_naval"
 }
 
 	add_ideas = GDU_refinery_prebuild_disincentive
-	add_ideas = CAN_great_depression_1
-	add_ideas = CAN_conscription_crisis
-	set_cosmetic_tag = CAN_UK
-
+	add_ideas = AST_great_depression_1
 	add_to_tech_sharing_group = commonwealth_research
 
 
+set_politics = {
+	ruling_party = democratic
+	last_election = "1934.9.15"
+	election_frequency = 36
+	elections_allowed = yes
+}
 add_equipment_to_stockpile = {
          type = artillery_equipment_1
-         amount = 2505
-         producer = CAN
+         amount = 1233
+         producer = AST
 }  
 add_equipment_to_stockpile = {
          type = support_equipment
-         amount = 1351
-         producer = CAN
-} 
-add_equipment_to_stockpile = {
-         type = anti_tank_equipment_1
-         amount = 1250
-         producer = CAN
-} 
-add_equipment_to_stockpile = {
-         type = infantry_equipment_1
-         amount = 6000
-         producer = CAN
-} 
-add_equipment_to_stockpile = {
-         type = infantry_equipment_0
-         amount = 7000
-         producer = CAN
+         amount = 287
+         producer = AST
 } 
 add_equipment_to_stockpile = {
          type = motorized_equipment_1
-         amount = 230
-         producer = CAN
-}
+         amount = 200
+         producer = AST
+} 
 add_equipment_to_stockpile = {
-         type = heavy_tank_chassi_1
-         amount = 400
-         producer = CAN
-}
+         type = infantry_equipment_1
+         amount = 4000
+         producer = AST
+} 
 add_equipment_to_stockpile = {
-         type = light_tank_chassis_2
-         amount = 800
-         producer = CAN
-}
-add_equipment_to_stockpile = {
-         type = light_tank_chassis_1
-         amount = 400
-         producer = CAN
+         type = infantry_equipment_0
+         amount = 2000
+         producer = AST
 } 
 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-    amount = 1141
-    producer = CAN
+    amount = 733
+    producer = AST
 }
-
-set_politics = {
-	ruling_party = democratic
-	last_election = "1935.10.14"
-	election_frequency = 60
-	elections_allowed = yes
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+    amount = 250
+    producer = AST
 }
 
 set_popularities = {
@@ -246,42 +221,42 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Mackenzie King"
-	desc = "POLITICS_MACKENZIE_KING_DESC"
-	picture = "Portrait_Canada_Mackenzie_King.dds"
+	name = "John Curtin"
+	desc = "POLITICS_JOHN_CURTIN_DESC"
+	picture = "Portrait_Australia_John_Curtin.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socialism
 #	traits = {
 #		#
 #	}
 }
 
 create_country_leader = {
-	name = "Adrien Arcand"
-	desc = "POLITICS_ADRIEN_ARCAND_DESC"
-	picture = "GFX_CAN_adrien_arcand"
+	name = "Eric Campbell"
+	desc = "POLITICS_ERIC_CAMPBELL_DESC"
+	picture = "GFX_AST_eric_campbell"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = fascism_ideology
 #	traits = {
 #		#
 #	}
 }
 
 create_country_leader = {
-	name = "Tim Buck"
-	desc = "POLITICS_TIM_BUCK_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	name = "Richard Dixon"
+	desc = "POLITICS_RICHARD_DIXON_DESC"
+	picture = "GFX_AST_richard_dixon"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = stalinism
 #	traits = {
 #		#
 #	}
 }
 
 create_country_leader = {
-	name = "J. S. Woodsworth"
-	desc = "POLITICS_JS_WOODSWORTH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	name = "Earle Page"
+	desc = "POLITICS_EARLE_PAGE_DESC"
+	picture = "GFX_AST_earle_page"
 	expire = "1965.1.1"
 	ideology = centrism
 #	traits = {
@@ -289,177 +264,198 @@ create_country_leader = {
 #	}
 }
 
-set_convoys = 100
-set_stability = 0.8
-set_war_support = 0.1
+create_country_leader = {
+	name = "Rod Hull"
+	desc = ""
+	picture = "Portrait_Australia_Rod_Hull.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+#	traits = {
+#		#
+#	}
+}
 
-create_corps_commander = {
-	name = "Thomas Victor Anderson"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { infantry_leader trait_engineer career_officer trait_mountaineer ranger trait_cautious}
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
+set_convoys = 100
+
+create_field_marshal = {
+	name = "Leslie Morshead"
+	gfx = "GFX_AST_leslie_morshead"
+	traits = { naval_invader infantry_leader organizer inflexible_strategist old_guard career_officer jungle_rat war_hero}
+	skill = 5
+
+	attack_skill = 5
+	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 3
 }
 
-create_field_marshal = {
-	name = "Charles Foulkes"
-	gfx = "GFX_CAN_charles_foulkes"
-	traits = { brilliant_strategist organizer infantry_leader old_guard skilled_staffer politically_connected}
-	skill = 5
-		attack_skill = 3
-		defense_skill = 4
-		planning_skill = 2
-		logistics_skill = 6
-}
-create_field_marshal = {
-	name = "Charles Foulkes AFRICANUS"
-	gfx = "AFRICA_GFX_CAN_charles_foulkes"
-	traits = { brilliant_strategist organizer desert_fox infantry_leader old_guard skilled_staffer politically_connected}
-	skill = 5
-		attack_skill = 4
-		defense_skill = 5
-		planning_skill = 2
-		logistics_skill = 6
-}
 
-create_corps_commander = {
-	name = "John Montague"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { armor_officer panzer_leader trickster hill_fighter trait_cautious}
-	skill = 5
-		attack_skill = 4
-		defense_skill = 5
-		planning_skill = 4
-		logistics_skill = 5
-}
-create_corps_commander = {
-	name = "Bert Hoffmeister"
-	gfx = "GFX_CAN_bert_hoffmeister"
-	traits = { hill_fighter trait_engineer trait_reckless harsh_leader infantry_officer}
-	skill = 5
-		attack_skill = 5
-		defense_skill = 4
-		planning_skill = 3
-		logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Georges Vanier"
-	picture = "Portrait_CAN_Georges_Vanier.tga"
-	traits = { skilled_staffer old_guard organizer politically_connected trait_cautious panzer_leader trait_engineer} 
-	skill = 4
-		attack_skill = 3
-		defense_skill = 2
-		planning_skill = 5
-		logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Georges Vanier AFRICANUS"
-	picture = "AFRICA_Portrait_CAN_Georges_Vanier.dds"
-	traits = { skilled_staffer old_guard organizer politically_connected desert_fox trait_cautious trait_engineer panzer_leader} 
-	skill = 4
-		attack_skill = 4
-		defense_skill = 3
-		planning_skill = 5
-		logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Guy Simonds"
-	picture = "Portrait_CAN_Guy_Simonds.tga"
-	traits = { naval_invader infantry_leader urban_assault_specialist commando trait_engineer trait_reckless media_personality}
-	skill = 4
-		attack_skill = 6
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 1
-}
+
 create_field_marshal = {
-	name = "Harry Crerar"
-	picture = "Portrait_CAN_Harry_Crerar.tga"
-	traits = {  infantry_leader war_hero media_personality career_officer brilliant_strategist naval_invader}
+	name = "Thomas Blamey"
+	gfx = "GFX_AST_thomas_blamey"
+	traits = { old_guard skilled_staffer organizer infantry_officer politically_connected trait_cautious }
 	skill = 5
-		attack_skill = 5
-		defense_skill = 4
-		planning_skill = 4
-		logistics_skill = 2
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 6
 }
 create_corps_commander = {
-	name = "Kenneth Stuart"
-	picture = "Portrait_CAN_Kenneth_Stuart.tga"
-	traits = { career_officer trickster infantry_leader cavalry_officer panzer_leader  skilled_staffer old_guard trait_cautious brilliant_strategist}
-	skill = 5
-		attack_skill = 8
-		defense_skill = 1
-		planning_skill = 4
-		logistics_skill = 2
+	name = "Henry Wynter"
+	gfx = "GFX_AST_henry_wynter"
+	traits = { infantry_leader infantry_officer harsh_leader infantry_leader organizer jungle_rat}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 5
 }
 create_corps_commander = {
-	name = "Kenneth Stuart AFRICANUS"
-	picture = "AFRICA_Portrait_CAN_Kenneth_Stuart.dds"
-	traits = { desert_fox career_officer trickster infantry_leader cavalry_officer panzer_leader  skilled_staffer old_guard trait_cautious brilliant_strategist}
-	skill = 5
-		attack_skill = 9
-		defense_skill = 2
-		planning_skill = 4
-		logistics_skill = 2
+	name = "Henry Wynter AFRICANUS"
+	gfx = "AFRICA_GFX_AST_henry_wynter"
+	traits = { infantry_leader infantry_officer harsh_leader desert_fox infantry_leader organizer  }
+	skill = 4
+	attack_skill = 6
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
 }
-create_navy_leader = {
-	name = "Leonard W. Murray"
-	gfx = "GFX_CAN_leonard_warren_murray"
-	traits = { fly_swatter }
+create_corps_commander = {
+	name = "Alan Vasey"
+	gfx = "GFX_AST_alan_vasey"
+	traits = { hill_fighter infantry_leader infantry_officer politically_connected skilled_staffer}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 7
+}
+create_corps_commander = {
+	name = "Horace Robertson"
+	gfx = "GFX_AST_horace_robertson"
+	traits = { infantry_leader cavalry_officer harsh_leader trait_reckless panzer_leader}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 7
+}
+create_corps_commander = {
+	name = "Horace Robertson AFRICANUS"
+	gfx = "AFRICA_GFX_AST_horace_robertson"
+	traits = { desert_fox infantry_leader cavalry_officer harsh_leader trait_reckless panzer_leader}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 7
+}
+create_corps_commander = {
+	name = "John Northcott"
+	gfx = "GFX_AST_john_northcott"
+	traits = { panzer_leader armor_officer jungle_rat trait_cautious }
 	skill = 4
 	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Frank Berryman"
+	picture = "Portrait_AST_Frank_Berryman.tga"
+	traits = { infantry_leader infantry_officer old_guard career_officer jungle_rat}
+	skill = 5
+	attack_skill = 2
+	defense_skill = 6
+	planning_skill = 3
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Brudenell White"
+	picture = "Portrait_AST_Brudenell_White.tga"
+	traits = { harsh_leader trait_cautious old_guard naval_invader jungle_rat war_hero commando}
+	skill = 5
+	attack_skill = 5
 	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Iven Mackay"
+	picture = "Portrait_AST_Iven_Mackay.tga"
+	traits = { old_guard infantry_leader skilled_staffer career_officer harsh_leader brilliant_strategist trickster}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Iven Mackay AFRICANUS"
+	picture = "AFRICA_Portrait_AST_Iven_Mackay.tga"
+	traits = { desert_fox old_guard infantry_leader skilled_staffer career_officer harsh_leader brilliant_strategist trickster}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "John Lavarack"
+	picture = "Portrait_AST_John_Lavarack.tga"
+	traits = { career_officer hill_fighter trait_mountaineer trickster inflexible_strategist trait_cautious }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
 }
 
 create_navy_leader = {
-	name = "H.T. Baillie-Grohman"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { spotter }
+	name = "Harold Farncomb"
+	gfx = "GFX_AST_harold_farncomb"
+	traits = { superior_tactician ironside blue_water_expert }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 3
 	maneuvering_skill = 3
 	coordination_skill = 4
 }
+
 create_navy_leader = {
-	name = "James D. Prentice"
-	gfx = "GFX_CAN_james_prentice"
-	traits = { fleet_protector spotter green_water_expert }
+	name = "Victor Crutchley"
+	gfx = "GFX_AST_victor_crutchley"
+	traits = { bold fleet_protector fly_swatter spotter green_water_expert }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
 	maneuvering_skill = 3
 	coordination_skill = 2
 }
-create_navy_leader = {
-	name = "Harry DeWolf"
-	gfx = "GFX_CAN_harry_dewolf"
-	traits = { bold fleet_protector superior_tactician inshore_fighter }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 5
-}
-
-### VARIANTS ###
-# 1936 Start #
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
+	
 	create_equipment_variant = {
-		name = "Sanguenay Class"
-		type = destroyer_1
+		name = "Sydney Class"
+		type = light_cruiser_1
 		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 1
-			ship_ASW_upgrade = 1
-			ship_anti_air_upgrade = 1
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_gun_upgrade = 2
+			ship_anti_air_upgrade = 2
+		}
+	}
+	
+	create_equipment_variant = {
+		name = "Canberra Class"
+		type = heavy_cruiser_1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 2
+			ship_gun_upgrade = 2
 		}
 	}
 }
@@ -486,7 +482,7 @@ if = {
 		name = "SS2"
 		type = ship_hull_submarine_2
 		name_group = ENG_SS_HISTORICAL
-		parent_version = 0
+		parent_version = 2
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
 			fixed_ship_engine_slot = sub_ship_engine_2
@@ -523,8 +519,8 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_2
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 			fixed_ship_radar_slot = ship_sonar_1
-			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_1
+			fixed_ship_engine_slot = light_ship_engine_2			
 			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_depth_charge_1
 		}
@@ -704,5 +700,4 @@ if = {
 	}
 	
 }
-
 

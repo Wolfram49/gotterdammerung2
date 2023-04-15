@@ -398,7 +398,7 @@ instant_effect =
 
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_chassis_1
+			type = light_tank_equipment_1
 			creator = "JAP" 
 		}
 		requested_factories = 1
@@ -427,7 +427,7 @@ instant_effect =
 	
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_1
+			type = small_plane_airframe _1
 			creator = "JAP"
 		}
 		requested_factories = 2
@@ -487,7 +487,7 @@ instant_effect =
 	
 	add_equipment_production = {
 		equipment = {
-			type = heavy_fighter_equipment_1
+			type = medium_plane_fighter_airframe  _1
 			creator = "JAP" 
 		}
 		requested_factories = 1

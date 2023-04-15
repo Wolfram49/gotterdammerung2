@@ -307,7 +307,7 @@ instant_effect = {
 	}	
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_1
+			type = small_plane_airframe _1
 			creator = "ENG"
 			version_name = "Hurricane 109 B"
 		}
@@ -348,7 +348,7 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = heavy_fighter_equipment_1
+			type = medium_plane_fighter_airframe  _1
 			creator = "ENG" 
 		}
 		requested_factories = 1
@@ -368,7 +368,7 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = cv_fighter_equipment_1
+			type = cv_small_plane_airframe _1
 			creator = "ENG" 
 		}
 		requested_factories = 1

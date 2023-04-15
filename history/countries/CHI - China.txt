@@ -19,7 +19,7 @@ add_equipment_to_stockpile = {
          producer = JAP
 }
 add_equipment_to_stockpile = {
-         type = fighter_equipment_0
+         type = small_plane_airframe_0
          amount = 45
          producer = JAP
 }
