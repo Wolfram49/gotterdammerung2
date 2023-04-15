@@ -10,7 +10,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-
+			reliability = 0.05
+			fuel_consumption = 1.5
 		}
 		multiply_stats = {
 		}
@@ -23,8 +24,11 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
+			fuel_consumption = 2
 		}
-		multiply_stats = {  }
+		multiply_stats = { 
+			maximum_speed = 0.1
+		}
 	}
 
 	tank_petrol_electric_engine = {
@@ -33,8 +37,11 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
+			reliability = -0.05
+			fuel_consumption = 0.75
 		}
 		multiply_stats = {
+			
 		}
 	}
 
@@ -47,7 +54,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			soft_attack = 1 # that's when rivets shoot back because they got dislodged by the shock. That was in fact the first reactive armor.
+			##soft_attack = 1 # that's when rivets shoot back because they got dislodged by the shock. That was in fact the first reactive armor.
 		}
 		xp_cost = 0
 		multiply_stats = {
@@ -96,6 +103,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
+			breakthrough = 4
 		}
 		dismantle_cost_ic  = 2
 
@@ -109,6 +117,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
+			breakthrough = 6
+			reliability = -0.025
 		}
 		dismantle_cost_ic  = 1
 
@@ -120,6 +130,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
+			breakthrough = 8
+			reliability = -0.05
 		}
 		dismantle_cost_ic  = 2
 
@@ -193,7 +205,6 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 1
-			maximum_speed = -0.25
 			breakthrough = 14
 		}
 		##dismantle_cost_ic =   0.5
@@ -273,7 +284,6 @@ equipment_modules = {
 		}
 		add_stats = {
 			build_cost_ic = 2
-			maximum_speed = -0.25
 			breakthrough = 24
 		}
 		##dismantle_cost_ic =   1
@@ -366,7 +376,6 @@ equipment_modules = {
 		xp_cost = 0
 		add_stats = {
 			build_cost_ic = 5.5
-			maximum_speed = -0.25
 			breakthrough = 22
 		}
 
@@ -735,7 +744,7 @@ equipment_modules = {
 			build_cost_ic = 3
 			maximum_speed = 0
 			reliability = -0.15
-			breakthrough = 10
+			breakthrough = 2
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -764,7 +773,7 @@ equipment_modules = {
 			build_cost_ic = 3
 			maximum_speed = 0
 			reliability = -0.15
-			breakthrough = 13.5
+			breakthrough = 5.5
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -792,7 +801,7 @@ equipment_modules = {
 			build_cost_ic = 3
 			maximum_speed = 0
 			reliability = -0.15
-			breakthrough = 17
+			breakthrough = 9
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -820,7 +829,7 @@ equipment_modules = {
 			build_cost_ic = 3
 			maximum_speed = 0
 			reliability = -0.15
-			breakthrough = 10
+			breakthrough = 2
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -847,7 +856,7 @@ equipment_modules = {
 			build_cost_ic = 3
 			maximum_speed = 0
 			reliability = -0.15
-			breakthrough = 13.5
+			breakthrough = 5.5
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -874,7 +883,7 @@ equipment_modules = {
 			build_cost_ic = 3
 			maximum_speed = 0
 			reliability = -0.15
-			breakthrough = 17
+			breakthrough = 9
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -902,7 +911,7 @@ equipment_modules = {
 			build_cost_ic = 3
 			maximum_speed = 0
 			reliability = -0.15
-			breakthrough = 6
+			breakthrough = 2
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -930,7 +939,7 @@ equipment_modules = {
 			build_cost_ic = 3
 			maximum_speed = 0
 			reliability = -0.15
-			breakthrough = 15
+			breakthrough = 7
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -958,7 +967,7 @@ equipment_modules = {
 			build_cost_ic = 3
 			maximum_speed = 0
 			reliability = -0.15
-			breakthrough = 20
+			breakthrough = 12
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -986,7 +995,6 @@ equipment_modules = {
 			build_cost_ic = 3
 			maximum_speed = -2
 			reliability = -0.3
-			breakthrough = -40
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
