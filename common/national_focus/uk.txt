@@ -360,7 +360,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 500		
+			army_experience = 200		
 			add_tech_bonus = {
 				name = medium1_bonus
 				bonus = 0.5
@@ -1715,7 +1715,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			navy_experience = 800
+			navy_experience = 100
 
 		}
 	}
@@ -1898,7 +1898,6 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			air_experience = 25
 			if = {
 				limit = { has_country_flag = air_defense_focus_built_max }
 				custom_effect_tooltip = air_defense_focus_tt
@@ -1924,7 +1923,6 @@ focus_tree = {
 				technology = antiair2
 				technology = antiair3				
 			}
-			air_experience = 25
 			if = {
 				limit = {
 					NOT = {
@@ -3478,7 +3476,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 200
 			add_timed_idea = { idea = eng_blood_toil_tears_idea days = 400 }
-			army_experience = 500
+			army_experience = 200
 
 		}
 	}

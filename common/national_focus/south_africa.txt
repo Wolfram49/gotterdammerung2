@@ -1067,13 +1067,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = SAF_special_service_battalion
-				bonus = 0.5 
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 200
 		}
 	}
 
@@ -1197,13 +1191,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 10
-			add_tech_bonus = {
-				name = SAF__south_african_military_college
-				bonus = 0.5 
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 200
 		}
 	}
 
@@ -1445,22 +1433,22 @@ focus_tree = {
 				name = SAF_armor_effort
 				bonus = 0.75
 				uses = 1
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = SAF_armor_effort
 				bonus = 0.75
 				uses = 2
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 			add_tech_bonus = {
 				name = SAF_armor_effort
 				bonus = 1.0
 				uses = 3
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = advanced_light_tank_a				
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_light_tank_chassis				
 			}
 		}
 	}
@@ -1495,7 +1483,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			air_experience = 25
 			random_state = {
 				limit = {
 					has_state_flag = SAF_commit_to_the_five_year_plan_AB
@@ -1515,7 +1502,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1575,9 +1561,7 @@ focus_tree = {
 				name = SAF_improve_the_hawker_hartbees
 				bonus = 0.5 
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
+				technology = improved_small_airframe
 			}
 		}
 	}
@@ -1618,11 +1602,7 @@ focus_tree = {
 				name = SAF_replace_the_blenheim
 				bonus = 0.5 
 				uses = 1
-				technology = tactical_bomber1
-				technology = tactical_bomber2
-				technology = CAS1
-				technology = CAS2
-				category = naval_bomber
+				technology = improved_medium_airframe
 			}
 		}
 	}
@@ -1635,7 +1615,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 4
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -1658,13 +1638,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = SAF_perfect_the_cab_rank_technique
-				bonus = 1.00 
-				uses = 1
-				category = cat_battlefield_support
-			}
 		}
 	}
 
@@ -1676,7 +1649,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -1699,13 +1672,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = SAF_desert_air_force
-				bonus = 1.00 
-				uses = 1
-				technology = CAS1
-				technology = CAS2
-			}
 		}
 	}
 
@@ -1717,7 +1683,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -1740,13 +1706,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = SAF_secure_the_cape_sea_route
-				bonus = 0.5  
-				uses = 1
-				technology = naval_bomber1
-				technology = naval_bomber2				
-			}
 		}
 	}
 
@@ -1758,7 +1717,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 4
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -1781,13 +1740,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 35
-			add_tech_bonus = {
-				name = SAF_retain_experienced_pilots
-				bonus = 1.00 
-				uses = 1
-				category = air_doctrine
-			}
 		}
 	}
 
@@ -1813,7 +1765,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			navy_experience = 25
 			random_state = {
 				limit = {
 					has_state_flag = SAF_seaward_defence_force_DY
@@ -1829,7 +1780,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = GDU_Commonwealth_Navy_Manpower1		
-			navy_experience = 25
 			random_owned_controlled_state = {
 				prioritize = { 681 719 }
 				limit = {

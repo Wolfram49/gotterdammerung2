@@ -1082,9 +1082,8 @@ focus_tree = {
 			}
 		}
 		complete_tooltip = {
-			air_experience = 50
-			navy_experience = 50
-			army_experience = 10
+			navy_experience = 200
+			army_experience = 100
 			every_state = {
 				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
 				add_extra_state_shared_building_slots = 3
@@ -1096,9 +1095,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			navy_experience = 50
-			army_experience = 50
-			air_experience = 10
+			navy_experience = 200
+			army_experience = 100
 			391 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -1203,7 +1201,6 @@ focus_tree = {
 		#	factor = 1
 		#}
 		complete_tooltip = {
-			army_experience = 10
 			every_state = {
 				limit = { has_state_flag = USA_military_construction_5MF }
 				add_extra_state_shared_building_slots = 5
@@ -1223,7 +1220,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			army_experience = 10
 			395 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
@@ -1326,9 +1322,8 @@ focus_tree = {
 				}
 				set_state_flag = USA_USACE_projects_3Inf
 			}
-			air_experience = 50
-			navy_experience = 50
-			army_experience = 10
+			navy_experience = 300
+			army_experience = 100
 		}
 	}
 
@@ -1861,7 +1856,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 1.0
@@ -1906,13 +1900,7 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = inexperienced_army
-			army_experience = 20
-			add_tech_bonus = {
-				name = USA_louisiana_maneuvers
-				bonus = 0.5
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 100
 		}
 	}
 	focus = {
@@ -2100,22 +2088,22 @@ focus_tree = {
 				name = tank_bonus
 				bonus = 0.25
 				uses = 1
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = tank_bonus
 				bonus = 0.5
 				uses = 2
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 			add_tech_bonus = {
 				name = tank_bonus
 				bonus = 1.0
 				uses = 3
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = advanced_light_tank_a					
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_light_tank_chassis					
 			}
 			
 		}
@@ -2270,7 +2258,6 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = harold_mcclelland
-			air_experience = 25
 			add_tech_bonus = {
 				name = USA_air_war_plans_division
 				bonus = 1.0
@@ -2281,12 +2268,12 @@ focus_tree = {
 				name = USA_fighter_bonus
 				ahead_reduction = 0.5
 				bonus = 0.25
-				technology = fighter2
+				technology = improved_small_airframe
 			}
 			add_tech_bonus = {
 				name = USA_fighter_bonus
 				bonus = 0.25
-				technology = fighter2
+				technology = basic_small_airframe
 			}			
 		}
 	}
@@ -2306,20 +2293,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
 			add_tech_bonus = {
 				name = CAS_effort
 				uses = 1
 				ahead_reduction = 0.5
 				bonus = 1.0
-				category = cas_bomber
+				technology = atg_rockets
 			}
 			add_tech_bonus = {
 				name = CAS_effort
 				uses = 1
+				ahead_reduction = 0.5
 				bonus = 1.0
-				category = cas_bomber
-			}			
+				technology = advanced_bombs
+			}	
 		}
 	}
 
@@ -2340,19 +2327,18 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = curtis_lemay
-			air_experience = 25
 			add_tech_bonus = {
 				name = USA_combined_bomber_offensive
 				bonus = 1.0
 				ahead_reduction = 0.5
 				uses = 1
-				category = heavy_air
+				technology = improved_large_airframe
 			}
 			add_tech_bonus = {
 				name = USA_combined_bomber_offensive
 				bonus = 1.0
 				uses = 1
-				category = heavy_air
+				technology = basic_large_airframe
 			}			
 		}
 	}
@@ -2372,19 +2358,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
 			add_tech_bonus = {
 				name = USA_TAC
 				uses = 1
 				ahead_reduction = 0.5
 				bonus = 1.0
-				category = tactical_bomber
+				technology = improved_medium_airframe
 			}
 			add_tech_bonus = {
 				name = USA_TAC
 				uses = 1
 				bonus = 1.0
-				category = tactical_bomber
+				technology = improved_medium_airframe
 			}			
 		}
 	}
@@ -2415,7 +2400,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
 			add_ideas = combined_bomber_offensive
 		}
 	}
@@ -2447,20 +2431,10 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_escort_fighters
-				bonus = 2.5
-				ahead_reduction = 0.5
+				bonus = 1
 				uses = 1
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
-			}
-			add_tech_bonus = {
-				name = USA_escort_fighters
-				bonus = 2.5
-				uses = 1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
-			}			
+				technology = aa_cannon_3
+			}		
 		}
 	}
 	focus = {
@@ -2489,13 +2463,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = USA_us_army_airforce
-				uses = 10
-				bonus = 3.0
-				category = air_doctrine
-			}
-		add_ideas = USA_us_air_force2			
+			add_ideas = USA_us_air_force2			
 		}
 	}
 	focus = {
@@ -2524,12 +2492,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = USA_us_army_airforce
-				uses = 1
-				bonus = 1.0
-				category = air_doctrine
-			}
 			add_ideas = USA_us_air_force
 		}
 	}
@@ -2710,7 +2672,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 300
 			add_ideas = bureau_of_ships_focus
 			378 = {
 					add_extra_state_shared_building_slots = 2
@@ -2985,7 +2947,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 200
 			add_tech_bonus = {
 				name = USA_convoy_tactics
 				bonus = 1.0

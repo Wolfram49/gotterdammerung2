@@ -1509,13 +1509,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 20
-			add_tech_bonus = {
-				name = CAN_independent_command
-				bonus = 0.5
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 200
 		}
 	}
 
@@ -1668,13 +1662,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = CAN_army_modernization
-				bonus = 0.5
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 100
 		}
 	}
 
@@ -2092,22 +2080,22 @@ focus_tree = {
 				name = tank_bonus
 				bonus = 0.75
 				uses = 1
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = tank_bonus
 				bonus = 0.75
 				uses = 2
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 			add_tech_bonus = {
 				name = tank_bonus
 				bonus = 1.25
 				uses = 3
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = advanced_light_tank_a
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 
 			
@@ -2625,7 +2613,6 @@ focus_tree = {
 
 
 		complete_tooltip = {
-			air_experience = 25
 			random_state = {
 				limit = {
 					has_state_flag = CAN_rcaf_station_borden_AB
@@ -2636,16 +2623,9 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-				name = CAN_rcaf_station_borden
-				bonus = 1.00
-				uses = 1
-				category = air_doctrine
-			}
 		}
 
 		completion_reward = {
-			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -2659,12 +2639,6 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = CAN_rcaf_station_borden_AB
-			}
-			add_tech_bonus = {
-				name = CAN_rcaf_station_borden
-				bonus = 1.00
-				uses = 1
-				category = air_doctrine
 			}
 		}
 	}
@@ -2704,9 +2678,7 @@ focus_tree = {
 				name = CAN_we_have_the_hurricane
 				bonus = 0.5
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
+				technology = improved_small_airframe
 			}
 		}
 	}
@@ -2932,7 +2904,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			air_experience = 25
 			random_state = {
 				limit = {
 					has_state_flag = CAN_commonwealth_air_training_plan_AB
@@ -2943,16 +2914,9 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-				name = CAN_commonwealth_air_training_plan
-				bonus = 1.00
-				uses = 1
-				category = air_doctrine
-			}
 		}
 
 		completion_reward = {
-			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -2967,12 +2931,7 @@ focus_tree = {
 				}
 				set_state_flag = CAN_commonwealth_air_training_plan_AB
 			}
-			add_tech_bonus = {
-				name = CAN_commonwealth_air_training_plan
-				bonus = 1.00
-				uses = 1
-				category = air_doctrine
-			}
+
 		}
 	}
 
@@ -3015,10 +2974,7 @@ focus_tree = {
 				name = CAN_fund_fairchilds_development
 				bonus = 1.00
 				uses = 1
-				technology = CAS1
-				technology = CAS2
-				technology = tactical_bomber1
-				technology = tactical_bomber2
+				technology = improved_medium_airframe
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = CAN_fairchild_aircraft_ltd
@@ -3064,8 +3020,7 @@ focus_tree = {
 				name = CAN_cookie_carriers
 				bonus = 1.00
 				uses = 1
-				technology = strategic_bomber1
-				technology = strategic_bomber2			
+				technology = improved_large_airframe	
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = CAN_handley_page
@@ -3144,7 +3099,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			navy_experience = 25
 			random_state = {
 				limit = {
 					has_state_flag = CAN_halifax_shipyards_DY
@@ -3160,7 +3114,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = GDU_Commonwealth_Navy_Manpower1 
-			navy_experience = 25
+			navy_experience = 200
 			random_owned_controlled_state = {
 				prioritize = { 464 }
 				limit = {
@@ -3394,7 +3348,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = GDU_Commonwealth_Navy_Manpower4		
-			navy_experience = 25
+			navy_experience = 400
 			add_tech_bonus = {
 				name = CAN_escort_fleet
 				bonus = 1.00
@@ -3447,7 +3401,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = GDU_Commonwealth_Navy_Manpower4		
-			navy_experience = 25
 			add_tech_bonus = {
 				name = CAN_fleet_in_being
 				bonus = 1.00
@@ -3586,7 +3539,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			navy_experience = 25
 			random_state = {
 				limit = {
 					has_state_flag = CAN_united_shipyards_DY
@@ -3602,7 +3554,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = GDU_Commonwealth_Navy_Manpower6		
-			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes

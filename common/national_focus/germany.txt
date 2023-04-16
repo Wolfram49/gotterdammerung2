@@ -32,7 +32,7 @@ focus_tree = {
 			842 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
 			add_political_power = 150
-			army_experience = 300
+			army_experience = 200
 			add_named_threat = { threat = 5 name = GER_rhineland }
 			add_named_threat = { threat = 1 name = ITA_Ethiopia }
 			if = {
@@ -1223,7 +1223,7 @@ activate_mission = GER_relocate_industry_from_friesland
 
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
-			army_experience = 400
+			army_experience = 200
 			
 			add_tech_bonus = {
 				bonus = 1.00
@@ -3467,7 +3467,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 500
+			army_experience = 100
 			set_technology = {
 				improved_heavy_tank_chassis = 1
 			}
@@ -3514,7 +3514,7 @@ add_timed_idea = { idea = CDE days = 365 }
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 500
+			army_experience = 100
 			set_technology = {
 				improved_heavy_tank_chassis = 1
 			}

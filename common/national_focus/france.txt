@@ -606,7 +606,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 400
+			army_experience = 200
 		}
 	}
 	
@@ -890,7 +890,7 @@ focus_tree = {
 		completion_reward = {
 		   	custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = charles_de_gaulle
-			army_experience = 400
+			army_experience = 200
 		}
 	}	
 	focus = {

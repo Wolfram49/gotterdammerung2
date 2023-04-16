@@ -86,7 +86,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			army_experience = 250
+			army_experience = 100
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -122,13 +122,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			army_experience = 25
-			add_tech_bonus = {
-				name = SPA_the_army_of_africa_model
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = 100
+
 		}
 	}
 
@@ -198,13 +193,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			air_experience = 50
-			add_tech_bonus = {
-				name = SPA_expand_the_air_branch
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
+
 		}
 	}
 
@@ -292,22 +281,22 @@ focus_tree = {
 				name = SPA_an_armored_corps
 				bonus = 0.75
 				uses = 1
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = SPA_an_armored_corps
 				bonus = 0.75
 				uses = 2
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 			add_tech_bonus = {
 				name = SPA_an_armored_corps
 				bonus = 1.75
 				uses = 3
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = advanced_light_tank_a				
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_light_tank_chassis		
 			}
 		}
 	}
@@ -1133,8 +1122,6 @@ focus_tree = {
 			}
 			hidden_effect { 
 				set_global_flag = scw_over
-				army_experience = 500
-				air_experience = 300
 				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 800 }
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
@@ -1142,14 +1129,6 @@ focus_tree = {
 					producer = SPR
 				}
 				set_stability = 0.6
-				SOV = { air_experience = 300 }
-				GER = { air_experience = 300 }
-				ITA = { air_experience = 300 }
-				SOV = { army_experience = 300 }
-				GER = { army_experience = 500 }
-				ITA = { army_experience = 300 }
-				army_experience = 500
-				air_experience = 300
 			}
 		}
 	}
