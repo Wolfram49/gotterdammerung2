@@ -72,7 +72,7 @@ upgrades = {
 		maximum_speed = -0.02
 		add_stats = {
 			breakthrough = 0.2
-			defense = 0.35
+			defense = 0.5
 			build_cost_ic = 0.15
 
 		}

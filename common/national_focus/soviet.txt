@@ -3044,7 +3044,6 @@ focus_tree = {
 	focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_Goal_Soviet_guns
-		mutually_exclusive = { focus = SOV_nkvd_primacy }
 		relative_position_id = SOV_positive_heroism
 		prerequisite = { focus = SOV_positive_heroism }
 		x = -1
@@ -3099,7 +3098,6 @@ focus_tree = {
 	focus = {
 		id = SOV_nkvd_primacy
 		icon = GFX_Goal_NKVD_Primacy
-		mutually_exclusive = { focus = SOV_rehabilitated_military }
 		relative_position_id = SOV_positive_heroism
 		prerequisite = { focus = SOV_positive_heroism }
 		x = 1

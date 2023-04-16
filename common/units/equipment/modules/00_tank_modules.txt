@@ -1091,8 +1091,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			defense = 3
-			breakthrough = 3
+			defense = 6
+			breakthrough = 4
 			build_cost_ic = 1.5
 		}
 		xp_cost = 0
