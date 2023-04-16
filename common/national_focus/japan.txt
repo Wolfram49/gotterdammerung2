@@ -149,56 +149,7 @@ focus_tree = {
 
 		completion_reward = {
 
-		army_experience = 1000
-		air_experience = 1000
-		navy_experience = 1000
-
-        SOV = {
-        army_experience = 1000
-        air_experience  = 300
-                }
-        GER = {
-        air_experience  = 300
-                }
-        ITA = {
-        air_experience  = 300
-                }
-       BUL = {
-        army_experience = 125
-                }`
-        
-		
-		SIA = {
-		army_experience = 125
-		}
-		
-		SPR = {
-        army_experience = 125
-                }
-         ROM = {
-        army_experience = 125
-                }
-        HUN = {
-        army_experience = 125
-                }
-        ENG = {
-        army_experience = 100
-                }
-        CAN = {
-        army_experience = 100
-                }
-        SAF = {
-        army_experience = 100
-                }
-        RAJ = {
-        army_experience = 100
-                }
-        AST = {
-        army_experience = 100
-                }
-        NZL = {
-        army_experience = 100
-                }			
+		army_experience = 200
 	   transfer_state = 608
        transfer_state = 614
        transfer_state = 597
@@ -259,9 +210,7 @@ focus_tree = {
         transfer_state = 620
         transfer_state = 621
 
-		army_experience = 1000
-		air_experience = 1000
-		navy_experience = 1000
+		army_experience = 200
 
 
 
@@ -356,12 +305,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_strike_south_doctrine
-				bonus = 1.0
-				uses = 2
-				category = naval_doctrine
-			}
+			navy_experience = 200
 #			unlock_decision_tooltip = JAP_pressure_france
 		}
 	}
@@ -855,12 +799,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
-			army_experience = 30		
+			army_experience = 400		
 		}
 	}
 
@@ -977,22 +916,22 @@ focus_tree = {
 				name = JAP_armored_divisions
 				bonus = 0.5
 				uses = 1
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = JAP_armored_divisions
 				bonus = 0.75
 				uses = 2
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 			add_tech_bonus = {
 				name = JAP_armored_divisions
 				bonus = 1.0
 				uses = 3
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = advanced_light_tank_a				
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_light_tank_chassis			
 			}
 		}
 	}
@@ -2818,22 +2757,10 @@ focus_tree = {
 
 		completion_reward = {
             
-            add_tech_bonus = {
-				name = JAP_armored_divisions
-				bonus = 5.0 				
-				uses = 1
-				technology = amphibious_tank
-			}
-			add_tech_bonus = {
-				name = JAP_armored_divisions
-				bonus = 4.0 				
-				uses = 1
-				technology = amphibious_tank_2
-			}	
 			add_tech_bonus = {
 				name = JAP_armored_divisions
 				bonus = 2.0
-				uses = 1
+				uses = 2
 				technology = amphibious_mechanized_infantry
 			}
 			
@@ -2988,12 +2915,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_fighter_modernization
-				bonus = 1.0
-				uses = 3
-				category = air_doctrine
-			}
 		}
 	}
 
@@ -3110,7 +3031,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = JAP_the_zero_tt
-			hidden_effect = { set_technology = { cv_fighter2 = 1 } }
+			hidden_effect = { set_technology = { improved_small_airframe = 1 } }
 		}
 	}
 
@@ -3149,8 +3070,7 @@ focus_tree = {
 				name = JAP_bomber_modernization
 				bonus = 1.0
 				uses = 1
-				category = cas_bomber
-				category = tactical_bomber
+				technology = improved_small_airframe
 			}
 		}
 	}
@@ -3190,7 +3110,7 @@ focus_tree = {
 				name = JAP_strategic_bomber_effort
 				bonus = 1.0
 				uses = 2
-				category = cat_strategic_bomber
+				technology = improved_large_airframe
 			}
 		}
 	}
@@ -3226,12 +3146,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_heavy_fighter_effort
-				bonus = 1.0
-				uses = 1
-				category = cat_heavy_fighter
-			}
 		}
 	}	
 
@@ -3268,7 +3182,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = JAP_fighters
 			hidden_effect = {
-				set_technology = { fighter2 = 1 }
+				set_technology = { improved_small_airframe = 1 }
 			}
 		}
 	}
@@ -3456,17 +3370,11 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_carrier_warfare_experiments
-				bonus = 1.0
-				uses = 2
-				category = naval_doctrine
-			}
-						add_tech_bonus = {
-				name = JAP_carrier_warfare_experiments
 				bonus = 1.5
 				uses = 1
 				category = cv_tech
 			}		
-			navy_experience = 50
+			navy_experience = 200
 		}
 	}
 
@@ -3554,7 +3462,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = JAP_first_air_fleet
-			navy_experience = 50
+			navy_experience = 200
 		}
 	}
 	
@@ -3589,12 +3497,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_nav_bomber_effort
-				bonus = 2.0
-				uses = 1
-				category = naval_bomber
-			}
 		}
 	}	
 

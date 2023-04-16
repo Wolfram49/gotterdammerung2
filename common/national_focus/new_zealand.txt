@@ -100,13 +100,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = GDU_Commonwealth_Navy_Manpower2		
-			navy_experience = 25
-			add_tech_bonus = {
-				name = NZL_form_the_rnzn
-				bonus = 1.00 
-				uses = 2
-				category = naval_doctrine
-			}
+			navy_experience = 500
 			723 = {
 				add_resource = {
 					type = steel
@@ -513,28 +507,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = nav_bomber_equipment_1
-				amount = 100
-				producer = ENG
-			}
-			if = {
-				limit = {
-					ENG = { has_tech = tactical_bomber1 }
-				}
-				add_equipment_to_stockpile = {
-					type = tac_bomber_equipment_1
-					amount = 100
-					producer = ENG
-				}
-				else = {
-					add_equipment_to_stockpile = {
-						type = tac_bomber_equipment_0
-						amount = 100
-						producer = ENG
-					}
-				}
-			}
 		}
 	}
 
@@ -645,7 +617,7 @@ focus_tree = {
 				name = NZL_fighter_focus
 				bonus = 0.5  
 				uses = 1
-				technology = fighter2
+				technology = improved_small_airframe
 			}
 		}
 	}
@@ -686,10 +658,7 @@ focus_tree = {
 				name = NZL_bomber_focus
 				bonus = 0.5 
 				uses = 1
-				technology = tactical_bomber1
-				technology = tactical_bomber2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
+				technology = improved_medium_airframe
 			}
 		}
 	}
@@ -725,13 +694,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = NZL_defend_our_islands
-				bonus = 1.00 
-				uses = 2
-				technology = naval_bomber1
-				technology = naval_bomber2
-			}
+
 		}
 	}
 
@@ -769,12 +732,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_modern_fighters
-				bonus = 0.5  
+				bonus = 0.25  
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				category = cat_heavy_fighter
+				technology = advanced_small_airframe
 			}
 		}
 	}
@@ -815,8 +775,7 @@ focus_tree = {
 				name = NZL_heavy_bombers
 				bonus = 0.5  
 				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
+				technology = improved_large_airframe
 			}
 		}
 	}
@@ -1310,13 +1269,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 25
-			add_tech_bonus = {
-				name = NZL_army_reforms
-				bonus = 0.5 
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 400
+
 			set_technology = { bicycle_infantry = 1 }
 		}
 	}
@@ -1397,12 +1351,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = NZL_bob_semple_tank
-			add_tech_bonus = {
-				name = NZL_bob_semple_tank
-				bonus = 1.00 
-				uses = 1
-				technology = basic_light_tank
-			}
 		}
 	}
 
@@ -1495,22 +1443,22 @@ focus_tree = {
 				name = NZL_schofield_tank
 				bonus = 0.5
 				uses = 1
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = NZL_schofield_tank
 				bonus = 0.75
 				uses = 2
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 			add_tech_bonus = {
 				name = NZL_schofield_tank
 				bonus = 1.0
 				uses = 3
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = advanced_light_tank_a				
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_light_tank_chassis		
 			}			
 		}
 	}

@@ -164,12 +164,7 @@ focus_tree = {
 					active = yes
 				}
 			}
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.00
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 200
 		}
 	}
 
@@ -1223,12 +1218,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_air_superiority
-				bonus = 1.00
-				uses = 2
-				category = strategic_destruction_tree
-			}
+
 		}
 	}
 
@@ -1263,13 +1253,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_cas
-				bonus = 1.00
-				uses = 1
-				technology = CAS1
-				technology = CAS2
-			}
+
 		}
 	}
 
@@ -1309,7 +1293,7 @@ focus_tree = {
 					name = ROM_iar_80
 					bonus = 1.00
 					uses = 1
-					technology = fighter2
+					technology = improved_small_airframe
 				}		
 		}
 	}
@@ -1346,13 +1330,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_strategic_bomber_force
-				bonus = 1.00
-				uses = 1
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-			}
+			
 		}
 	}
 
@@ -1387,13 +1365,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_heavy_bombers
-				bonus = 1.00
-				uses = 1
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-			}
+		
 		}
 	}
 
@@ -1430,8 +1402,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_nuclear_bomb_project
-				bonus = 1.00
-				uses = 1
+				bonus = 0.5
+				uses = 3
 				category = nuclear
 			}
 		}
@@ -1462,7 +1434,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 200
 		}
 	}
 
@@ -1870,22 +1842,22 @@ focus_tree = {
 				name = ROM_the_maresal
 				bonus = 0.75
 				uses = 1
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = ROM_the_maresal
 				bonus = 0.75
 				uses = 2
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 			add_tech_bonus = {
 				name = ROM_the_maresal
 				bonus = 2.0
 				uses = 3
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = advanced_light_tank_a				
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_light_tank_chassis		
 			}			
 		}
 	}
@@ -1919,7 +1891,7 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_tech = basic_medium_tank
+						has_tech = basic_medium_tank_chassis
 						has_tech = tech_recon
 					}
 					division_template = {
@@ -1951,7 +1923,7 @@ focus_tree = {
 					else = {
 						if = {
 							limit = {
-								has_tech = basic_medium_tank
+								has_tech = basic_medium_tank_chassis
 							}
 							division_template = {
 								name = "Blindata Division"

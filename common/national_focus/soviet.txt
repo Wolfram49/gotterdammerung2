@@ -25,7 +25,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		    army_experience = 1000
+		    army_experience = 100
 			add_political_power = 10
 			add_ideas = partial_economic_mobilisation
 			hidden_effect = {
@@ -820,13 +820,13 @@ focus_tree = {
 				name = fighter3_bonus
 				bonus = 0.25
 				uses = 1
-				technology = fighter3
+				technology = advanced_small_airframe
 			}			
 			add_tech_bonus = {
 				name = jet_fighter_bonus
 				bonus = 1.5
 				uses = 1
-				technology = jet_fighter1
+				technology = modern_small_airframe
 			}		
 		}
 	}	
@@ -1242,19 +1242,7 @@ focus_tree = {
 			add_ideas = georgy_zhukov_CoA
 			add_ideas = general_winter_idea
 			custom_effect_tooltip = GDU_spacer
-			add_tech_bonus = {
-				name = moscow_landdoc_7
-				bonus = 215.00
-				uses = 1
-				technology = volkssturm
-				technology = firebrigades
-				technology = combined_arms
-				technology = forward_observers
-				technology = assault_breakthrough
-				technology = night_assault_tactics
-				technology = breakthrough_priority
-				technology = guerilla_warfare
-			}
+			army_experience = 100
 			219 = {
 				custom_effect_tooltip = SOV_defense_of_moscow_forts_GDU
 				hidden_effect = {
@@ -1493,18 +1481,7 @@ focus_tree = {
 				remove_idea = SOV_war_for_communism
 				add_idea = great_patriotic_war
 			}
-			add_tech_bonus = {
-				name = stalingrad_landdoc_9
-				bonus = 215.00
-				uses = 1
-				technology = modern_blitzkrieg
-				technology = werwolf_guerillas
-				technology = air_land_battle
-				technology = shock_and_awe
-				technology = c3i_theory
-				technology = infiltration_in_depth
-				technology = continuous_offensive
-			}
+			army_experience = 400
 			if = {
 				limit = {
 					SOV = { has_idea = GDU_SOV_Danger_To_Heartland }
@@ -1633,7 +1610,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 10
 			if = {
 				limit = {
 					653 = {
@@ -1916,7 +1892,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		    army_experience = 700
+		    army_experience = 100
 			add_tech_bonus = {
 				bonus = 1.7
 				uses = 1
@@ -1955,7 +1931,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 2.85
 				uses = 1
-				technology = CAS2
+				technology = improved_medium_airframe
 			}			
 		}
 	}
@@ -2051,27 +2027,15 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 2.5
 				uses = 2
-				technology = advanced_medium_tank
-				technology = advanced_light_tank_a				
+				technology = advanced_medium_tank_chassis
+				technology = advanced_light_tank_chassis			
 			}
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 2.0
 				uses = 1
-				technology = advanced_heavy_tank
+				technology = advanced_heavy_tank_chassis
 			}		
-			add_tech_bonus = {
-				name = patriotic_landdoc_8
-				bonus = 215.00
-				uses = 1
-				technology = nd_conscription
-				technology = backhand_blow
-				technology = tactical_control
-				technology = advanced_firebases
-				technology = central_planning
-				technology = attritional_containment
-				technology = mechanized_wave
-			}
 }
 
 		prerequisite = { focus = SOV_defense_of_moscow }
@@ -2095,13 +2059,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
 
 			add_tech_bonus = {
 				name = air_bonus
 				bonus = 2.9
 				uses = 1
-				technology = fighter2
+				technology = improved_small_airframe
 			}	
 		}
 	}
@@ -2125,17 +2088,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 25
 
 			add_tech_bonus = {
 				name = heavy_armor_tank_cult
 				bonus = 2.25
-				technology = improved_heavy_tank
+				technology = improved_heavy_tank_chassis
 			}
 			add_tech_bonus = {
 				name = light_armor_tank_cult
 				bonus = 2.25
-				technology = advanced_light_tank
+				technology = advanced_light_tank_chassis
 			}			
 		}
 	}	
@@ -2291,11 +2253,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.00
-				uses = 2
-				category = air_doctrine
-			}
 		}
 	}
 
@@ -3135,7 +3092,7 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
-			army_experience = 20
+			
 		}
 	}
 
@@ -3355,19 +3312,14 @@ focus_tree = {
 		}
 	}
 
+	army_experience = 100
+	add_tech_bonus = {
+		name = USSR_MEME_project
+		bonus = 1.00
+		uses = 1
+		category = nuclear
+	}
 
-			army_experience = 20
-			add_tech_bonus = {
-				name = USSR_MEME_project
-				bonus = 1.00
-				uses = 1
-				category = nuclear
-			}
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.00
-				category = land_doctrine
-			}
 	}
 }	
 

@@ -406,7 +406,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = RAJ_jungle_training_effect
 			hidden_effect = { set_technology = { jungle_warfare = 1 } }
-			army_experience = 20
+			army_experience = 100
 			add_tech_bonus = {
 				name = RAJ_british_army_support
 				bonus = 1.00
@@ -528,12 +528,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_lessons_of_the_great_war
-				bonus = 1.00
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 100
 		}
 	}
 
@@ -573,7 +568,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
-			army_experience = 25
+			army_experience = 50
 		}
 	}
 
@@ -975,7 +970,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 10
 			add_tech_bonus = {
 				name = RAJ_royal_indian_artillery
 				bonus = 1.00
@@ -1104,22 +1098,22 @@ focus_tree = {
 				name = RAJ_indian_armor
 				bonus = 0.75
 				uses = 1
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = RAJ_indian_armor
 				bonus = 0.75
 				uses = 2
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 			add_tech_bonus = {
 				name = RAJ_indian_armor
 				bonus = 1.5
 				uses = 3
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = advanced_light_tank_a				
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = advanced_light_tank_chassis				
 			}
 		}
 	}
@@ -1156,12 +1150,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_modernizing_army
-				bonus = 1.00
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 100
 		}
 	}
 
@@ -1313,16 +1302,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_air_support_effort
-				bonus = 1.00
-				uses = 1
-				technology = tactical_bomber1
-				technology = tactical_bomber2
-				technology = CAS1
-				technology = CAS2
-				category = naval_bomber
-			}
+			
 		}
 	}
 
@@ -1357,15 +1337,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_fighter_effort
-				bonus = 0.5
-				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				category = cat_heavy_fighter
-			}
+			
 		}
 	}
 
@@ -1407,13 +1379,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = RAJ_royal_indian_air_force
-				bonus = 1.00
-				uses = 1
-				category = air_doctrine
-			}
+			
 		}
 	}
 

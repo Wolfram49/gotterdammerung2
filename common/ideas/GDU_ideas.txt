@@ -26,6 +26,19 @@ ideas = {
 			}
 		}
 
+		GDU_experience_gain = {
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+			}			
+		}
+
 		GDU_aided_by_BEF = {
 			allowed = {
 				always = no
