@@ -1557,7 +1557,7 @@ org_loss_when_moving = 0.10
 				}			
 			}
 			available = {
-				date > 1936.1.1
+				date > 1942.1.1
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1639,7 +1639,7 @@ org_loss_when_moving = 0.10
 				}
 			}
 			available = {
-				date > 1936.1.1
+				date > 1942.1.1
 			}
 
 			research_bonus = {
@@ -1659,8 +1659,8 @@ org_loss_when_moving = 0.10
 					defense = 0.25
 					breakthrough = 0.15
 					armor_value = 0.6			
-					build_cost_ic = 0.5
 					reliability = -0.25
+					build_cost_ic = 0.5
 				}
 			}
 		}

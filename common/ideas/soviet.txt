@@ -1482,7 +1482,7 @@ ideas = {
 			}
 
 			available = {
-				date > 1936.1.1
+				date > 1942.1.1
 			}
 			
 			research_bonus = {
@@ -1589,7 +1589,7 @@ ideas = {
 			
 			cost = 75		
 			available = {
-				date > 1936.1.1
+				date > 1942.1.1
 			}
 			
 			research_bonus = {
