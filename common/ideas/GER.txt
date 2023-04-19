@@ -976,9 +976,9 @@ org_loss_when_moving = 0.10
 			
 			
 			modifier = { 
-				air_ace_generation_chance_factor = 0.15
-				air_mission_xp_gain_factor = 0.2
-				air_training_xp_gain_factor = 0.2
+				
+				
+				
 			} 
 		}
 
