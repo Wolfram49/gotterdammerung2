@@ -8,7 +8,7 @@ set_variable = { ROOT.SpecOpsLimit = 160 }
 add_opinion_modifier = { target = JAP modifier = embargo }
 add_opinion_modifier = { target = JAP modifier = sanctions }
 add_opinion_modifier = { target = JAP modifier = minor_sanctions }
-
+add_ideas = { idea = GDU_experience_gain }
 add_intel = {
 	target = USA
 	civilian_intel = 200
@@ -27,7 +27,7 @@ add_intel = {
 oob = "RAJ_1936"
 set_stability = 0.71
 set_war_support = 0.1
-set_research_slots = 4
+set_research_slots = 3
 add_timed_idea = { idea = airandnavy_idea days = 1320 }
 recruit_character = RAJ_lord_linlithgow
 recruit_character = RAJ_v_d_savarkar

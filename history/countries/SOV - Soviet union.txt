@@ -8,7 +8,7 @@ if = {
 		set_naval_oob = "SOV_1936_naval_legacy"
 	}
 }
-
+add_ideas = { idea = GDU_experience_gain }
 set_country_flag=host
 
 add_intel = {
@@ -68,7 +68,7 @@ add_intel = {
 	airforce_intel = 200
 }
 
-set_research_slots = 3
+set_research_slots = 2
 navy_experience = 0
 add_timed_idea = { idea = airandnavy_idea days = 1980 }
 recruit_character = SOV_nikolay_voznesensky

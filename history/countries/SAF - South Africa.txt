@@ -7,7 +7,7 @@ set_variable = {
 add_opinion_modifier = { target = JAP modifier = embargo }
 add_opinion_modifier = { target = JAP modifier = sanctions }
 add_opinion_modifier = { target = JAP modifier = minor_sanctions }
-
+add_ideas = { idea = GDU_experience_gain }
 add_intel = {
 	target = USA
 	civilian_intel = 200
@@ -25,7 +25,7 @@ add_intel = {
 
 set_variable = { ROOT.SpecOpsLimit = 160 }
 oob = "SAF_1936"
-set_research_slots = 4
+set_research_slots = 3
 add_timed_idea = { idea = airandnavy_idea days = 1320 }
 recruit_character = SAF_j_b_m_hertzog
 recruit_character = SAF_d_f_malan

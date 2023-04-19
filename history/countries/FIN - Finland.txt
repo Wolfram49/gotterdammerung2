@@ -16,7 +16,7 @@ add_intel = {
 	navy_intel = 200
 	airforce_intel = 200
 }
-
+add_ideas = { idea = GDU_experience_gain }
 add_opinion_modifier = { target = SOV modifier = embargo }
 add_opinion_modifier = { target = SOV modifier = sanctions_relations }
 add_opinion_modifier = { target = SOV modifier = large_decrease }
@@ -26,7 +26,7 @@ add_opinion_modifier = { target = JAP modifier = embargo }
 add_opinion_modifier = { target = JAP modifier = sanctions }
 add_opinion_modifier = { target = JAP modifier = minor_sanctions }
 
-set_research_slots = 3
+set_research_slots = 2
 
 set_stability = 0.6
 set_war_support = 0.71

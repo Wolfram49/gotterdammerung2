@@ -1,7 +1,7 @@
 capital = 284
 
 oob = "NZL_1936"
-set_research_slots = 4
+set_research_slots = 3
 add_timed_idea = { idea = airandnavy_idea days = 1320 }
 # Starting tech
 set_stability = 0.8
@@ -12,7 +12,7 @@ add_opinion_modifier = { target = JAP modifier = sanctions }
 add_opinion_modifier = { target = JAP modifier = minor_sanctions }
 
 add_ideas = GDU_refinery_prebuild_disincentive
-
+add_ideas = { idea = GDU_experience_gain }
 recruit_character = NZL_michael_joseph_savage
 recruit_character = NZL_sidney_holland
 recruit_character = NZL_john_ormond

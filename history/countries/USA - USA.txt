@@ -12,8 +12,8 @@ if = {
 	}
 }
 navy_experience = 0
-set_research_slots = 5
-
+set_research_slots = 4
+add_ideas = { idea = GDU_experience_gain }
 add_timed_idea = { idea = airandnavy_idea days = 1825 }
 recruit_character = USA_william_dudley_pelley
 recruit_character = USA_franklin_delano_roosevelt

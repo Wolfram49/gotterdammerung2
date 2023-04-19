@@ -10,7 +10,7 @@ add_opinion_modifier = { target = SOV modifier = embargo }
 add_opinion_modifier = { target = SOV modifier = sanctions_relations }
 add_opinion_modifier = { target = SOV modifier = large_decrease }
 add_opinion_modifier = { target = SOV modifier = hostile_status }
-
+add_ideas = { idea = GDU_experience_gain }
 add_opinion_modifier = { target = JAP modifier = embargo }
 add_opinion_modifier = { target = JAP modifier = sanctions }
 add_opinion_modifier = { target = JAP modifier = minor_sanctions }
@@ -33,7 +33,7 @@ if = {
 		set_naval_oob = "ROM_1936_naval_legacy"
 	}
 }
-set_research_slots = 4
+set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.6
 

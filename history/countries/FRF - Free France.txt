@@ -11,8 +11,8 @@ if = {
 		set_naval_oob = "FRA_1936_naval_legacy"
 	}
 }
-set_research_slots = 5
-
+set_research_slots = 4
+add_ideas = { idea = GDU_experience_gain }
 add_opinion_modifier = { target = JAP modifier = embargo }
 add_opinion_modifier = { target = JAP modifier = sanctions }
 add_opinion_modifier = { target = JAP modifier = minor_sanctions }

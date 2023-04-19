@@ -13,7 +13,7 @@ if = {
 		set_naval_oob = "SPR_1936_naval_legacy"
 	}
 }
-
+add_ideas = { idea = GDU_experience_gain }
 add_ideas = { GER_mefo_bills_non_germany }
 
 add_intel = {
@@ -24,7 +24,7 @@ add_intel = {
 	airforce_intel = 200
 }
 
-set_research_slots = 3
+set_research_slots = 2
 
 add_ideas = {
 	SPA_carlism_1

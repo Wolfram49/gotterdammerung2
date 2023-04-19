@@ -28,8 +28,9 @@ add_intel = {
 	airforce_intel = 200
 }
 
-set_research_slots = 4
+set_research_slots = 3
 add_timed_idea = { idea = airandnavy_idea days = 1320 }
+add_ideas = { idea = GDU_experience_gain }
 
 recruit_character = FRA_philippe_petain
 recruit_character = FRA_rene_massigli

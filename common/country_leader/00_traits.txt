@@ -1791,7 +1791,7 @@ leader_traits = {
 		war_support_factor = 0.05
 		political_power_factor = 0.05
 		army_morale_factor = 0.1
-		experience_gain_air_factor = 0.03
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -1919,9 +1919,9 @@ leader_traits = {
 	
 	military_theorist = {
 		sprite = 14
-		experience_gain_army = 0.2
-		experience_gain_air = 0.1
-		experience_gain_navy = 0.05		
+		
+		
+		
 
 		ai_will_do = {
 			factor = 500
@@ -1930,9 +1930,9 @@ leader_traits = {
 
 	mobile_warfare_expert = {
 		sprite = 14
-		experience_gain_army = 0.2
-		experience_gain_air = 0.1
-		experience_gain_navy = 0.05				
+		
+		
+					
 
 		ai_will_do = {
 			factor = 500
@@ -1941,9 +1941,9 @@ leader_traits = {
 
 	superior_firepower_expert = {
 		sprite = 14
-		experience_gain_army = 0.2
-		experience_gain_air = 0.1
-		experience_gain_navy = 0.05				
+		
+		
+					
 
 		ai_will_do = {
 			factor = 500
@@ -1952,9 +1952,9 @@ leader_traits = {
 
 	grand_battle_plan_expert = {
 		sprite = 14
-		experience_gain_army = 0.2
-		experience_gain_air = 0.1
-		experience_gain_navy = 0.05				
+		
+		
+					
 
 		ai_will_do = {
 			factor = 500
@@ -1963,9 +1963,9 @@ leader_traits = {
 
 	mass_assault_expert = {
 		sprite = 14
-		experience_gain_army = 0.2
-		experience_gain_air = 0.1
-		experience_gain_navy = 0.05				
+		
+		
+					
 
 		ai_will_do = {
 			factor = 500
@@ -1974,9 +1974,9 @@ leader_traits = {
 
 	air_warfare_theorist = {
 		sprite = 14
-		experience_gain_air = 0.2
-		experience_gain_army = 0.1
-		experience_gain_navy = 0.05				
+		
+		
+					
 
 		ai_will_do = {
 			factor = 500
@@ -1991,9 +1991,9 @@ leader_traits = {
 					air_ground_attack = 0.1
 			}
 		}			
-		experience_gain_air = 0.2
-		experience_gain_army = 0.1
-		experience_gain_navy = 0.05			
+		
+		
+				
 		motorized_attack_factor = 0.06
 		motorized_defence_factor = 0.06			
 
@@ -2004,9 +2004,9 @@ leader_traits = {
 
 	victory_through_airpower = {
 		sprite = 14
-		experience_gain_air = 0.2
-		experience_gain_army = 0.1
-		experience_gain_navy = 0.05				
+		
+		
+					
 
 		ai_will_do = {
 			factor = 100
@@ -2015,9 +2015,9 @@ leader_traits = {
 
 	close_air_support_proponent = {
 		sprite = 14
-		experience_gain_air = 0.2
-		experience_gain_army = 0.1
-		experience_gain_navy = 0.05				
+		
+		
+					
 
 		ai_will_do = {
 			factor = 100
@@ -2026,9 +2026,9 @@ leader_traits = {
 
 	assault_avaition = {
 		sprite = 14
-		experience_gain_air = 0.2
-		experience_gain_army = 0.1
-		experience_gain_navy = 0.05				
+		
+		
+					
 
 		ai_will_do = {
 			factor = 100
@@ -2037,9 +2037,9 @@ leader_traits = {
 
 	naval_theorist = {
 		sprite = 14
-		experience_gain_navy = 0.2
-		experience_gain_army = 0.1
-		experience_gain_air = 0.05
+		
+		
+		
 
 		ai_will_do = {
 			factor = 100
@@ -2048,9 +2048,9 @@ leader_traits = {
 
 	naval_aviation_pioneer = {
 		sprite = 14
-		experience_gain_navy = 0.2
-		experience_gain_army = 0.1
-		experience_gain_air = 0.05		
+		
+		
+				
 
 		ai_will_do = {
 			factor = 100
@@ -2059,9 +2059,9 @@ leader_traits = {
 
 	grand_fleet_proponent = {
 		sprite = 14
-		experience_gain_navy = 0.2
-		experience_gain_army = 0.1
-		experience_gain_air = 0.05		
+		
+		
+				
 
 		ai_will_do = {
 			factor = 100
@@ -2070,9 +2070,9 @@ leader_traits = {
 
 	submarine_specialist = {
 		sprite = 14
-		experience_gain_navy = 0.2
-		experience_gain_army = 0.1
-		experience_gain_air = 0.05		
+		
+		
+				
 
 		ai_will_do = {
 			factor = 100
@@ -2088,9 +2088,9 @@ leader_traits = {
 				maximum_speed = 0.05
 			}		
 		}
-		experience_gain_army = 0.2
-		experience_gain_air = 0.1
-		experience_gain_navy = 0.05
+		
+		
+		
 		motorized_attack_factor = 0.06
 		motorized_defence_factor = 0.06		
 
@@ -2524,7 +2524,7 @@ leader_traits = {
 	marshal_of_victory = { # IT'S ZHUKOV 
 		sprite = 7
 		army_attack_factor = 0.075
-		experience_gain_army_factor = 0.15
+		
 		
 		ai_will_do = { 
 			factor = 1 
@@ -2535,7 +2535,7 @@ leader_traits = {
 		sprite = 7
 		army_attack_factor = 0.10
 		army_defence_factor = 0.05		
-		experience_gain_army_factor = 0.15
+		
 		
 		ai_will_do = { 
 			factor = 1 
@@ -2599,7 +2599,7 @@ leader_traits = {
 
 	army_chief_old_guard = { # Rate at which field experience is gained decreases by 10%
 		sprite = 5 # Should not need sprite, should mostly be secondary
-		experience_gain_army_factor = -0.1
+		
 		political_power_factor = 0.1
 
 		ai_will_do = {
@@ -2637,7 +2637,7 @@ leader_traits = {
 
 	army_chief_reform_1 = { # Rate at which field experience is gained increases by 5%
 		sprite = 5
-		experience_gain_army_factor = 0.05
+		
 
 		ai_will_do = {
 			factor = 1
@@ -2646,7 +2646,7 @@ leader_traits = {
 
 	army_chief_reform_2 = { # Rate at which field experience is gained increases by 10%
 		sprite = 5
-		experience_gain_army_factor = 0.1
+		
 
 		ai_will_do = {
 			factor = 2
@@ -2655,7 +2655,7 @@ leader_traits = {
 
 	army_chief_reform_3 = { # Rate at which field experience is gained increases by 15%
 		sprite = 5
-		experience_gain_army_factor = 0.15
+		
 
 		ai_will_do = {
 			factor = 3
@@ -2924,7 +2924,7 @@ leader_traits = {
 
 	bicyclesp = { # +4 paratrooper/marine/mountain efficiency
 		sprite = 5
-		experience_gain_bicycle_battalion_combat_factor = 3
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -3092,7 +3092,7 @@ leader_traits = {
 
 	air_chief_reform_1 = {  # Rate at which air experience is gained increases by 5%
 		sprite = 5
-		experience_gain_air_factor = 0.05
+		
 
 		ai_will_do = {
 			factor = 1
@@ -3101,7 +3101,7 @@ leader_traits = {
 
 	air_chief_reform_2 = {  # Rate at which air experience is gained increases by 10%
 		sprite = 5
-		experience_gain_air_factor = 0.1
+		
 
 		ai_will_do = {
 			factor = 2
@@ -3110,7 +3110,7 @@ leader_traits = {
 
 	air_chief_reform_3 = {  # Rate at which air experience is gained increases by 15%
 		sprite = 5
-		experience_gain_air_factor = 0.15
+		
 
 		ai_will_do = {
 			factor = 3
@@ -3147,7 +3147,7 @@ leader_traits = {
 
 	air_chief_old_guard = {
 		sprite = 1
-		experience_gain_air_factor = -0.1
+		
 		political_power_factor = 0.1
 
 		ai_will_do = {
@@ -3504,7 +3504,7 @@ leader_traits = {
 
 	air_pilot_training_1 = {
 		sprite = 1
-		air_training_xp_gain_factor = 0.05
+		
 
 		ai_will_do = {
 			factor = 1
@@ -3512,7 +3512,7 @@ leader_traits = {
 	}
 	air_pilot_training_2 = {
 		sprite = 1
-		air_training_xp_gain_factor = 0.1
+		
 
 		ai_will_do = {
 			factor = 2
@@ -3520,7 +3520,7 @@ leader_traits = {
 	}
 	air_pilot_training_3 = {
 		sprite = 1
-		air_training_xp_gain_factor = 0.15
+		
 
 		ai_will_do = {
 			factor = 3
@@ -3631,7 +3631,7 @@ leader_traits = {
 
 	navy_chief_old_guard = {
 		sprite = 3
-		experience_gain_navy_factor = -0.1
+		
 		political_power_factor = 0.1
 
 		ai_will_do = {
@@ -3641,7 +3641,7 @@ leader_traits = {
 
 	navy_chief_reform_1 = {
 		sprite = 3
-		experience_gain_navy_factor = 0.05
+		
 
 		ai_will_do = {
 			factor = 1
@@ -3650,7 +3650,7 @@ leader_traits = {
 
 	navy_chief_reform_2 = {
 		sprite = 3
-		experience_gain_navy_factor = 0.1
+		
 
 		ai_will_do = {
 			factor = 2
@@ -3659,7 +3659,7 @@ leader_traits = {
 
 	navy_chief_reform_3 = {
 		sprite = 3
-		experience_gain_navy_factor = 0.15
+		5
 
 		ai_will_do = {
 			factor = 3

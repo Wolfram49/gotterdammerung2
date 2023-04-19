@@ -9,6 +9,7 @@ add_opinion_modifier = { target = JAP modifier = minor_sanctions }
 
 add_ideas = GDU_neutrality
 add_ideas = GDU_price_of_playable_poland
+add_ideas = { idea = GDU_experience_gain }
 
 set_convoys = 0
 

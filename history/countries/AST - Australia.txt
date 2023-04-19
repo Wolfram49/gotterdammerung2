@@ -3,7 +3,7 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-
+add_ideas = { idea = GDU_experience_gain }
 add_opinion_modifier = { target = JAP modifier = embargo }
 add_opinion_modifier = { target = JAP modifier = sanctions }
 add_opinion_modifier = { target = JAP modifier = minor_sanctions }
@@ -28,7 +28,7 @@ set_variable = { ROOT.SpecOpsLimit = 160 }
 oob = "AST_1936"
 set_stability = 0.8
 set_war_support = 0.3
-set_research_slots = 4
+set_research_slots = 3
 add_timed_idea = { idea = airandnavy_idea days = 1320 }
 recruit_character = AST_john_curtin
 recruit_character = AST_eric_campbell

@@ -5,7 +5,7 @@ set_variable = {
 	var = min_fuel
 	value = 0.500
 }
-
+add_ideas = { idea = GDU_experience_gain }
 add_opinion_modifier = { target = JAP modifier = embargo }
 add_opinion_modifier = { target = JAP modifier = sanctions }
 add_opinion_modifier = { target = JAP modifier = minor_sanctions }
@@ -251,7 +251,7 @@ add_intel = {
 	airforce_intel = 200
 }
 
-set_research_slots = 4
+set_research_slots = 3
 set_stability = 0.65
 set_war_support = 0.71
 
