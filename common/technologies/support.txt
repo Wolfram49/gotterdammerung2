@@ -94,7 +94,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -183,7 +183,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -231,6 +231,10 @@ technologies = {
 				attack = 0.1	
 				defence = 0.10
 			}
+			urban_africa = {
+				attack = 0.1	
+				defence = 0.1
+			}
 		}
 
 ##		light_flame_tank = {
@@ -262,7 +266,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -302,6 +306,10 @@ technologies = {
 				attack = 0.1	
 				defence = 0.1
 			}
+			urban_africa = {
+				attack = 0.1	
+				defence = 0.1
+			}
 		}
 		flamethrower_inf = {
 			soft_attack = 0.05
@@ -334,7 +342,7 @@ technologies = {
 ##				attack = 0.10
 ##			}
 ##		}
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -380,7 +388,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -432,7 +440,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -474,7 +482,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -511,7 +519,7 @@ technologies = {
 			recon = 2
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -554,7 +562,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -612,7 +620,9 @@ technologies = {
 	tech_military_police2 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			max_organisation = 10	
+			default_morale = 0.10
+			experience_loss_factor = -0.10
 		}
 		
 		
@@ -621,7 +631,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -646,14 +656,16 @@ technologies = {
 	tech_military_police3 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			max_organisation = 13	
+			default_morale = 0.13
+			experience_loss_factor = -0.07
 		}
 		path = {
 			leads_to_tech = tech_military_police4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -677,10 +689,12 @@ technologies = {
 	tech_military_police4 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			max_organisation = 16	
+			default_morale = 0.16
+			experience_loss_factor = -0.08
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -702,19 +716,19 @@ technologies = {
 		}
 	}
 
-	camicie_nere_security_militias = {
-
-		research_cost = 1
-
-		# only from focus!!! #####
-		allow = {
-			always = no
-		}
-
-		military_police = {
-			suppression_factor = 0.05
-		}
-	}
+##	camicie_nere_security_militias = {
+##
+##		research_cost = 1
+##
+##		# only from focus!!! #####
+##		allow = {
+##			always = no
+##		}
+##
+##		military_police = {
+##			suppression_factor = 0.05
+##		}
+##	}
 
 	tech_maintenance_company = {
 
@@ -727,7 +741,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -763,7 +777,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			max_strength = 3.5
 		}
 		enable_equipment_modules = {
 			easy_maintenance
@@ -775,7 +789,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -811,14 +825,14 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			max_strength = 3.5
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -853,10 +867,10 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			max_strength = 3.5
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -903,7 +917,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -939,8 +953,9 @@ technologies = {
 	tech_field_hospital2 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.10
-			experience_loss_factor = -0.10
+			casualty_trickleback = 0.16
+			experience_loss_factor = -0.11
+			max_strength = 5	
 		}
 		
 		path = {
@@ -948,7 +963,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -984,15 +999,16 @@ technologies = {
 	tech_field_hospital3 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.1
-			experience_loss_factor = -0.10
+			casualty_trickleback = 0.16
+			experience_loss_factor = -0.11
+			max_strength = 5	
 		}
 		path = {
 			leads_to_tech = tech_field_hospital4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -1027,11 +1043,12 @@ technologies = {
 	tech_field_hospital4 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.1
-			experience_loss_factor = -0.10
+			casualty_trickleback = 0.16
+			experience_loss_factor = -0.11
+			max_strength = 5
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -1088,7 +1105,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1128,7 +1145,7 @@ technologies = {
 	tech_logistics_company2 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
+			supply_consumption_factor = -0.09
 			fuel_consumption_factor = -0.05
 		}
 		
@@ -1138,7 +1155,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -1179,7 +1196,7 @@ technologies = {
 	tech_logistics_company3 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
+			supply_consumption_factor = -0.09
 			fuel_consumption_factor = -0.05
 		}
 		path = {
@@ -1187,7 +1204,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -1222,11 +1239,11 @@ technologies = {
 	tech_logistics_company4 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.05
+			supply_consumption_factor = -0.09
+			fuel_consumption_factor = -0.03
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1945
 		folder = {
 			name = support_folder
@@ -1276,7 +1293,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1303,7 +1320,7 @@ technologies = {
 	tech_signal_company2 = {
 
 		signal_company = {
-			initiative = 0.12
+			initiative = 0.15
 		}
 		
 		
@@ -1312,7 +1329,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1939
 		folder = {
 			name = support_folder
@@ -1348,14 +1365,14 @@ technologies = {
 	tech_signal_company3 = {
 
 		signal_company = {
-			initiative = 0.12
+			initiative = 0.25
 		}
 		path = {
 			leads_to_tech = tech_signal_company4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1942
 		folder = {
 			name = support_folder
@@ -1390,10 +1407,10 @@ technologies = {
 	tech_signal_company4 = {
 
 		signal_company = {
-			initiative = 0.12
+			initiative = 0.25
 		}
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1945
 		folder = {
 			name = support_folder
