@@ -73,7 +73,8 @@ technologies = {
 	basic_light_battery = {
 
 		research_cost = 1
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		start_year = 1936
 
 		path = {
@@ -305,7 +306,8 @@ technologies = {
 	basic_medium_battery = {
 
 		research_cost = 1
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		start_year = 1936
 
 
@@ -388,7 +390,8 @@ technologies = {
 	improved_medium_battery = {
 
 		research_cost = 1
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		start_year = 1939
 
 		path = {
@@ -475,7 +478,8 @@ technologies = {
 		research_cost = 1
 
 		start_year = 1944
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		enable_equipment_modules = {
 			ship_medium_battery_4
 			ship_light_medium_battery_4
@@ -505,7 +509,8 @@ technologies = {
 	basic_heavy_battery = {
 
 		research_cost = 1
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		start_year = 1936
 
 		path = {
@@ -551,7 +556,8 @@ technologies = {
 	improved_heavy_battery = {
 
 		research_cost = 1
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		start_year = 1939
 
 		path = {
@@ -596,7 +602,8 @@ technologies = {
 	advanced_heavy_battery = {
 
 		research_cost = 1
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		start_year = 1944
 
 		enable_equipment_modules = {
@@ -714,7 +721,8 @@ technologies = {
 	basic_dp_light_battery = {
 
 		research_cost = 1
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		start_year = 1939
 
 		enable_equipment_modules = {
@@ -759,7 +767,8 @@ technologies = {
 	improved_dp_light_battery = {
 
 		research_cost = 1
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		start_year = 1939
 
 		enable_equipment_modules = {
@@ -804,7 +813,8 @@ technologies = {
 		research_cost = 1
 
 		start_year = 1944
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		enable_equipment_modules = {
 			dp_light_battery_4
 			dp_ship_secondaries_4
@@ -840,7 +850,8 @@ technologies = {
 	basic_dp_medium_battery = {
 
 		research_cost = 1.5
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		start_year = 1944
 
 		enable_equipment_modules = {
@@ -883,7 +894,8 @@ technologies = {
 	basic_torpedo = {
 
 		research_cost = 2.0
-
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
 		start_year = 1922
 
 		path = {
