@@ -784,7 +784,6 @@ equipment_modules = {
 		multiply_stats = {
 			air_range = -0.15
 			air_agility = -0.35
-			maximum_speed = 20
 		}
 		##dismantle_cost_ic = 3.5
 	}
@@ -809,7 +808,6 @@ equipment_modules = {
 		multiply_stats = {
 			air_range = -0.15
 			air_agility = -0.35
-			maximum_speed = 20
 			
 		}
 		##dismantle_cost_ic = 3.5
@@ -828,8 +826,7 @@ equipment_modules = {
 			##weight = 8
 		}
 		multiply_stats = {
-			air_agility = -0.3
-			maximum_speed = 20
+			air_agility = -0.2
 		}
 		xp_cost = 0
 		allow_mission_type = {
@@ -899,8 +896,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			air_range = -0.30
-			air_agility = -0.5
-			maximum_speed = 20
+			air_agility = -0.35
 		}
 		xp_cost = 0
 		allow_mission_type = {
