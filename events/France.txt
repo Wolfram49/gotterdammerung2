@@ -275,9 +275,6 @@ country_event = {
 		add_timed_idea = { idea = FRF_retrain days = 70 }
 		hidden_effect =  {
 			add_political_power = 1200
-			army_experience = 700
-			air_experience = 225
-			navy_experience = 250 
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 8000 producer = FRF }
 			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 2000 producer = FRF }
 
@@ -293,11 +290,6 @@ country_event = {
 			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1000 producer = FRF }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = FRF }
 
-			add_equipment_to_stockpile = { type = heavy_tank_chassis_1 amount = 100 producer = FRF }
-			add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 100 producer = FRF }
-			add_equipment_to_stockpile = { type = medium_tank_chassis_1 amount = 100 producer = FRF }
-			add_equipment_to_stockpile = { type = gw_tank_equipment amount = 600 producer = FRF }
-			add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 50 producer = FRF }
 			
 			add_equipment_to_stockpile = { type = transport_plane_equipment amount = 5 producer = FRF }	
 			

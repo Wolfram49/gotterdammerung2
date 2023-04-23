@@ -604,7 +604,6 @@ ideas = {
 			}
 
 			modifier = {
-				experience_gain_army_factor = -0.5
 			}
 			research_bonus = {
 				land_doctrine = -1.10
@@ -629,7 +628,7 @@ ideas = {
 			}
 
 			modifier = {
-				experience_gain_army_factor = -0.5
+
 			}
 			research_bonus = {
 				land_doctrine = -1.10
@@ -654,12 +653,9 @@ ideas = {
 			}
 
 			modifier = {
-				experience_gain_army_factor = -0.5				
+		
 			}
 			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.1
-				air_doctrine = -0.1
 			}
 
 		}
@@ -676,9 +672,6 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.13
-				air_doctrine = -0.13
 			}
 
 			modifier = {
@@ -709,9 +702,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.12
-				air_doctrine = -0.12
+
 			}
 
 			modifier = {
@@ -741,9 +732,6 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.11
-				air_doctrine = -0.11
 			}
 
 			modifier = {
@@ -773,9 +761,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.1
-				air_doctrine = -0.1
+
 			}
 
 			modifier = {
@@ -805,9 +791,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.09
-				air_doctrine = -0.09
+
 			}
 
 			modifier = {
@@ -837,9 +821,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.08
-				air_doctrine = -0.08
+				
 			}
 
 			modifier = {
@@ -868,9 +850,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.07
-				air_doctrine = -0.07
+				
 			}
 
 			modifier = {
@@ -899,9 +879,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.06
-				air_doctrine = -0.06
+			
 			}
 
 			modifier = {
@@ -933,9 +911,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.04
-				air_doctrine = -0.04
+			
 			}
 
 
@@ -967,7 +943,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -0.50
+				
 			}
 
 			modifier = {

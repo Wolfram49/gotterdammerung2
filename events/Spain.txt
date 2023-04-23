@@ -212,14 +212,7 @@ country_event = {
 				ideology = fascism
 				popularity = 1
 			}
-			SOV = { air_experience = 300 }
-			GER = { air_experience = 300 }
-			ITA = { air_experience = 300 }
-			SOV = { army_experience = 300 }
-			GER = { army_experience = 500 }
-			ITA = { army_experience = 300 }
-			SPR = { army_experience = 500 }
-			SPR = { air_experience = 300 }
+	
 
 					add_timed_idea = { idea = SPA_recovering_from_civil_war days = 800 }
 
@@ -264,9 +257,7 @@ country_event = {
 				ideology = fascism
 				popularity = 1
 			}
-			SOV = { air_experience = 300 }
-			GER = { air_experience = 300 }
-			ITA = { air_experience = 300 }
+			
 					custom_effect_tooltip = nationalists_chosen
 		}
 

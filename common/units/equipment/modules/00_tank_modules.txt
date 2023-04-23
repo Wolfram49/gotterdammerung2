@@ -69,8 +69,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			defense = 4
-			breakthrough = 4	
+			defense = 6
+			breakthrough = 6	
 		}
 		##dismantle_cost_ic =   1
 		xp_cost = 0
@@ -87,7 +87,8 @@ equipment_modules = {
 		xp_cost = 0
 
 		add_stats = {
-			breakthrough = 4
+			defense = 2
+			breakthrough = 2
 		}
 		##dismantle_cost_ic =   1
 		multiply_stats = {
@@ -703,7 +704,7 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 1
 			steel = 3
-			chromium = 1
+			##chromium = 1
 		}
 	}
 	tank_medium_howitzer_3 = {
@@ -726,7 +727,7 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 1
 			steel = 3
-			chromium = 1
+			##chromium = 1
 		}
 	}
 
@@ -784,7 +785,7 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 1
 			steel = 2
-			chromium = 1
+			##chromium = 1
 		}
 	}
 	tank_medium_cannon_3 = {
@@ -812,7 +813,7 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 1
 			steel = 2
-			chromium = 1
+			##chromium = 1
 		}
 	}
 
@@ -866,7 +867,7 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			tungsten = 2
-			chromium = 1
+			##chromium = 1
 			steel = 2
 		}
 	}
@@ -893,7 +894,7 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			tungsten = 2
-			chromium = 1
+			##chromium = 1
 			steel = 3
 		}
 	}
@@ -1091,7 +1092,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			defense = 6
+			defense = 7
 			breakthrough = 4
 			build_cost_ic = 1.5
 		}
