@@ -3960,27 +3960,27 @@ land_reinforce_rate = 0.05
 # naval invasion tactic doctrines
 
 
-	naval_invasion_tactics_MW = {
-
-		enable_tactic = tactic_advanced_naval_landing
-		enable_tactic = tactic_multi_wave_invasion
-		enable_tactic = tactic_storm_machine_gun_nests
-		enable_tactic = tactic_clear_coastal_bunkers
-		enable_tactic = tactic_basic_naval_invasion_attack
-
-		doctrine = yes
-		research_cost = 0.01
-
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-		}
-
-		folder = {
-			name = land_doctrine_folder
-			position = { x = 0 y = 20 }
-		}
-	}
+##	naval_invasion_tactics_MW = {
+##
+##		enable_tactic = tactic_advanced_naval_landing
+##		enable_tactic = tactic_multi_wave_invasion
+##		enable_tactic = tactic_storm_machine_gun_nests
+##		enable_tactic = tactic_clear_coastal_bunkers
+##		enable_tactic = tactic_basic_naval_invasion_attack
+##
+##		doctrine = yes
+##		research_cost = 0.01
+##
+##		categories = {
+##			land_doctrine
+##			cat_mobile_warfare
+##		}
+##
+##		folder = {
+##			name = land_doctrine_folder
+##			position = { x = 0 y = 20 }
+##		}
+##	}
 
 	MW_3rd_Right_1 = {
 
@@ -4211,70 +4211,70 @@ land_reinforce_rate = 0.05
 		}
 	}
 
-	naval_invasion_tactics_SF = {
-
-		enable_tactic = tactic_advanced_naval_landing
-		enable_tactic = tactic_multi_wave_invasion
-		enable_tactic = tactic_storm_machine_gun_nests
-		enable_tactic = tactic_clear_coastal_bunkers
-		enable_tactic = tactic_basic_naval_invasion_attack
-
-		doctrine = yes
-		research_cost = 0.01
-
-		categories = {
-			land_doctrine
-			cat_superior_firepower
-		}
-
-		folder = {
-			name = land_doctrine_folder
-			position = { x = 0 y = 20 }
-		}
-	}
-
-	naval_invasion_tactics_GBP = {
-
-		enable_tactic = tactic_advanced_naval_landing
-		enable_tactic = tactic_multi_wave_invasion
-		enable_tactic = tactic_storm_machine_gun_nests
-		enable_tactic = tactic_clear_coastal_bunkers
-		enable_tactic = tactic_basic_naval_invasion_attack
-		
-		doctrine = yes
-		research_cost = 0.01
-
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-		folder = {
-			name = land_doctrine_folder
-			position = { x = 0 y = 20 }
-		}
-	}
-
-	naval_invasion_tactics_MA = {
-
-		enable_tactic = tactic_advanced_naval_landing
-		enable_tactic = tactic_multi_wave_invasion
-		enable_tactic = tactic_storm_machine_gun_nests
-		enable_tactic = tactic_clear_coastal_bunkers
-		enable_tactic = tactic_basic_naval_invasion_attack
-
-		doctrine = yes
-		research_cost = 0.01
-
-		categories = {
-			land_doctrine
-			cat_mass_assault
-		}
-
-		folder = {
-			name = land_doctrine_folder
-			position = { x = 0 y = 20 }
-		}
-	}
+##	naval_invasion_tactics_SF = {
+##
+##		enable_tactic = tactic_advanced_naval_landing
+##		enable_tactic = tactic_multi_wave_invasion
+##		enable_tactic = tactic_storm_machine_gun_nests
+##		enable_tactic = tactic_clear_coastal_bunkers
+##		enable_tactic = tactic_basic_naval_invasion_attack
+##
+##		doctrine = yes
+##		research_cost = 0.01
+##
+##		categories = {
+##			land_doctrine
+##			cat_superior_firepower
+##		}
+##
+##		folder = {
+##			name = land_doctrine_folder
+##			position = { x = 0 y = 20 }
+##		}
+##	}
+##
+##	naval_invasion_tactics_GBP = {
+##
+##		enable_tactic = tactic_advanced_naval_landing
+##		enable_tactic = tactic_multi_wave_invasion
+##		enable_tactic = tactic_storm_machine_gun_nests
+##		enable_tactic = tactic_clear_coastal_bunkers
+##		enable_tactic = tactic_basic_naval_invasion_attack
+##		
+##		doctrine = yes
+##		research_cost = 0.01
+##
+##		categories = {
+##			land_doctrine
+##			cat_grand_battle_plan
+##		}
+##
+##		folder = {
+##			name = land_doctrine_folder
+##			position = { x = 0 y = 20 }
+##		}
+##	}
+##
+##	naval_invasion_tactics_MA = {
+##
+##		enable_tactic = tactic_advanced_naval_landing
+##		enable_tactic = tactic_multi_wave_invasion
+##		enable_tactic = tactic_storm_machine_gun_nests
+##		enable_tactic = tactic_clear_coastal_bunkers
+##		enable_tactic = tactic_basic_naval_invasion_attack
+##
+##		doctrine = yes
+##		research_cost = 0.01
+##
+##		categories = {
+##			land_doctrine
+##			cat_mass_assault
+##		}
+##
+##		folder = {
+##			name = land_doctrine_folder
+##			position = { x = 0 y = 20 }
+##		}
+##	}
 
 }
