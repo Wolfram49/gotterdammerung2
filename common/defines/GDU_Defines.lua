@@ -228,6 +228,10 @@ NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.0125                   -- basic speed
 NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.02	-- speed penalty per infrastucture below maximum.
 
 
+NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 0
+NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 0
+
+
 
 
 -- stacking penalty to nerf 20w
@@ -257,7 +261,7 @@ NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.00
 NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.0 -- if there are multiple leaders in same combat, each one gets thisratio + (1-thisratio)/num leaders. amount of xp each general gets scales 1 0.75 0.66 etc for 1 2 3 generals
 
-NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.35               -- defender penalty if attacked from multiple directions
+NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.01               -- defender penalty if attacked from multiple directions
 
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 7
 
@@ -421,7 +425,9 @@ NDefines.NMilitary.PLANNING_MAX = 0.17                           	-- can get mor
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01	-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.0001				-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 
-NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.01 					-- air xp gain from training doubled from vanilla, since planes cost more so you get a decent amount of air XP from training air wings --Factor on country Air XP gained from wing training
+NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.01 
+
+-- air xp gain from training doubled from vanilla, since planes cost more so you get a decent amount of air XP from training air wings --Factor on country Air XP gained from wing training
 
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 3.0 --makes redeployement of fighters faster vanilla is 0.02
 
