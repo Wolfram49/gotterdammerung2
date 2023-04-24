@@ -4,7 +4,7 @@ state={
 	
 	state_category = wasteland
 	history={
-		owner = ITA
+		##owner = ITA
 }
 	provinces={
 		4913

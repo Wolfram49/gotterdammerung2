@@ -4,7 +4,7 @@ state={
 	name="STATE_514" # Algerian Desert
 	manpower = 1
 	history={
-		owner = ITA
+		##owner = ITA
 }	
 	state_category = wasteland
 
