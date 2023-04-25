@@ -19,7 +19,7 @@ NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0
 
 NDefines.NIntel.NAVAL_SUPREMACY_INTEL_LOW = 0.0								-- we need more intel than this to get any supremacy - should hopefully make naval invasions not be blocked by intel nonesense????
 
-NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999			
+NDefines.NOperatives.AGENCY_CREATION_DAYS = 9998			
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999	
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 40
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_ABSOLUTE_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 50
