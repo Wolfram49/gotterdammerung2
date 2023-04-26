@@ -68,7 +68,7 @@ add_intel = {
 	airforce_intel = 200
 }
 
-set_research_slots = 2
+set_research_slots = 1
 navy_experience = 0
 add_timed_idea = { idea = airandnavy_idea days = 1980 }
 recruit_character = SOV_nikolay_voznesensky

@@ -151,7 +151,9 @@ technologies = {
 			engine_3_1x
 			engine_3_2x
 		}
-
+		allow = { 
+			date > 1937.1.5
+		}
 		research_cost = 2
 		start_year = 1940
 		folder = {
@@ -228,7 +230,9 @@ technologies = {
 			leads_to_tech = modern_small_airframe
 			research_cost_coeff = 1
 		}
-		
+		allow = { 
+			date > 1942.1.1
+		}
 		research_cost = 2
 		start_year = 1944
 
@@ -438,7 +442,9 @@ technologies = {
 			leads_to_tech = advanced_medium_airframe
 			research_cost_coeff = 1
 		}
-		
+		allow = { 
+			date > 1937.1.5
+		}
 		research_cost = 2
 		start_year = 1940
 		folder = {
@@ -493,6 +499,9 @@ technologies = {
 			engine_4_2x
 			engine_4_3x
 			engine_4_4x
+		}
+		allow = { 
+			date > 1942.1.1
 		}
 		path = {
 			leads_to_tech = modern_medium_airframe
@@ -674,7 +683,9 @@ technologies = {
 			leads_to_tech = advanced_large_airframe
 			research_cost_coeff = 1
 		}
-		
+		allow = { 
+			date > 1937.1.5
+		}
 		research_cost = 2
 		start_year = 1940
 		folder = {
@@ -717,7 +728,9 @@ technologies = {
 			leads_to_tech = modern_large_airframe
 			research_cost_coeff = 1
 		}
-
+		allow = { 
+			date > 1942.1.1
+		}
 		research_cost = 2
 		start_year = 1944
 		folder = {

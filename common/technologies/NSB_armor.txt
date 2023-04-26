@@ -509,6 +509,7 @@ technologies = {
 			medium_armor
 		}
 
+
 		on_research_complete_limit = {
 			NOT = {	has_template_containing_unit = light_armor }
 			NOT = {	has_template_containing_unit = heavy_armor }
@@ -622,6 +623,9 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1940
+		allow = { 
+			date > 1939.1.1
+		}
 
 		folder = {
 			name = nsb_armour_folder
@@ -713,7 +717,9 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1943
-
+		allow = { 
+			date > 1942.1.1
+		}
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1943 }
@@ -768,7 +774,9 @@ technologies = {
 
 		research_cost = 2.5
 		start_year = 1945
-
+		allow = { 
+			date > 1944.1.1
+		}
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1945 }
@@ -888,6 +896,10 @@ technologies = {
 
 	improved_heavy_tank_chassis = { #Tiger
 
+
+		allow = { 
+			date > 1939.1.1
+		}
 		enable_equipments = {
 			heavy_tank_chassis_2
 			heavy_tank_destroyer_chassis_2
@@ -969,6 +981,10 @@ technologies = {
 
 	advanced_heavy_tank_chassis = { #King Tiger
 
+
+		allow = { 
+			date > 1942.1.1
+		}
 		enable_equipments = {
 			heavy_tank_chassis_3
 			heavy_tank_destroyer_chassis_3
