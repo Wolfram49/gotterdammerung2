@@ -62,6 +62,19 @@ technologies = {
 			wet_ammo_storage
 			smoke_launchers
 			expanded_fuel_tank
+
+
+			tank_medium_howitzer
+			tank_small_cannon_2
+			##tank_close_support_gun
+			secondary_turret_close_support_gun
+
+			tank_auto_cannon
+			tank_anti_air_cannon
+
+			tank_high_velocity_cannon
+			tank_medium_cannon
+			tank_heavy_cannon
 		}
 		enable_subunits = {
 			light_armor
@@ -590,6 +603,18 @@ technologies = {
 			medium_tank_aa_chassis_2
 		}
 
+		enable_equipment_modules {
+			tank_medium_howitzer_2
+			tank_heavy_howitzer
+
+			tank_auto_cannon_2
+			tank_anti_air_cannon_2
+
+			tank_medium_cannon_2
+			tank_high_velocity_cannon_2
+			tank_heavy_cannon_2
+		}
+
 		path = {
 			leads_to_tech = advanced_medium_tank_chassis
 			research_cost_coeff = 1
@@ -670,6 +695,15 @@ technologies = {
 			medium_tank_destroyer_chassis_3
 			medium_tank_artillery_chassis_3
 			medium_tank_aa_chassis_3
+		}
+
+		enable_equipment_modules {
+			tank_medium_howitzer_3
+			tank_anti_air_cannon_3		
+
+			tank_high_velocity_cannon_3
+			tank_heavy_cannon_3
+			tank_medium_cannon_3
 		}
 
 		path = {
@@ -861,6 +895,17 @@ technologies = {
 			heavy_tank_aa_chassis_2
 		}
 
+		enable_equipment_modules {
+			tank_medium_howitzer_2
+			tank_heavy_howitzer
+
+			tank_auto_cannon_2
+			tank_anti_air_cannon_2
+
+			tank_medium_cannon_2
+			tank_high_velocity_cannon_2
+			tank_heavy_cannon_2
+		}
 		path = {
 			leads_to_tech = advanced_heavy_tank_chassis
 			research_cost_coeff = 1
@@ -931,6 +976,14 @@ technologies = {
 			heavy_tank_aa_chassis_3
 		}
 
+		enable_equipment_modules {
+			tank_medium_howitzer_3
+			tank_anti_air_cannon_3		
+
+			tank_high_velocity_cannon_3
+			tank_heavy_cannon_3
+			tank_medium_cannon_3
+		}
 		path = {
 			leads_to_tech = main_battle_tank_chassis
 			research_cost_coeff = 1
