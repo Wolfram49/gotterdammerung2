@@ -152,7 +152,7 @@ technologies = {
 			engine_3_2x
 		}
 		allow = { 
-			date > 1937.1.5
+			date > 1937.5.1
 		}
 		research_cost = 2
 		start_year = 1940
@@ -443,7 +443,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		allow = { 
-			date > 1937.1.5
+			date > 1937.5.1
 		}
 		research_cost = 2
 		start_year = 1940
@@ -684,7 +684,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		allow = { 
-			date > 1937.1.5
+			date > 1937.5.1
 		}
 		research_cost = 2
 		start_year = 1940

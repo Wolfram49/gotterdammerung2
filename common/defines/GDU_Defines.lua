@@ -13,6 +13,7 @@ NDefines.NAir.AIR_WING_XP_LEVELS = { 0 }                         --Experience ne
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0               --Removed for game stability/reducing chance of desync
 
+
 ------- Intelligence nonsense
 
 NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0
@@ -707,3 +708,8 @@ NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1.0				-- initially 
 NDefines.NAI.ACCESS_SCORE_FOR_DEMOCRATIC_COUNTRIES = 0						-- was 500 in vanilla, trying to stop mil access from AI
 NDefines.NAI.TOO_INSIGNIFICANT_ARMY_RATIO_BEGIN = 0.0					-- was 0.75 in vanilla, if army ratio is of a country is larger than this threshold, it will be less reluctant to accept certain diplo actions
 NDefines.NAI.TOO_INSIGNIFICANT_MAX_PENALTY = 999						-- was 350 in vanilla, max penalty that will be applied for thinking a country is too insignificant
+
+
+
+
+NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 100 -- Cost to scorch earth
