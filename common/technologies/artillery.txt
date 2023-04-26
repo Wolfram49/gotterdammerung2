@@ -25,7 +25,7 @@ technologies = {
 			secondary_turret_small_cannon
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		
 		folder = {
 			name = artillery_folder
@@ -73,7 +73,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1936
 		
@@ -129,7 +129,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1939
 		
@@ -189,7 +189,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1940
 		
@@ -238,7 +238,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1941
 		
@@ -287,7 +287,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 
 		start_year = 1942
 		
@@ -442,7 +442,7 @@ technologies = {
 
 	mountain_gun = {
 
-		research_cost = 1
+		research_cost = 1.5
 
 		# only from focus!!! #####
 		allow = {
@@ -479,7 +479,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 
 		start_year = 1940
 		
@@ -522,7 +522,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1941
 		
@@ -565,7 +565,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1942
 		
@@ -657,7 +657,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1944
 		
@@ -697,7 +697,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1945
 		
@@ -736,7 +736,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1936
 		
@@ -790,7 +790,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.75 
+		research_cost = 1.5 
 
 		start_year = 1936
 		
@@ -827,7 +827,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1939
 		
@@ -866,7 +866,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.75 
+		research_cost = 1.5 
 
 		start_year = 1940
 		
@@ -905,7 +905,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.75 
+		research_cost = 1.5 
 
 		start_year = 1941
 		
@@ -944,7 +944,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.75
+		research_cost = 1.5
 
 		start_year = 1942
 		
@@ -1021,7 +1021,7 @@ technologies = {
 		tech_air_damage_factor = -0.02
 		
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1944
 		
@@ -1053,7 +1053,7 @@ technologies = {
 
 		tech_air_damage_factor = -0.02
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1945
 		
